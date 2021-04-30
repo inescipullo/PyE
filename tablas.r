@@ -1,4 +1,4 @@
-setwd("/Users/inescipullo/Documents2.0/Probabilidad\ y\ Estadistica/TP\ Lab")
+setwd("/Users/inescipullo/Documents2.0/Probabilidad\ y\ Estadistica/PyE")
 
 data = read.table("usuarios9.csv", header = TRUE, sep = ",")
 data2 = read.table("recorridos9.csv", header = TRUE, sep = ",")
@@ -27,8 +27,8 @@ grafico_genero = pie(x, labels = labels, main = title, col = c("#ff896b","#fbdb4
 
 
 #tabla de frecuencias para EDAD
-# garfico HISTOGRAMA
-breaks = seq(19,67,3)
+# garfico histograma
+breaks = seq(18,68,5)
 edad_intervalos = cut(data$edad_usuario, breaks = breaks, right = FALSE)
 frec_abs_edad = table(edad_intervalos) 
 frec_rel_edad = round(frec_abs_edad / sum(frec_abs_edad),2)
@@ -38,18 +38,26 @@ tabla_edad = cbind(frec_abs_edad, frec_rel_edad, frec_abs_ac_edad,frec_rel_ac_ed
 attributes(tabla_edad)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia Relativa", "Frecuencia Absoluta Acumulada", "Frecuencia Relativa Acumulada")
 tabla_edad
 
+# grafico de histograma para EDAD
+hist(data$edad_usuario,freq = F)
+
 
 
 # tabla de frecuencias para DIA
 # grafico de barras
 # ver de ponerlo en orden
 frec_abs_dia = table(data2$dia) 
+frec_abs_dia <- frec_abs_dia[c(1,3,4,5,2,7,6)]
 frec_rel_dia = round(frec_abs_dia / sum(frec_abs_dia), 2)
 frec_abs_ac_dia = cumsum(frec_abs_dia)
 frec_rel_ac_dia = round(frec_abs_ac_dia / sum(frec_abs_dia), 2)
 tabla_dia = cbind(frec_abs_dia,frec_rel_dia,frec_abs_ac_dia,frec_rel_ac_dia)
 attributes(tabla_dia)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia Relativa", "Frecuencia Absoluta Acumulada", "Frecuencia Relativa Acumulada")
+rbind()
 tabla_dia
+
+# grafico de barras para DIA
+barplot(frec_abs_dia,xlab = "Días de la Semana",ylab = "Cantidad",ylim = c(0,70),col = "lightgreen",main = "Cantidad de bicicletas públicas usadas por día")
 
 
 
