@@ -8,39 +8,48 @@ attach(data2)
 # tabla de frecuencias para GENERO
 # es variable cualitativa
 # grafico de torta
-frec_abs_genero = table(data$genero_usuario) # frecuencia absoluta de la variable 
+frec_abs_genero = table(data$genero_usuario)
 frec_rel_genero = round(frec_abs_genero / sum(frec_abs_genero), 2)
-frec_abs_ac_genero = cumsum(frec_abs_genero)
-frec_rel_ac_genero = round(frec_abs_ac_genero / sum(frec_abs_genero), 2)
-tabla_genero = cbind(frec_abs_genero,frec_rel_genero,frec_abs_ac_genero,frec_rel_ac_genero)
-attributes(tabla_genero)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia Relativa", "Frecuencia Absoluta Acumulada", "Frecuencia Relativa Acumulada")
+tabla_genero = cbind(frec_abs_genero,frec_rel_genero)
+attributes(tabla_genero)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia Relativa")
+total = c(sum(frec_abs_genero),sum(frec_rel_genero))
+tabla_genero = rbind(tabla_genero,total)
+attributes(tabla_genero)$dimnames[[1]] = c("Femenino","Masculino","Otro","Total")
 tabla_genero
 
 #grafico de sectores para GENERO
 x = table(data$genero_usuario)
-title = "GENERO USUSARIO"
+title = "Género de los Usuarios del Sistema EcoBicis de CABA"
 porcentaje = round(x / sum(x) * 100, 2)
 options = c("Femenino", "Masculino", "Otro")
 labels = paste(options, porcentaje, c("%"), sep = " ")
-grafico_genero = pie(x, labels = labels, main = title, col = c("#ff896b","#fbdb48","#00ff00"))
+grafico_genero = pie(x, labels = labels, main = title, col = c("#ffff66","#99ff66","#ff6666"))
 
 
 
 #tabla de frecuencias para EDAD
 # garfico histograma
-breaks = seq(18,68,5)
-edad_intervalos = cut(data$edad_usuario, breaks = breaks, right = FALSE)
+breaks_edad = seq(18,68,5)
+edad_intervalos = cut(data$edad_usuario, breaks = breaks_edad, right = FALSE)
 frec_abs_edad = table(edad_intervalos) 
 frec_rel_edad = round(frec_abs_edad / sum(frec_abs_edad),2)
 frec_abs_ac_edad = cumsum(frec_abs_edad)
 frec_rel_ac_edad = round(frec_abs_ac_edad / sum(frec_abs_edad),2)
 tabla_edad = cbind(frec_abs_edad, frec_rel_edad, frec_abs_ac_edad,frec_rel_ac_edad)
 attributes(tabla_edad)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia Relativa", "Frecuencia Absoluta Acumulada", "Frecuencia Relativa Acumulada")
+NA_ = c(1,1/100,sum(frec_abs_ac_edad)+1,sum(frec_rel_ac_edad)+1/100)
+total = c(sum(frec_abs_edad)+NA_[1],sum(frec_rel_edad)+NA_[2],NA,NA)
+tabla_edad = rbind(tabla_edad,NA_,total)
 tabla_edad
 
 # grafico de histograma para EDAD
-hist(data$edad_usuario,freq = F)
+title2 = "Edad de los Usuarios del Servicio EcoBici de CABA"
+hist(data$edad_usuario,border = "black",col = "lightblue",xlim = c(10,70),ylim = c(0,30),breaks = breaks_edad,xlab = "Edad (en años)",ylab = "Cantidad de Usuarios",main = title2,)
 
+# poligono de frecuencia y poligono acumulativo para EDAD
+xy = c(0,frec_rel_edad,0)
+plot(xy,type = "l",main = title2,ylab = "Frecuencia Relativa",xlab = "Edad (en años)",ylim = c(0,0.3))
+grid()
 
 
 # tabla de frecuencias para DIA
@@ -51,8 +60,8 @@ frec_abs_dia <- frec_abs_dia[c(1,3,4,5,2,7,6)]
 frec_rel_dia = round(frec_abs_dia / sum(frec_abs_dia), 2)
 frec_abs_ac_dia = cumsum(frec_abs_dia)
 frec_rel_ac_dia = round(frec_abs_ac_dia / sum(frec_abs_dia), 2)
-tabla_dia = cbind(frec_abs_dia,frec_rel_dia,frec_abs_ac_dia,frec_rel_ac_dia)
-attributes(tabla_dia)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia Relativa", "Frecuencia Absoluta Acumulada", "Frecuencia Relativa Acumulada")
+tabla_dia = cbind(frec_abs_dia,frec_rel_dia)
+attributes(tabla_dia)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia Relativa")
 rbind()
 tabla_dia
 
