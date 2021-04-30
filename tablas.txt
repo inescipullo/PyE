@@ -1,0 +1,30 @@
+          Frecuencia Absoluta Frecuencia Relativa
+Femenino                   38                0.38
+Masculino                  27                0.27
+Otro                       35                0.35
+Total                     100                1.00
+
+
+        Frecuencia Absoluta Frecuencia Relativa Frecuencia Absoluta Acumulada Frecuencia Relativa Acumulada
+[18,23)                  16                0.16                            16                          0.16
+[23,28)                  15                0.15                            31                          0.31
+[28,33)                  27                0.27                            58                          0.59
+[33,38)                  17                0.17                            75                          0.76
+[38,43)                  12                0.12                            87                          0.88
+[43,48)                   1                0.01                            88                          0.89
+[48,53)                   6                0.06                            94                          0.95
+[53,58)                   3                0.03                            97                          0.98
+[58,63)                   1                0.01                            98                          0.99
+[63,68)                   1                0.01                            99                          1.00
+NA_                       1                0.01                           744                          7.52
+total                   100                1.00                            NA                            NA
+
+
+          Frecuencia Absoluta Frecuencia Relativa
+Domingo                    63                0.15
+Lunes                      63                0.15
+Martes                     54                0.13
+Miércoles                  51                0.12
+Jueves                     59                0.14
+Viernes                    53                0.13
+Sábado                     68                0.17
