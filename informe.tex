@@ -2,10 +2,12 @@
 \usepackage{graphicx}
 \usepackage{fancyhdr}
 \usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{tabularx}
 
 \addtolength{\textwidth}{0.2cm}
-\setlength{\parskip}{8pt}
-\setlength{\parindent}{0.5cm}
+\setlength{\parskip}{13pt}
+\setlength{\parindent}{0.0cm}
 \linespread{1.5}
 
 \pagestyle{fancy}
@@ -39,8 +41,58 @@
 \end{titlepage}
 \par
 
-Histograma empezando en cero
-Esta bien poner n/a en valores acumulados?
+El presente informe tiene como objetivo la exposici\'on de un an\'alisis estad\'istico descriptivo
+sobre los datos recopilados del sistema de bicicletas compartidas de la Ciudad de Buenos Aires, EcoBici.
+
+\section{Sobre los datos}
+Los datos utilizados se encontraban divididos en dos unidades de an\'alisis diferentes: una correspondiente
+a la informaci\'on sobre los usuarios del sistema en el a\~{n}o 2020, y la otra, a la informaci\'on sobre los recorridos 
+realizados por los mismos, en el a\~{n}o 2020.
+\par
+La informaci\'on recibida para la realizaci\'on del trabajo constituye una muestra aleatoria 
+de las observaciones totales registradas por el Ministerio de Desarrollo Urbano y Transporte de la
+Ciudad de Buenos Aires, disponibles en {\small \url{https://data.buenosaires.gob.ar/dataset/estaciones-bicicletas-publicas}}.
+\par
+Todos los datos y gr\'aficos presentados a continuaci\'on provienen de esta misma y \'unica fuente.
+
+\section{Sobre las variables}
+Como fue mencionado en la secci\'on anterior, la informaci\'on se encontraba dividida en dos unidades de an\'alisis.
+Cada una de ellas presenta diferentes variables que ser\'an el objeto de inter\'es de este informe.
+\par
+En la primer unidad (referida a informaci\'on de usuario) se cuenta con tres variables: ID de usuario 
+(n\'umero de 6 d\'igitos que identifica un usuario), g\'enero de usuario (pudiendo tomar las categor\'ias femenino, masculino y otro) y
+edad de usuario (representada en a\~{n}os).
+\par
+En la segunda unidad (referida a informaci\'on de recorridos) se cuenta con 5 variables: Duraci\'on del recorrido
+(representada en segundos), Distancia (distancia entre la estaci\'on de origen y la de destino, representada en metros), 
+D\'ia (d\'ia de la semana en el que se realizo el recorrido), Direcci\'on de origen (direcci\'on de la estaci\'on de EcoBici desde donde se inici\'o el recorrido), 
+Direcci\'on de destino (direcci\'on de la estaci\'on de EcoBici desde donde finaliz\'o el recorrido). 
+
+\section{An\'alisis univariado}
+
+\subsection{G\'enero de usuario}
+
+Para comenzar el an\'alisis, se puede observar la siguiente tabla de frecuencias sobre la variable
+g\'enero de usuario. 
+
+\begin{tabularx} {0.8\textwidth}{ 
+    | >{\raggedright\arraybackslash}X 
+    | >{\raggedleft\arraybackslash}X 
+    | >{\raggedleft\arraybackslash}X | }
+   \hline
+   G\'enero de usuario & Frecuencia absoluta & Frecuencia relativa \\
+   \hline
+   Femenino & 38 & 0.38 \\
+   \hline
+   Masculino & 27 & 0.27 \\
+   \hline
+   Otro & 35 & 0.35 \\
+   \hline \hline
+   Total & 100 & 1.00 \\
+   \hline
+  \end{tabularx}
+
+
 
 
 \end{document}

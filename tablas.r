@@ -1,4 +1,5 @@
 setwd("/Users/inescipullo/Documents2.0/Probabilidad\ y\ Estadistica/PyE")
+setwd("/home/administrador/Documentos/PyE")
 
 data = read.table("usuarios9.csv", header = TRUE, sep = ",")
 data2 = read.table("recorridos9.csv", header = TRUE, sep = ",")
@@ -19,11 +20,11 @@ tabla_genero
 
 #grafico de sectores para GENERO
 x = table(data$genero_usuario)
-title = "Género de los Usuarios del Sistema EcoBicis de CABA"
+title = "Género de los Usuarios \n del Sistema EcoBicis de CABA"
 porcentaje = round(x / sum(x) * 100, 2)
 options = c("Femenino", "Masculino", "Otro")
 labels = paste(options, porcentaje, c("%"), sep = " ")
-grafico_genero = pie(x, labels = labels, main = title, col = c("#ffff66","#99ff66","#ff6666"))
+grafico_genero = pie(x, labels = labels, clockwise = TRUE, main = title, col = c("#ffff66","#99ff66","#ff6666"))
 
 
 
