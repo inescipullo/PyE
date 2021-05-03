@@ -48,8 +48,15 @@ title2 = "Edad de los Usuarios del Servicio EcoBici de CABA"
 hist(data$edad_usuario,border = "black",col = "lightblue",xlim = c(10,70),ylim = c(0,30),breaks = breaks_edad,xlab = "Edad (en años)",ylab = "Cantidad de Usuarios",main = title2,)
 
 # poligono de frecuencia y poligono acumulativo para EDAD
-xy = c(0,frec_rel_edad,0)
+breaks_edad2 = seq(13,73,5)
+xy = table(cut(data$edad_usuario,breaks = breaks_edad2,right = FALSE))
+xy = round(xy/sum(xy),2)
+# poligono de frecuencia:
 plot(xy,type = "l",main = title2,ylab = "Frecuencia Relativa",xlab = "Edad (en años)",ylim = c(0,0.3))
+grid()
+# poligono acumulativo:
+xy2 = cumsum(xy)
+plot(xy2,type = "l",main = title2,ylab = "Frecuencia Relativa Acumulada",xlab = "Edad (en años)",ylim = c(0,1))
 grid()
 
 
