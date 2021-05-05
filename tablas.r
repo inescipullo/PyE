@@ -28,19 +28,19 @@ grafico_genero = pie(x, labels = labels, clockwise = TRUE, main = title, col = c
 
 
 
-#tabla de frecuencias para EDAD
+# tabla de frecuencias para EDAD
 # garfico histograma
 breaks_edad = seq(18,68,5)
 edad_intervalos = cut(data$edad_usuario, breaks = breaks_edad, right = FALSE)
 frec_abs_edad = table(edad_intervalos) 
-frec_rel_edad = round(frec_abs_edad / sum(frec_abs_edad),2)
+frec_rel_edad = round(frec_abs_edad / sum(frec_abs_edad),3)
 frec_abs_ac_edad = cumsum(frec_abs_edad)
 frec_rel_ac_edad = cumsum(frec_rel_edad)
 tabla_edad = cbind(frec_abs_edad, frec_rel_edad, frec_abs_ac_edad,frec_rel_ac_edad)
 attributes(tabla_edad)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia Relativa", "Frecuencia Absoluta Acumulada", "Frecuencia Relativa Acumulada")
-NA_ = c(1,1/100,sum(frec_abs_edad)+1,sum(frec_rel_edad)+1/100)
-total = c(sum(frec_abs_edad)+NA_[1],sum(frec_rel_edad)+NA_[2],NA,NA)
-tabla_edad = rbind(tabla_edad,NA_,total)
+#NA_ = c(1,1/100,sum(frec_abs_edad)+1,sum(frec_rel_edad)+1/100)
+total = c(sum(frec_abs_edad),sum(frec_rel_edad),NA,NA)
+tabla_edad = rbind(tabla_edad,total)
 tabla_edad
 
 # grafico de histograma para EDAD
@@ -50,15 +50,22 @@ hist(data$edad_usuario,border = "black",col = "lightblue",xlim = c(10,70),ylim =
 # poligono de frecuencia y poligono acumulativo para EDAD
 breaks_edad2 = seq(13,73,5)
 xy = table(cut(data$edad_usuario,breaks = breaks_edad2,right = FALSE))
-xy = round(xy/sum(xy),2)
+xy = round(xy/sum(xy),3)
 # poligono de frecuencia:
 plot(xy,type = "l",main = title2,ylab = "Frecuencia Relativa",xlab = "Edad (en años)",ylim = c(0,0.3))
 grid()
 # poligono acumulativo:
-xy2 = cumsum(xy)
-plot(cumsum(xy),type = "l",main = title2,ylab = "Frecuencia Relativa Acumulada",xlab = "Edad (en años)",ylim = c(0,1))
+xy2 = as.table(cumsum(xy))
+plot(xy2,type = "l",main = title2,ylab = "Frecuencia Relativa Acumulada",xlab = "Edad (en años)",ylim = c(0,1))
 grid()
-# no queda bien el eje x y faltaria agg NA
+# faltaria agg NA
+
+# Analisis de Medidas Descriptivas EDAD
+res = summary(data$edad_usuario)
+rango_intercuartil = 37 - 25
+desvio_estandar = sd(data$edad_usuario,na.rm = T)
+moda = "[28,33)"
+
 
 
 # tabla de frecuencias para DIA
@@ -79,8 +86,9 @@ barplot(frec_abs_dia,xlab = "Días de la Semana",ylab = "Cantidad",ylim = c(0,70
 
 
 
-
-# DIRECCION ESTACION DE ORIGEN
+install.packages("qcc")
+library(qcc)
+# tabla de frecuencias DIRECCION ESTACION DE ORIGEN
 fa_direc_or = table(data2$direccion_estacion_origen)
 fr_direc_or = round(fa_direc_or/sum(fa_direc_or),4)
 tabla_direc_or = cbind(fa_direc_or,fr_direc_or)
@@ -88,9 +96,17 @@ attributes(tabla_direc_or)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia 
 TOTAL = c(sum(fa_direc_or),sum(fr_direc_or))
 tabla_direc_or = rbind(tabla_direc_or,TOTAL)
 tabla_direc_or
+tabla_direc_or_10 = tabla_direc_or[c(24,3,4,5,2,7,6)]
+
+# Diagrama de Pareto, cantidad de Estaciones de Origen de acuerda a su frecuencia absoluta,
+# el Principio de Pareto que se visualiza es que la mayoria de las estaciones son poco utilizadas 
+# como estacion de origen.
+pareto.chart(table(tabla_direc_or[order(-fa_direc_or)]))
 
 
-# DIRECCION ESTACION DE DESTINO
+
+
+# tabla de frecuencias DIRECCION ESTACION DE DESTINO
 fa_direc_dt = table(data2$direccion_estacion_destino)
 fr_direc_dt = round(fa_direc_dt/sum(fa_direc_dt),4)
 tabla_direc_dt = cbind(fa_direc_dt,fr_direc_dt)
@@ -98,6 +114,16 @@ attributes(tabla_direc_dt)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia 
 TOTAL = c(sum(fa_direc_dt),sum(fr_direc_dt))
 tabla_direc_dt = rbind(tabla_direc_dt,TOTAL)
 tabla_direc_dt
+
+
+# Diagrama de Pareto, cantidad de Estaciones de Destino de acuerda a su frecuencia absoluta,
+# el Principio de Pareto que se visualiza es que la mayoria de las estaciones son poco utilizadas 
+# como estacion de destino.
+pareto.chart(table(tabla_direc_dt[order(-fa_direc_dt)]))
+
+
+
+
 
 
 
@@ -131,4 +157,8 @@ tabla_duracion
 
 
 boxplot(frec_abs_duracion, col="lightblue", main = "Duración de Recorrido" , xlab=NA, ylab="Edad de la madre (en años)")
-b
+
+
+
+
+
