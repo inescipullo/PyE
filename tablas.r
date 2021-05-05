@@ -35,10 +35,10 @@ edad_intervalos = cut(data$edad_usuario, breaks = breaks_edad, right = FALSE)
 frec_abs_edad = table(edad_intervalos) 
 frec_rel_edad = round(frec_abs_edad / sum(frec_abs_edad),2)
 frec_abs_ac_edad = cumsum(frec_abs_edad)
-frec_rel_ac_edad = round(frec_abs_ac_edad / sum(frec_abs_edad),2)
+frec_rel_ac_edad = cumsum(frec_rel_edad)
 tabla_edad = cbind(frec_abs_edad, frec_rel_edad, frec_abs_ac_edad,frec_rel_ac_edad)
 attributes(tabla_edad)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia Relativa", "Frecuencia Absoluta Acumulada", "Frecuencia Relativa Acumulada")
-NA_ = c(1,1/100,sum(frec_abs_ac_edad)+1,sum(frec_rel_ac_edad)+1/100)
+NA_ = c(1,1/100,sum(frec_abs_edad)+1,sum(frec_rel_edad)+1/100)
 total = c(sum(frec_abs_edad)+NA_[1],sum(frec_rel_edad)+NA_[2],NA,NA)
 tabla_edad = rbind(tabla_edad,NA_,total)
 tabla_edad
@@ -56,8 +56,9 @@ plot(xy,type = "l",main = title2,ylab = "Frecuencia Relativa",xlab = "Edad (en a
 grid()
 # poligono acumulativo:
 xy2 = cumsum(xy)
-plot(xy2,type = "l",main = title2,ylab = "Frecuencia Relativa Acumulada",xlab = "Edad (en años)",ylim = c(0,1))
+plot(cumsum(xy),type = "l",main = title2,ylab = "Frecuencia Relativa Acumulada",xlab = "Edad (en años)",ylim = c(0,1))
 grid()
+# no queda bien el eje x y faltaria agg NA
 
 
 # tabla de frecuencias para DIA
@@ -78,6 +79,30 @@ barplot(frec_abs_dia,xlab = "Días de la Semana",ylab = "Cantidad",ylim = c(0,70
 
 
 
+
+# DIRECCION ESTACION DE ORIGEN
+fa_direc_or = table(data2$direccion_estacion_origen)
+fr_direc_or = round(fa_direc_or/sum(fa_direc_or),4)
+tabla_direc_or = cbind(fa_direc_or,fr_direc_or)
+attributes(tabla_direc_or)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia Relativa")
+TOTAL = c(sum(fa_direc_or),sum(fr_direc_or))
+tabla_direc_or = rbind(tabla_direc_or,TOTAL)
+tabla_direc_or
+
+
+# DIRECCION ESTACION DE DESTINO
+fa_direc_dt = table(data2$direccion_estacion_destino)
+fr_direc_dt = round(fa_direc_dt/sum(fa_direc_dt),4)
+tabla_direc_dt = cbind(fa_direc_dt,fr_direc_dt)
+attributes(tabla_direc_dt)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia Relativa")
+TOTAL = c(sum(fa_direc_dt),sum(fr_direc_dt))
+tabla_direc_dt = rbind(tabla_direc_dt,TOTAL)
+tabla_direc_dt
+
+
+
+
+
 # tabla de frecuencias para DISTANCIA
 breaks = seq(min(data2$distancia),max(data2$distancia),100)
 distancia_intervalos = cut(data2$distancia, breaks = breaks, rigth = FALSE)
@@ -90,9 +115,10 @@ attributes(tabla_distancia)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia
 tabla_distancia
 
 
+
 # tabla de frecuencias para DURACION
-breaks = seq(min(data2$duracion),max(data2$duracion),100)
-duracion_intervalos = cut(data2$duracion_recorrido, breaks = breaks, rigth = FALSE)
+breaks = seq(130,29130,1000)/1000
+duracion_intervalos = cut(data2$duracion_recorrido/1000, breaks = breaks, rigth = FALSE)
 frec_abs_duracion = table(duracion_intervalos) 
 
 #frec_abs_duracion = table(data2$duracion_recorrido)
@@ -104,5 +130,5 @@ attributes(tabla_duracion)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia 
 tabla_duracion        
 
 
-
-
+boxplot(frec_abs_duracion, col="lightblue", main = "Duración de Recorrido" , xlab=NA, ylab="Edad de la madre (en años)")
+b
