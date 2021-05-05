@@ -4,11 +4,19 @@
 \usepackage{wrapfig}
 \usepackage{hyperref}
 \usepackage{tabularx}
+\usepackage{setspace}
+
+\newsavebox\CBox
+\def\textBF#1{\sbox\CBox{#1}\resizebox{\wd\CBox}{\ht\CBox}{\textbf{#1}}}
+
+\newenvironment{myenv}[1]
+  {\begin{spacing}{#1}}
+  {\end{spacing}}
 
 \addtolength{\textwidth}{0.2cm}
 \setlength{\parskip}{13pt}
 \setlength{\parindent}{0.0cm}
-\linespread{1.5}
+\linespread{1.25}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -49,8 +57,8 @@ Los datos utilizados se encontraban divididos en dos unidades de an\'alisis dife
 a la informaci\'on sobre los usuarios del sistema en el a\~{n}o 2020, y la otra, a la informaci\'on sobre los recorridos 
 realizados por los mismos, en el a\~{n}o 2020.
 \par
-La informaci\'on recibida para la realizaci\'on del trabajo constituye una muestra aleatoria 
-de las observaciones totales registradas por el Ministerio de Desarrollo Urbano y Transporte de la
+Se cuenta para el siguienete an\'alisis con una muestra aleatoria de 100 usuarios
+tomados de las observaciones totales registradas por el Ministerio de Desarrollo Urbano y Transporte de la
 Ciudad de Buenos Aires, disponibles en {\small \url{https://data.buenosaires.gob.ar/dataset/estaciones-bicicletas-publicas}}.
 \par
 Todos los datos y gr\'aficos presentados a continuaci\'on provienen de esta misma y \'unica fuente.
@@ -59,14 +67,23 @@ Todos los datos y gr\'aficos presentados a continuaci\'on provienen de esta mism
 Como fue mencionado en la secci\'on anterior, la informaci\'on se encontraba dividida en dos unidades de an\'alisis.
 Cada una de ellas presenta diferentes variables que ser\'an el objeto de inter\'es de este informe.
 \par
-En la primer unidad (referida a informaci\'on de usuario) se cuenta con tres variables: ID de usuario 
-(n\'umero de 6 d\'igitos que identifica un usuario), g\'enero de usuario (pudiendo tomar las categor\'ias femenino, masculino y otro) y
-edad de usuario (representada en a\~{n}os).
+En la primer unidad (referida a informaci\'on de usuario) se cuenta con tres variables: 
+\begin{itemize}
+    \item ID de usuario (n\'umero de 6 d\'igitos que identifica un usuario), 
+    \item G\'enero de usuario (pudiendo tomar las categor\'ias Femenino, Masculino y Otro), y
+    \item Edad de usuario (representada en a\~{n}os).
+\end{itemize}
+
 \par
-En la segunda unidad (referida a informaci\'on de recorridos) se cuenta con 5 variables: Duraci\'on del recorrido
-(representada en segundos), Distancia (distancia entre la estaci\'on de origen y la de destino, representada en metros), 
-D\'ia (d\'ia de la semana en el que se realizo el recorrido), Direcci\'on de origen (direcci\'on de la estaci\'on de EcoBici desde donde se inici\'o el recorrido), 
-Direcci\'on de destino (direcci\'on de la estaci\'on de EcoBici desde donde finaliz\'o el recorrido). 
+En la segunda unidad (referida a informaci\'on de recorridos) se cuenta con 5 variables: 
+
+\begin{itemize}
+    \item Duraci\'on del recorrido(representada en segundos), 
+    \item Distancia (distancia entre la estaci\'on de origen y la de destino, representada en metros), 
+    \item D\'ia (d\'ia de la semana en el que se realizo el recorrido), 
+    \item Direcci\'on de origen (direcci\'on de la estaci\'on de EcoBici desde donde se inici\'o el recorrido), y
+    \item Direcci\'on de destino (direcci\'on de la estaci\'on de EcoBici desde donde finaliz\'o el recorrido). 
+\end{itemize}
 
 \section{An\'alisis univariado}
 
@@ -79,7 +96,11 @@ de las otras dos categor\'ias hayan quedado bajo la categor\'ia "Otro" por simpl
 Para comenzar el an\'alisis, se puede observar la siguiente tabla de frecuencias sobre la variable
 g\'enero de usuario. 
 
+
 \begin{center}
+\large\textbf{G\'enero de los Usuarios del 
+Sistema EcoBici de CABA}
+
 \begin{tabularx} {0.8\textwidth}{ 
     | >{\raggedright\arraybackslash}X 
     | >{\raggedleft\arraybackslash}X 
@@ -98,22 +119,33 @@ g\'enero de usuario.
   \end{tabularx}
 \end{center}
 
+
   Esta informaci\'on, dada la condici\'on cualitativa de la variable, se puede exponer
   en forma de gr\'afico de sectores. As\'i se puede visualizar claramente la porci\'on del
   total que representa cada valor de la variable.
-
+    
   \hspace{-2.3cm}\includegraphics[scale=0.9]{PieChartGenero.png}
-  \vspace{-3cm}
+  \vspace{-2.5cm}
 
   De lo descripto se puede observar que las categor\'ias se encuentran bastante uniformemente
-  divididas.
+  divididas, y que la moda es Femenino, es decir, se cuenta con más usuarios del género Feminino que de cualquiera de los otros.
 
   \subsection{Edad de usuario}
 
-  Para el an\'alisis de frecuencias de esta variable se procedi\'o a la divisi\'on de la misma en intervalos,
-  quedando su tabla de frecuencais de la siguiente manera: 
+  Es importante tener en cuenta que para este an\'alisis univariado se cuenta con un total de 99 usuarios,
+  puesto que se debi\'o excluir de los datos 
+  recopilados un usuario cuyo valor de Edad se presentaba como faltante.
 
-    \begin{tabularx} {0.8\textwidth}{ 
+  Se procedi\'o a la divisi\'on de la variable en intervalos de 5 a\~{n}os de edad
+  quedando su tabla de frecuencias de la siguiente manera: 
+
+    \begin{center}
+        \large\textbf{Edad de los Usuarios del 
+        Sistema EcoBici de CABA}
+    \end{center}
+
+  \begin{myenv}{1}
+    \begin{tabularx} {1\textwidth}{ 
         | >{\raggedright\arraybackslash}X 
         | >{\raggedleft\arraybackslash}X 
         | >{\raggedleft\arraybackslash}X 
@@ -126,14 +158,56 @@ g\'enero de usuario.
        \hline
        [23,28) & 15 & 0.15 & 31 & 0.31 \\
        \hline
-       [28,33) & 27 & 0.27 & 58 & 0.59 \\
+       [28,33) & 27 & 0.27 & 58 & 0.58 \\
+       \hline
+       [33,38) & 17 & 0.17 & 75 & 0.75 \\
+       \hline
+       [38,43) & 12 & 0.12 & 87 & 0.88 \\
+       \hline
+       [43,48) & 1 & 0.01 & 88 & 0.89 \\
+       \hline
+       [48,53) & 6 & 0.06 & 94 & 0.95 \\
+       \hline
+       [53,58) & 3 & 0.03 & 97 & 0.98 \\
+       \hline
+       [58,63) & 1 & 0.01 & 98 & 0.99 \\
+       \hline
+       [63,68) & 1 & 0.01 & 99 & 1.00 \\
        \hline \hline
-       \textbf{Total} & 100 & 1.00 \\
+       \textbf{Total} & 99 & 1.00 & - & - \\
        \hline
       \end{tabularx}
-    hacer tablita en otro tex con letra mas chqiuita y dibujarla aca
+    \end{myenv}
 
+    \vspace{5mm}
 
+    Manteniendo esta separaci\'on en intervalos se puede visualizar m\'as c\'omodamente esta informaci\'on en un histograma
+    que toma como unidad el intervalo de 5 a\~{n}os, as\'i pudiendo presentar la densidad de las \'areas con
+    la cantidad de usuarios.
 
+    \hspace{7mm}\includegraphics[scale=0.7]{HistEdad.png}
 
+    Acompañando al histograma, tambi\'en resulta \'util la presentaci\'on del pol\'igono de frecuencias (arriba) y el pol\'igono acumulativo (abajo).
+
+    \begin{center}
+    \includegraphics[scale=0.55]{PoligFrecEdad.png}
+    \vspace{-4mm}
+
+    (a) Pol\'igono de frecuencias
+    \end{center}
+
+    \begin{center}
+    \includegraphics[scale=0.55]{PoligAcumEdad.png}
+    \vspace{-4mm}
+
+    (b) Pol\'igono acumulativo
+    \end{center}
+
+    Por \'ultimo, dada la condici\'on cuantitativa de la variable edad resulta interesante hablar sobre sus medidas resumen y respectivas medidas de dispersi\'on. 
+
+    La media es de 32.51 a\~{n}os con un desv\'io est\'andar de 9.95 a\~{n}os.
+
+    La mediana la marca la edad de 31 a\~{n}os. El primer cuartil, los 25 a\~{n}os y el tercer cuartil, los 37 a\~{n}os. Por lo tanto se cuenta con un rango intercuartil de 12 a\~{n}os. 
+
+    La edad m\'inima presentada fue de 19 a\~{n}os y la m\'axima, de 66 a\~{n}os.
 \end{document}
