@@ -1,0 +1,26 @@
+\documentclass[9pt]{article}
+\usepackage{tabularx}
+
+\begin{document}
+Tablita valores truncados a 2 decimales Edad
+
+\begin{tabularx} {0.8\textwidth}{ 
+    | >{\raggedright\arraybackslash}X 
+    | >{\raggedleft\arraybackslash}X 
+    | >{\raggedleft\arraybackslash}X 
+    | >{\raggedleft\arraybackslash}X 
+    | >{\raggedleft\arraybackslash}X |}
+   \hline
+   \textbf{Edad de usuario} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} & \textbf{Frecuencia absoluta acumulada} & \textbf{Frecuencia relativa acumulada} \\
+   \hline
+   [18,23) & 16 & 0.16 & 16 & 0.16 \\
+   \hline
+   [23,28) & 15 & 0.15 & 31 & 0.31 \\
+   \hline
+   [28,33) & 27 & 0.27 & 58 & 0.59 \\
+   \hline \hline
+   \textbf{Total} & 100 & 1.00 \\
+   \hline
+  \end{tabularx}
+
+\end{document}
