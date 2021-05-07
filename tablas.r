@@ -6,6 +6,10 @@ data2 = read.table("recorridos9.csv", header = TRUE, sep = ",")
 attach(data)
 attach(data2)
 
+
+# ANALISIS UNIVARIADO
+
+
 # tabla de frecuencias para GENERO
 # es variable cualitativa
 # grafico de torta
@@ -52,7 +56,7 @@ hist(data$edad_usuario,border = "black",col = "lightblue",xlim = c(10,70),ylim =
 # poligono de frecuencia y poligono acumulativo para EDAD
 breaks_edad2 = seq(13,73,5)
 xy = table(cut(data$edad_usuario,breaks = breaks_edad2,right = FALSE))
-xy = round(xy/sum(xy),3)
+xy = round(xy/sum(xy),4)
 # poligono de frecuencia:
 plot(xy,type = "l",main = title2,ylab = "Frecuencia Relativa",xlab = "Edad (en años)",ylim = c(0,0.3))
 grid()
@@ -157,7 +161,7 @@ pareto.chart(table(tabla_direc_dt[order(-fa_direc_dt)]), ylab = "Cantidad de Est
 
 
 # tabla de frecuencias para DISTANCIA
-# divido por 1000 y pasan a ser quilometros
+# divido por 1000 y pasan a ser kilometros
 breaks = seq(0,11000,1000)/1000
 distancia_intervalos = cut(data2$distancia/1000, breaks = breaks,right = FALSE)
 frec_abs_distancia = table(distancia_intervalos) 
@@ -172,15 +176,15 @@ tabla_distancia
 
 # grafico para DISTANCIA
 # probamos un histograma
-hist(data2$distancia/1000,border = "black",col = "yellow",xlim = c(0,12),breaks = breaks,xlab = "Distancia (en kilometros)",ylab = "Cantidad de recorridos",main = "Distancias de recorridos en EcoBici en CABA")
+hist(data2$distancia/1000,border = "black",col = "yellow",xlim = c(0,12),breaks = breaks,xlab = "Distancia (en kilómetros)",ylab = "Cantidad de recorridos",main = "Distancias de recorridos en EcoBici en CABA")
 
 # probamos un grafico de caja
-boxplot(data2$distancia/1000, col="yellow", main = "Distancias de recorridos en EcoBici en CABA" , ylab="Distancia del recorrido (en kilometros)")
+boxplot(data2$distancia/1000, col="yellow", main = "Distancias de recorridos en EcoBici en CABA" , ylab="Distancia del recorrido (en kilómetros)")
 
 # Analisis de Medidas Descriptivas DISTANCIA
-summary(data2$distancia)
-rango_intercuartil = 3039 - 1006
-desvio_estandar = sd(data2$distancia)
+summary(data2$distancia/1000)
+rango_intercuartil = 3.039 - 1.006
+desvio_estandar = sd(data2$distancia/1000)
 moda = "[1,2)"
 
 
@@ -188,7 +192,8 @@ moda = "[1,2)"
 
 # tabla de frecuencias para DURACION DEL RECORRIDO
 #se podria dividir un 60 y queda en minutos (?)
-breaks = round(seq(130,29130,1000)/60,2)
+#breaks = round(seq(130,29130,1000)/60,2)
+breaks = c(2,12,22,32,42,52,62,72,82,92,102,112,122,132,485)
 duracion_intervalos = cut(data2$duracion_recorrido/60, breaks = breaks, rigth = FALSE)
 frec_abs_duracion = table(duracion_intervalos) 
 frec_rel_duracion = round(frec_abs_duracion / sum(frec_abs_duracion),4)
@@ -196,18 +201,33 @@ frec_abs_ac_duracion = cumsum(frec_abs_duracion)
 frec_rel_ac_duracion = round(frec_abs_ac_duracion / sum(frec_abs_duracion),4)
 tabla_duracion = cbind(frec_abs_duracion, frec_rel_duracion, frec_abs_ac_duracion,frec_rel_ac_duracion)
 attributes(tabla_duracion)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia Relativa", "Frecuencia Absoluta Acumulada", "Frecuencia Relativa Acumulada")
-TOTAL = c(sum(frec_abs_duracion),sum(round(frec_abs_duracion / sum(frec_abs_duracion),4)),NA,NA)
+TOTAL = c(sum(frec_abs_duracion),frec_rel_ac_duracion[[14]],NA,NA)
 tabla_duracion = rbind(tabla_duracion,TOTAL)
 tabla_duracion
 
 # grafico de caja para DURACION
-boxplot(dur_recorridos, col="orange", main = "Duraciones de recorridos en EcoBici en CABA" , ylab="Duración del recorrido (en minutos)")
+title3 = "Duraciones de recorridos en EcoBici en CABA"
+boxplot(dur_recorridos, col="orange", main = title3 , ylab="Duración del recorrido (en minutos)")
+
+breaks_hist = c(2,12,22,32,42,52,62,72,82,92,102,112,122,132)
+hist(dur_recorridos,border = "black",col = "orange",ylim = c(0,120),xlim = c(0,140),breaks = breaks_hist,xlab = "Duración (en minutos)",ylab = "Cantidad de recorridos",main = "Duración de recorridos en EcoBici en CABA")
+
+# poligono de frecuencia y poligono acumulativo para DURACION
+breaks_hist2 = c(-8,breaks_hist,142)
+datos = table(cut(data2$duracion_recorrido/60, breaks = breaks_hist2, rigth = FALSE))
+datos = round(datos/sum(datos),4)
+# poligono de frecuencia:
+plot(datos,type = "l",main = title3,ylab = "Frecuencia Relativa",xlab = "Duración (en minutos)")
+grid()
+# poligono acumulativo:
+datos2 = as.table(cumsum(datos))
+plot(datos2,type = "l",main = title3,ylab = "Frecuencia Relativa Acumulada",xlab = "Duración (en minutos)",ylim = c(0,1))
+grid()
 
 # Analisis de Medidas Descriptivas DURACION
-summary(data2$duracion_recorrido)
-rango_intercuartil = 1914 - 700
-desvio_estandar = sd(data2$duracion_recorrido)
-moda = "(18.8,35.5]" = "(1128,2130]" 
+summary(data2$duracion_recorrido/60)
+rango_intercuartil = 31.91 - 11.67
+desvio_estandar = sd(data2$duracion_recorrido/60)
 
 
 #lista de duraciones de reorridos sin los 3 outliers mas extremos
@@ -260,5 +280,12 @@ dur_recorridos =  c(33.633333,  30.483333,7.283333,44.916667,16.533333,9.050000,
 ,39.183333,38.916667,31.516667,36.300000,32.700000,32.516667,16.666667,17.150000,9.000000
 ,9.000000,15.483333,19.616667,40.500000,35.150000,37.316667)
 
-  #setdiff((data2$duracion_recorrido/60),outliers)
 
+
+
+
+# ANALISIS BIVARIADO
+breaks = c(2,12,22,32,42,52,62,72,82,92,102,112,122,132,485)
+duracion_intervalos = cut(data2$duracion_recorrido/60, breaks = breaks, rigth = FALSE)
+tabla_bivariada = table((data2$dia),duracion_intervalos)
+tabla_bivariada <- tabla_bivariada[c(1,3,4,5,2,7,6)]
