@@ -281,11 +281,59 @@ dur_recorridos =  c(33.633333,  30.483333,7.283333,44.916667,16.533333,9.050000,
 ,9.000000,15.483333,19.616667,40.500000,35.150000,37.316667)
 
 
-
+dias = c("Domingo","Domingo","Miércoles","Domingo","Martes","Miércoles","Miércoles","Martes","Martes","Domingo"  
+,"Viernes","Domingo","Jueves","Sábado","Miércoles","Domingo","Lunes", "Sábado","Domingo","Sábado",
+"Viernes","Sábado","Sábado","Jueves","Lunes", "Sábado","Lunes", "Martes","Jueves","Sábado",
+"Jueves","Domingo","Jueves","Domingo","Jueves","Jueves","Martes","Domingo","Lunes", "Lunes",
+"Viernes","Lunes", "Lunes", "Domingo","Domingo","Jueves","Sábado","Sábado","Domingo","Sábado",
+"Domingo","Lunes", "Miércoles","Martes","Domingo","Viernes","Lunes", "Domingo","Miércoles","Sábado",
+"Domingo","Lunes", "Miércoles","Sábado","Domingo","Domingo","Lunes", "Sábado","Sábado","Domingo"  
+,"Lunes", "Lunes", "Jueves","Domingo","Miércoles","Jueves","Martes","Lunes", "Jueves","Miércoles"
+,"Miércoles","Martes","Lunes", "Martes","Jueves","Domingo","Domingo","Martes","Sábado","Domingo"  
+, "Miércoles","Miércoles", "Miércoles", "Jueves","Martes","Viernes","Miércoles", "Sábado","Miércoles", "Viernes"  
+,"Martes","Martes","Sábado","Sábado","Martes","Lunes", "Sábado","Domingo","Jueves","Jueves",
+ "Lunes", "Lunes", "Domingo","Jueves","Martes","Sábado","Viernes","Viernes","Jueves","Viernes"  
+, "Martes","Viernes","Martes","Miércoles", "Martes","Sábado","Jueves","Miércoles", "Lunes", "Sábado",
+"Viernes","Sábado","Viernes","Lunes", "Lunes", "Miércoles", "Viernes","Jueves","Miércoles", "Jueves",
+ "Domingo","Sábado","Jueves","Viernes","Miércoles", "Domingo","Jueves","Martes","Viernes","Domingo"  
+, "Sábado","Lunes", "Viernes","Miércoles", "Martes","Sábado","Sábado","Lunes", "Sábado","Domingo"  
+,"Sábado","Lunes", "Martes","Viernes","Jueves","Martes","Lunes", "Viernes","Martes","Martes",
+"Jueves","Lunes", "Lunes", "Viernes","Miércoles", "Lunes", "Martes","Sábado","Jueves","Martes",
+"Lunes", "Martes","Sábado","Lunes", "Viernes","Lunes", "Viernes","Miércoles", "Domingo","Viernes"  
+,"Domingo","Domingo","Domingo","Martes","Lunes", "Miércoles", "Miércoles", "Sábado","Miércoles", "Miércoles"
+,"Sábado","Jueves","Miércoles", "Jueves","Sábado","Miércoles", "Miércoles", "Jueves","Martes","Jueves",
+ "Domingo","Jueves","Sábado","Martes","Sábado","Jueves","Viernes","Viernes","Viernes","Sábado",
+"Lunes", "Martes","Miércoles", "Viernes","Sábado","Sábado","Lunes", "Domingo","Sábado","Martes",
+ "Viernes","Domingo","Jueves","Miércoles", "Lunes", "Viernes","Viernes","Domingo","Jueves","Sábado",
+"Viernes","Lunes", "Viernes","Lunes", "Domingo","Viernes","Sábado","Jueves","Jueves",
+ "Domingo","Martes","Domingo","Martes","Lunes", "Miércoles", "Sábado","Viernes","Miércoles"
+, "Martes","Martes","Jueves","Lunes", "Sábado","Viernes","Miércoles", "Sábado","Lunes", "Martes",
+ "Viernes","Viernes","Lunes", "Sábado","Viernes","Domingo","Miércoles", "Martes","Lunes", "Domingo"  
+, "Miércoles", "Domingo","Martes","Martes","Jueves","Viernes","Sábado","Jueves","Jueves","Miércoles"
+, "Viernes","Jueves","Domingo","Sábado","Viernes","Miércoles", "Domingo","Jueves","Viernes","Lunes",
+"Viernes","Martes","Martes","Sábado","Domingo","Domingo","Miércoles", "Lunes", "Domingo"
+, "Jueves","Lunes", "Lunes", "Jueves","Domingo","Viernes","Viernes","Domingo","Sábado","Sábado",
+ "Lunes", "Miércoles", "Jueves","Domingo","Lunes", "Lunes", "Domingo","Miércoles", "Lunes", "Viernes"  
+, "Lunes", "Lunes", "Viernes","Lunes", "Sábado","Domingo","Domingo","Martes","Sábado","Jueves",
+ "Domingo","Domingo","Sábado","Sábado","Sábado","Viernes","Viernes","Martes","Lunes", "Jueves",
+"Martes","Jueves","Miércoles", "Jueves","Lunes", "Miércoles", "Domingo","Jueves","Miércoles", "Martes",
+"Lunes", "Jueves","Domingo","Viernes","Jueves","Jueves","Sábado","Sábado","Sábado","Jueves",
+"Lunes", "Sábado","Domingo","Domingo","Viernes","Martes","Miércoles", "Martes","Lunes", "Jueves",
+"Martes","Viernes","Lunes", "Martes","Viernes","Miércoles", "Sábado","Jueves","Lunes", "Sábado",
+"Sábado","Jueves","Jueves","Martes","Sábado","Martes","Miércoles", "Miércoles", "Lunes", "Martes",
+"Lunes", "Jueves","Domingo","Martes","Lunes", "Sábado","Jueves","Viernes","Sábado","Miércoles","Sábado")
 
 
 # ANALISIS BIVARIADO
 breaks = c(2,12,22,32,42,52,62,72,82,92,102,112,122,132,485)
 duracion_intervalos = cut(data2$duracion_recorrido/60, breaks = breaks, rigth = FALSE)
-tabla_bivariada = table((data2$dia),duracion_intervalos)
-tabla_bivariada <- tabla_bivariada[c(1,3,4,5,2,7,6)]
+tabla_bivariada = table(data2$dia,duracion_intervalos)
+tabla_bivariada <- tabla_bivariada[c(1,3,4,5,2,7,6),]
+
+title = "Duración de recorridos de EcoBicis de CABA\n de acuerdo al día de la semana."
+boxplot(dur_recorridos ~ dias,col = "#e3b1d2",main = title,xlab = "Días de la semana",ylab = "Duración de los recorridos")
+
+
+
+
+
