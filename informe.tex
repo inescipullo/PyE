@@ -154,25 +154,25 @@ Sistema EcoBici de CABA}
        \hline
        \textbf{Edad de usuario} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} & \textbf{Frecuencia absoluta acumulada} & \textbf{Frecuencia relativa acumulada} \\
        \hline
-       [18,23) & 16 & 0.16 & 16 & 0.16 \\
+       [18,23) & 16 & 0.1616 & 16 & 0.1616 \\
        \hline
-       [23,28) & 15 & 0.15 & 31 & 0.31 \\
+       [23,28) & 15 & 0.1515 & 31 & 0.3131 \\
        \hline
-       [28,33) & 27 & 0.27 & 58 & 0.58 \\
+       [28,33) & 27 & 0.2727 & 58 & 0.5858 \\
        \hline
-       [33,38) & 17 & 0.17 & 75 & 0.75 \\
+       [33,38) & 17 & 0.1717 & 75 & 0.7575 \\
        \hline
-       [38,43) & 12 & 0.12 & 87 & 0.88 \\
+       [38,43) & 12 & 0.1212 & 87 & 0.8888 \\
        \hline
-       [43,48) & 1 & 0.01 & 88 & 0.89 \\
+       [43,48) & 1 & 0.0101 & 88 & 0.8989 \\
        \hline
-       [48,53) & 6 & 0.06 & 94 & 0.95 \\
+       [48,53) & 6 & 0.0606 & 94 & 0.9494 \\
        \hline
-       [53,58) & 3 & 0.03 & 97 & 0.98 \\
+       [53,58) & 3 & 0.0303 & 97 & 0.9899 \\
        \hline
-       [58,63) & 1 & 0.01 & 98 & 0.99 \\
+       [58,63) & 1 & 0.0101 & 98 & 0.9999 \\
        \hline
-       [63,68) & 1 & 0.01 & 99 & 1.00 \\
+       [63,68) & 1 & 0.0101 & 99 & 1.0000 \\
        \hline \hline
        \textbf{Total} & 99 & 1.00 & - & - \\
        \hline
@@ -228,19 +228,19 @@ Sistema EcoBici de CABA}
        \hline
        \textbf{D\'ia} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} \\
        \hline
-       Domingo & 63 & 0.15 \\
+       Domingo & 63 & 0.1533 \\
        \hline
-       Lunes & 63 & 0.15 \\
+       Lunes & 63 & 0.1533 \\
        \hline
-       Martes & 54 & 0.13 \\
+       Martes & 54 & 0.1314 \\
        \hline
-       Mi\'ercoles & 51 & 0.12 \\
+       Mi\'ercoles & 51 & 0.1241 \\
        \hline
-       Jueves & 59 & 0.14 \\
+       Jueves & 59 & 0.1436 \\
        \hline 
-       Viernes & 53 & 0.13 \\
+       Viernes & 53 & 0.1290 \\
        \hline 
-       S\'abado & 68 & 0.17 \\
+       S\'abado & 68 & 0.1653 \\
        \hline \hline
        \textbf{Total} & 411 & 1.00 \\
        \hline
@@ -260,7 +260,39 @@ Sistema EcoBici de CABA}
 
     Entonces, por un lado, recordando que no se llegan al total esperado de 411 recorridos porque solo presentamos las 10 con mayor frecuencia, se presenta la tabla a continuaci\'on. 
 
-
+    \begin{center}
+      \large\textbf{10 estaciones de EcoBicis de CABA \\
+      m\'as frecuentadas como origen}
+      
+      \begin{tabularx} {1\textwidth}{ 
+          | >{\raggedright\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}>{\hsize=.5\hsize}X 
+          | >{\raggedleft\arraybackslash}>{\hsize=.5\hsize}X | }
+         \hline
+         \textbf{Estaci\'on} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} \\
+         \hline
+         Ramos Mejia, Av Dr Jose Maria Vargas \& Av. Del Libertador & 15 & 0.0365 \\
+         \hline
+         2292 Montañeses & 13 & 0.0316 \\
+         \hline
+         3912 Humahuaca & 10 & 0.0243 \\
+         \hline
+         300 Almafuerte Av. \& Los Patos & 9 & 0.0219 \\
+         \hline
+         441 Bulnes \& Peron, Juan Domingo, Tte. General & 8 & 0.0195 \\
+         \hline
+         1785 Espinosa & 7 & 0.0170 \\
+         \hline
+         3084 Agrelo & 7 & 0.0170 \\
+         \hline
+         Cordoba 6599 & 7 & 0.0170 \\
+         \hline
+         Av. Del Libertador, 3260 & 6 & 0.0146 \\
+         \hline
+         Lavalle \& Acuña De Figueroa, Francisco & 6 & 0.0146 \\
+         \hline
+      \end{tabularx}
+    \end{center}
 
 
     Visualizando esta tabla resulta claro que la moda es la estaci\'on ubicada en Ramos Mejia, Av Dr Jose Maria Vargas \& Av. Del Libertador. 
@@ -273,7 +305,9 @@ Sistema EcoBici de CABA}
     Una vez hecha esta recategorizaci\'on se hace f\'acil de reconocer el principio de Paretto que aparece: las categor\'ias con n\'umeros m\'as bajos son las que 
     agrupan la mayor cantidad de estaciones, lo cual se puede observar claramente en el siguiente gr\'afico de Paretto. 
 
-
+    \begin{center}
+    \includegraphics[scale=0.7]{ParettoOrigen.png}
+    \end{center}
 
 
     \subsection{Estaci\'on de destino de recorrido}
@@ -283,7 +317,39 @@ Sistema EcoBici de CABA}
 
     Entonces, por un lado, recordando que no se llegan al total esperado de 411 recorridos porque solo presentamos las 10 con mayor frecuencia, se presenta la tabla a continuaci\'on. 
 
-
+    \begin{center}
+      \large\textbf{10 estaciones de EcoBicis de CABA \\
+      m\'as frecuentadas como destino}
+      
+      \begin{tabularx} {1\textwidth}{ 
+          | >{\raggedright\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}>{\hsize=.5\hsize}X 
+          | >{\raggedleft\arraybackslash}>{\hsize=.5\hsize}X | }
+         \hline
+         \textbf{Estaci\'on} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} \\
+         \hline
+         Lavalle \& Bouchard & 20 & 0.0487 \\
+         \hline
+         441 Bulnes \& Peron, Juan Domingo, Tte. General & 14 & 0.0341 \\
+         \hline
+         Amenabar y Mendoza & 14 & 0.0341 \\
+         \hline
+         Quintino Bocayuva y Don Bosco & 14 & 0.0341 \\
+         \hline
+         Cevallos, Virrey \& Yrigoyen, Hipolito Av. & 13 & 0.0316 \\
+         \hline
+         Culpina 121 & 11 & 0.0268 \\
+         \hline
+         1355 San Martin Av. & 11 & 0.0268 \\
+         \hline
+         Av. Patricias Argentinas \& Estivao & 8 & 0.0195 \\
+         \hline
+         3084 Agrelo & 7 & 0.0170 \\
+         \hline
+         3817 Traful & 7 & 0.0170 \\
+         \hline
+      \end{tabularx}
+    \end{center}
 
 
     Visualizando esta tabla resulta claro que la moda es la estaci\'on ubicada en Lavalle \& Bouchard. 
@@ -296,5 +362,185 @@ Sistema EcoBici de CABA}
     Otra vez, ya hecha esta recategorizaci\'on se hace f\'acil de reconocer el principio de Paretto que aparece: las categor\'ias con n\'umeros m\'as bajos son las que 
     agrupan la mayor cantidad de estaciones, lo cual se puede observar en el siguiente gr\'afico de Paretto. 
 
+    \begin{center}
+      \includegraphics[scale=0.7]{ParettoDest.png}
+    \end{center}
 
+    \subsection{Distancia de recorrido}
+
+    Antes de proceder con el an\'alisis resulta importante notar el cambio en la unidad 
+    de medida de la distancia respecto a la fuente de los datos. En la fuente las distancias 
+    se representan en metros, mientras que en el presente informe se representan en kil\'ometros. 
+
+    Adem\'as, dado que por la continuidad de la variable existen una gran cantidad de valores posibles
+    para que tome la variable, se procede a agrupar las categor\'ias de la variable en intervalos de un kil\'ometro. 
+    
+    Su tabla de frecuencias queda como sigue: 
+
+    \begin{center}
+      \large\textbf{Distancia de Recorridos en km \\ del Sistema EcoBici de CABA}
+    \end{center}
+
+    \begin{myenv}{1}
+      \begin{tabularx} {1\textwidth}{ 
+          | >{\raggedright\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X |}
+         \hline
+         \textbf{Distancia de recorrido} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} & \textbf{Frecuencia absoluta acumulada} & \textbf{Frecuencia relativa acumulada} \\
+         \hline
+         [0,1) & 103 & 0.2506 & 103 & 0.2506 \\
+         \hline
+         [1,2) & 136 & 0.3309 & 239 & 0.5815 \\
+         \hline
+         [2,3) & 66 & 0.1606 & 305 & 0.7421 \\
+         \hline
+         [3,4) & 55 & 0.1338 & 360 & 0.8759 \\
+         \hline
+         [4,5) & 23 & 0.0560 & 383 & 0.9319 \\
+         \hline
+         [5,6) & 15 & 0.0365 & 398 & 0.9684 \\
+         \hline
+         [6,7) & 6 & 0.0146 & 404 & 0.9830 \\
+         \hline
+         [7,8) & 3 & 0.0073 & 407 & 0.9903 \\
+         \hline
+         [8,9) & 3 & 0.0073 & 410 & 0.9976 \\
+         \hline
+         [9,10) & 0 & 0.0000 & 410 & 0.9976 \\
+         \hline
+         [10,11) & 1 & 0.0024 & 411 & 1.0000 \\
+         \hline \hline
+         \textbf{Total} & 411 & 1.00 & - & - \\
+         \hline
+        \end{tabularx}
+      \end{myenv}
+
+      Resulta interesante presentar las medidas res\'umenes de la variable y sus respectivas medidas de dispersi\'on.
+
+      \begin{itemize}
+        \item La media es de 2.0880 km con un desv\'io est\'andar de 1.7148 km.
+        \item El primer cuartil toma el valor de 1.0060 km, mentras que el segundo cuartil (o mediana)
+        toma el valor de 1.6130 km y el tercer cuartil, de 3.0390 km.
+        \item Se cuenta con un rango intercuartil de 2.0330 km. 
+        \item El valor m\'aximo que toma la variable es de 10.9460 km y el m\'inimo es de 0 km (un distancia de recorrido es de 0 km si se devuelve la bicicleta a la misma estaci\'on de donde se la sac\'o).
+        \item El intervalo de distancia que cuenta con m\'as recorridos es el [1,2).
+      \end{itemize}
+
+      Esta informaci\'on de la variable se puede ver clara y resumida en el siguiente boxplot: 
+
+      \begin{center}
+        \includegraphics[scale=0.7]{BoxPlotDist.png}
+      \end{center}
+
+      \vspace{-1.5cm}
+
+      \subsection{Duraci\'on de recorrido}
+
+      Al igual que con la distancia, previo al an\'alisis de esta variable se debe aclarar
+      que se modific\'o la unidad de medici\'on de la variable, pasando de segundos a minutos. 
+
+      A su vez, tambi\'en por la continuidad de la variable, se decidi\'o dividirla en intervalos de 
+      10 minutos hasta llegar a los 132 minutos, donde se agrup\'o a 3 valores muy extremos dentro de un solo intervalo. 
+
+      \vspace{7mm}
+
+      % ver si no hay que meter un vspace para que quede pegadito al cuadro
+      \begin{center}
+        \large\textbf{Duraci\'on de Recorridos en minutos \\ del Sistema EcoBici de CABA}
+      \end{center}
+
+      \begin{myenv}{1}
+        \begin{tabularx} {1\textwidth}{ 
+            | >{\raggedright\arraybackslash}X 
+            | >{\raggedleft\arraybackslash}X 
+            | >{\raggedleft\arraybackslash}X 
+            | >{\raggedleft\arraybackslash}X 
+            | >{\raggedleft\arraybackslash}X |}
+           \hline
+           \textbf{Duraci\'om de recorrido} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} & \textbf{Frecuencia absoluta acumulada} & \textbf{Frecuencia relativa acumulada} \\
+           \hline
+           (2,12] & 105 & 0.2555 & 105 & 0.2555 \\
+           \hline
+           (12,22] & 99 & 0.2409 & 204 & 0.4964 \\
+           \hline
+           (22,32] & 105 & 0.2555 & 309 & 0.7518 \\
+           \hline
+           (32,42] & 54 & 0.1314 & 363 & 0.8832 \\
+           \hline
+           (42,52] & 17 & 0.0414 & 380 & 0.9246 \\
+           \hline
+           (52,62] & 12 & 0.0292 & 392 & 0.9538 \\
+           \hline
+           (62,72] & 4 & 0.0097 & 396 & 0.9635 \\
+           \hline
+           (72,82] & 3 & 0.0073 & 399 & 0.9708 \\
+           \hline
+           (82,92] & 3 & 0.0073 & 402 & 0.9781 \\
+           \hline
+           (92,102] & 1 & 0.0024 & 403 & 0.9805 \\
+           \hline
+           (102,112] & 2 & 0.0049 & 405 & 0.9854 \\
+           \hline
+           (112,122] & 1 & 0.0024 & 406 & 0.9878 \\
+           \hline
+           (122,132] & 2 & 0.0049 & 408 & 0.9927 \\
+           \hline
+           (132,485] & 3 & 0.0073 & 411 & 1.0000 \\
+           \hline \hline
+           \textbf{Total} & 411 & 1.00 & - & - \\
+           \hline
+          \end{tabularx}
+        \end{myenv}
+
+        \vspace{7mm}
+
+        Se puede ver esta informaci\'on de una forma m\'as clara y ordenada si es presentada en un histograma. 
+        Para que este cumpla su prop\'osito de verse as\'i fue necesario excluir del mismo al \'ultimo intervalo 
+        que presenta solo 3 recorridos con duraciones muy extremas.  
+
+        Entonces, el nuevo total de recorridos con el que se trabaja es de 408 y este ser\'ia el histograma que representa la duraci\'on de los recorridos (menores a 132 minutos) tomando como unidad los 10 minutos para que as\'i la densidad representa la cantidad de recorridos.
+
+        \begin{center}
+          \includegraphics[scale=0.7]{HistDuracion.png}
+        \end{center}
+
+        Acompañando al histograma y manteniendo este total de 408 recorridos se presentan el pol\'igono de frecuencias y el pol\'igono acumulativo. 
+
+        \begin{center}
+          \includegraphics[scale=0.55]{PoligFrecDuracion.png}
+          \vspace{-4mm}
+      
+          (a) Pol\'igono de frecuencias
+        \end{center}
+      
+        \begin{center}
+          \includegraphics[scale=0.55]{PoligAcumDuracion.png}
+          \vspace{-4mm}
+      
+          (b) Pol\'igono acumulativo
+        \end{center}
+
+        Resulta \'util, tambi\'en, el hacer un an\'alisis de las medidas resumen de la variable y sus respectivas medidas de dispersi\'on.
+        Para su an\'alisis volvemos a considerar el total de 411 recorridos.
+
+        La media es de 27.3000 minutos con un desv\'io est\'andar de 32.5626 minutos. 
+
+        En relaci\'on a los cuartiles se puede observar lo siguiente:
+
+        \begin{itemize}
+          \item Primer cuartil: 11.67 minutos.
+          \item Segundo cuartil o mediana: 22.43 minutos.
+          \item Tercer cuartil: 31.91 minutos.
+          \item Rango intercuartil: 20.24 minutos.
+        \end{itemize}
+
+        Y, por \'ultimo, el recorrido con mayor duraci\'on fue de 484.55 minutos y el de menor duraci\'on fue de 2.20 minutos.
+
+        \section{An\'alisis bivariado}
+
+        \subsection{Duraci\'on de recorrido respecto a D\'ia de recorrido}
+        
 \end{document}                                                                                  
