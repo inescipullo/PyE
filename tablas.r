@@ -35,7 +35,7 @@ grafico_genero = pie(x, labels = labels, clockwise = TRUE, main = title, col = c
 breaks_edad = seq(18,68,5)
 edad_intervalos = cut(data$edad_usuario, breaks = breaks_edad, right = FALSE)
 frec_abs_edad = table(edad_intervalos) 
-frec_rel_edad = round(frec_abs_edad / sum(frec_abs_edad),3)
+frec_rel_edad = round(frec_abs_edad / sum(frec_abs_edad),4)
 frec_abs_ac_edad = cumsum(frec_abs_edad)
 frec_rel_ac_edad = cumsum(frec_rel_edad)
 tabla_edad = cbind(frec_abs_edad, frec_rel_edad, frec_abs_ac_edad,frec_rel_ac_edad)

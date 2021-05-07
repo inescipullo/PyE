@@ -1,26 +1,96 @@
-\documentclass[9pt]{article}
+\documentclass[11pt]{article}
 \usepackage{tabularx}
 
 \begin{document}
 Tablita valores truncados a 2 decimales Edad
 
-\begin{tabularx} {0.8\textwidth}{ 
-    | >{\raggedright\arraybackslash}X 
-    | >{\raggedleft\arraybackslash}X 
-    | >{\raggedleft\arraybackslash}X 
-    | >{\raggedleft\arraybackslash}X 
-    | >{\raggedleft\arraybackslash}X |}
-   \hline
-   \textbf{Edad de usuario} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} & \textbf{Frecuencia absoluta acumulada} & \textbf{Frecuencia relativa acumulada} \\
-   \hline
-   [18,23) & 16 & 0.16 & 16 & 0.16 \\
-   \hline
-   [23,28) & 15 & 0.15 & 31 & 0.31 \\
-   \hline
-   [28,33) & 27 & 0.27 & 58 & 0.59 \\
-   \hline \hline
-   \textbf{Total} & 100 & 1.00 \\
-   \hline
-  \end{tabularx}
+% \begin{tabularx} {0.8\textwidth}{ 
+%     | >{\raggedright\arraybackslash}X 
+%     | >{\raggedleft\arraybackslash}X 
+%     | >{\raggedleft\arraybackslash}X 
+%     | >{\raggedleft\arraybackslash}X 
+%     | >{\raggedleft\arraybackslash}X |}
+%    \hline
+%    \textbf{Edad de usuario} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} & \textbf{Frecuencia absoluta acumulada} & \textbf{Frecuencia relativa acumulada} \\
+%    \hline
+%    [18,23) & 16 & 0.16 & 16 & 0.16 \\
+%    \hline
+%    [23,28) & 15 & 0.15 & 31 & 0.31 \\
+%    \hline
+%    [28,33) & 27 & 0.27 & 58 & 0.59 \\
+%    \hline \hline
+%    \textbf{Total} & 100 & 1.00 \\
+%    \hline
+%   \end{tabularx}
+
+
+
+  \begin{center}
+    \large\textbf{10 estaciones de EcoBicis de CABA DESTINO}
+    
+    \begin{tabularx} {1\textwidth}{ 
+        | >{\raggedright\arraybackslash}X 
+        | >{\raggedleft\arraybackslash}>{\hsize=.5\hsize}X 
+        | >{\raggedleft\arraybackslash}>{\hsize=.5\hsize}X | }
+       \hline
+       \textbf{Estaci\'on} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} \\
+       \hline
+       Lavalle \& Bouchard & 20 & 0.0487 \\
+       \hline
+       441 Bulnes \& Peron, Juan Domingo, Tte. General & 14 & 0.0341 \\
+       \hline
+       Amenabar y Mendoza & 14 & 0.0341 \\
+       \hline
+       Quintino Bocayuva y Don Bosco & 14 & 0.0341 \\
+       \hline
+       Cevallos, Virrey \& Yrigoyen, Hipolito Av. & 13 & 0.0316 \\
+       \hline
+       Culpina 121 & 11 & 0.0268 \\
+       \hline
+       1355 San Martin Av. & 11 & 0.0268 \\
+       \hline
+       Av. Patricias Argentinas \& Estivao & 8 & 0.0195 \\
+       \hline
+       3084 Agrelo & 7 & 0.0170 \\
+       \hline
+       3817 Traful & 7 & 0.0170 \\
+       \hline
+    \end{tabularx}
+  \end{center}
+
+
+  \begin{center}
+    \large\textbf{10 estaciones de EcoBicis de CABA ORIGEN}
+    
+    \begin{tabularx} {1\textwidth}{ 
+        | >{\raggedright\arraybackslash}X 
+        | >{\raggedleft\arraybackslash}>{\hsize=.5\hsize}X 
+        | >{\raggedleft\arraybackslash}>{\hsize=.5\hsize}X | }
+       \hline
+       \textbf{Estaci\'on} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} \\
+       \hline
+       Ramos Mejia, Av Dr Jose Maria Vargas \& Av. Del Libertador & 15 & 0.0365 \\
+       \hline
+       2292 Montañeses & 13 & 0.0316 \\
+       \hline
+       3912 Humahuaca & 10 & 0.0243 \\
+       \hline
+       300 Almafuerte Av. \& Los Patos & 9 & 0.0219 \\
+       \hline
+       441 Bulnes \& Peron, Juan Domingo, Tte. General & 8 & 0.0195 \\
+       \hline
+       1785 Espinosa & 7 & 0.0170 \\
+       \hline
+       3084 Agrelo & 7 & 0.0170 \\
+       \hline
+       Cordoba 6599 & 7 & 0.0170 \\
+       \hline
+       Av. Del Libertador, 3260 & 6 & 0.0146 \\
+       \hline
+       Lavalle \& Acuña De Figueroa, Francisco & 6 & 0.0146 \\
+       \hline
+    \end{tabularx}
+  \end{center}
+  
 
 \end{document}
