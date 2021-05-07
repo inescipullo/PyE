@@ -210,4 +210,91 @@ Sistema EcoBici de CABA}
     La mediana la marca la edad de 31 a\~{n}os. El primer cuartil, los 25 a\~{n}os y el tercer cuartil, los 37 a\~{n}os. Por lo tanto se cuenta con un rango intercuartil de 12 a\~{n}os. 
 
     La edad m\'inima presentada fue de 19 a\~{n}os y la m\'axima, de 66 a\~{n}os.
-\end{document}
+
+
+  \subsection{D\'ia de recorrido}
+  Para dar comienzo al an\'alisis univariado de las variables referidas a los recorridos realizados por los 100 usuarios que 
+  comprenden la muestra, resulta pertinente mencionar que se cuenta con un total de 411 recorridos. Este ser\'a referido como total para estos an\'alisis. 
+
+  La variable D\'ia de recorrido cuenta con 7 categor\'ias: Domingo, Lunes, Martes, Mi\'ercoles, Jueves, Viernes y S\'abado, y su tabla de frecuencia es la que se presenta a continuaci\'on. 
+
+  \begin{center}
+    \large\textbf{Recorridos por d\'ia de semana del Sistema EcoBici de CABA}
+    
+    \begin{tabularx} {0.8\textwidth}{ 
+        | >{\raggedright\arraybackslash}X 
+        | >{\raggedleft\arraybackslash}X 
+        | >{\raggedleft\arraybackslash}X | }
+       \hline
+       \textbf{D\'ia} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} \\
+       \hline
+       Domingo & 63 & 0.15 \\
+       \hline
+       Lunes & 63 & 0.15 \\
+       \hline
+       Martes & 54 & 0.13 \\
+       \hline
+       Mi\'ercoles & 51 & 0.12 \\
+       \hline
+       Jueves & 59 & 0.14 \\
+       \hline 
+       Viernes & 53 & 0.13 \\
+       \hline 
+       S\'abado & 68 & 0.17 \\
+       \hline \hline
+       \textbf{Total} & 411 & 1.00 \\
+       \hline
+      \end{tabularx}
+    \end{center}
+
+    Se puede visualizar mejor esta informaci\'on en el gr\'afico de barras que aparece a continuaci\'on. 
+
+    \hspace{7mm}\includegraphics[scale=0.65]{BarPlotDia.png}
+
+    De lo anterior resulta simple notar que la moda de la variable es S\'abado y que la categor\'ia con menor cantidad de recorridos es Mi\'ercoles, aunque, de cualquier manera, las categor\'ias no presentan una gran diferencia entre sus valores.
+  
+    \subsection{Estaci\'on de origen de recorrido}
+
+    Tomando en consideraci\'on que se cuenta con 142 estaciones se decidi\'o presentar dentro del informe un cuadro con las 10 estaciones que fueron utilizadas m\'as veces como origen por la muestra de usuarios. 
+    Si se desea obtener el cuadro de frecuencias completo puede acceder a \'el mediante el siguiente enlace {\small \url{https://data.buenosaires.gob.ar/dataset/estaciones-bicicletas-publicas}}
+
+    Entonces, por un lado, recordando que no se llegan al total esperado de 411 recorridos porque solo presentamos las 10 con mayor frecuencia, se presenta la tabla a continuaci\'on. 
+
+
+
+
+    Visualizando esta tabla resulta claro que la moda es la estaci\'on ubicada en Ramos Mejia, Av Dr Jose Maria Vargas \& Av. Del Libertador. 
+
+    Sin embargo, por otro lado, teniendo en cuenta la cantidad de estaciones se vio como pertinente el recategorizar la variable 
+    con respecto a la cantidad de estaciones utilizadas como origen una x cantidad de veces. Es decir, 
+    las categor\'ias nuevas tendr\'an la forma de un n\'umero x que representa la cantidad de recorridos iniciados y su valor
+    asociado ser\'a la cantidad de estaciones que hayan sido origen de esa x cantidad de recorridos. 
+
+    Una vez hecha esta recategorizaci\'on se hace f\'acil de reconocer el principio de Paretto que aparece: las categor\'ias con n\'umeros m\'as bajos son las que 
+    agrupan la mayor cantidad de estaciones, lo cual se puede observar claramente en el siguiente gr\'afico de Paretto. 
+
+
+
+
+    \subsection{Estaci\'on de destino de recorrido}
+
+    Tomando en consideraci\'on que se cuenta con 135 estaciones se decidi\'o presentar dentro del informe un cuadro con las 10 estaciones que fueron utilizadas m\'as veces como destino por la muestra de usuarios. 
+    Si se desea obtener el cuadro de frecuencias completo puede acceder a \'el mediante el siguiente enlace {\small \url{https://data.buenosaires.gob.ar/dataset/estaciones-bicicletas-publicas}}
+
+    Entonces, por un lado, recordando que no se llegan al total esperado de 411 recorridos porque solo presentamos las 10 con mayor frecuencia, se presenta la tabla a continuaci\'on. 
+
+
+
+
+    Visualizando esta tabla resulta claro que la moda es la estaci\'on ubicada en Lavalle \& Bouchard. 
+
+    Sin embargo, por otro lado, teniendo en cuenta la cantidad de estaciones y lo realizado con la variable anterior se vio como pertinente el recategorizar la variable 
+    con respecto a la cantidad de estaciones utilizadas como origen una x cantidad de veces. Es decir, 
+    las categor\'ias nuevas tendr\'an la forma de un n\'umero x que representa la cantidad de recorridos iniciados y su valor
+    asociado ser\'a la cantidad de estaciones que hayan sido origen de esa x cantidad de recorridos. 
+
+    Otra vez, ya hecha esta recategorizaci\'on se hace f\'acil de reconocer el principio de Paretto que aparece: las categor\'ias con n\'umeros m\'as bajos son las que 
+    agrupan la mayor cantidad de estaciones, lo cual se puede observar en el siguiente gr\'afico de Paretto. 
+
+
+\end{document}                                                                                  
