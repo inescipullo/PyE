@@ -78,7 +78,7 @@ En la primer unidad (referida a informaci\'on de usuario) se cuenta con tres var
 En la segunda unidad (referida a informaci\'on de recorridos) se cuenta con 5 variables: 
 
 \begin{itemize}
-    \item Duraci\'on del recorrido(representada en segundos), 
+    \item Duraci\'on del recorrido (representada en segundos), 
     \item Distancia (distancia entre la estaci\'on de origen y la de destino, representada en metros), 
     \item D\'ia (d\'ia de la semana en el que se realizo el recorrido), 
     \item Direcci\'on de origen (direcci\'on de la estaci\'on de EcoBici desde donde se inici\'o el recorrido), y
@@ -128,7 +128,7 @@ Sistema EcoBici de CABA}
   \vspace{-2.5cm}
 
   De lo descripto se puede observar que las categor\'ias se encuentran bastante uniformemente
-  divididas, y que la moda es Femenino, es decir, se cuenta con más usuarios del género Feminino que de cualquiera de los otros.
+  divididas, y que la moda es Femenino, es decir, se cuenta con m\'as usuarios del g\'enero Feminino que de cualquiera de los otros.
 
   \subsection{Edad de usuario}
 
@@ -187,7 +187,7 @@ Sistema EcoBici de CABA}
 
     \hspace{7mm}\includegraphics[scale=0.7]{HistEdad.png}
 
-    Acompañando al histograma, tambi\'en resulta \'util la presentaci\'on del pol\'igono de frecuencias (arriba) y el pol\'igono acumulativo (abajo).
+    Acompañando al histograma, tambi\'en resulta \'util la presentaci\'on del pol\'igono de frecuencias (a) y el pol\'igono acumulativo (b).
 
     \begin{center}
     \includegraphics[scale=0.55]{PoligFrecEdad.png}
@@ -207,7 +207,7 @@ Sistema EcoBici de CABA}
 
     La media es de 32.51 a\~{n}os con un desv\'io est\'andar de 9.95 a\~{n}os.
 
-    La mediana la marca la edad de 31 a\~{n}os. El primer cuartil, los 25 a\~{n}os y el tercer cuartil, los 37 a\~{n}os. Por lo tanto se cuenta con un rango intercuartil de 12 a\~{n}os. 
+    La mediana la marca la edad de 31 a\~{n}os. El primer cuartil, los 25 a\~{n}os y el tercer cuartil, los 37 a\~{n}os. Por lo tanto, se cuenta con un rango intercuartil de 12 a\~{n}os. 
 
     La edad m\'inima presentada fue de 19 a\~{n}os y la m\'axima, de 66 a\~{n}os.
 
@@ -255,8 +255,9 @@ Sistema EcoBici de CABA}
   
     \subsection{Estaci\'on de origen de recorrido}
 
-    Tomando en consideraci\'on que se cuenta con 142 estaciones se decidi\'o presentar dentro del informe un cuadro con las 10 estaciones que fueron utilizadas m\'as veces como origen por la muestra de usuarios. 
-    Si se desea obtener el cuadro de frecuencias completo puede acceder a \'el mediante el siguiente enlace {\small \url{https://data.buenosaires.gob.ar/dataset/estaciones-bicicletas-publicas}}
+    % 142 estacion de origen
+    Tomando en consideraci\'on que se cuenta con 142 estaciones que fueron utilizadas como origen, se decidi\'o presentar dentro del informe un cuadro con las 10 estaciones m\'as utilizadas por la muestra de usuarios. 
+    Si se desea obtener el cuadro de frecuencias completo puede acceder a \'el mediante el siguiente enlace {\small \url{https://data.buenosaires.gob.ar/dataset/estaciones-bicicletas-publicas}}.
 
     Entonces, por un lado, recordando que no se llegan al total esperado de 411 recorridos porque solo presentamos las 10 con mayor frecuencia, se presenta la tabla a continuaci\'on. 
 
@@ -302,8 +303,9 @@ Sistema EcoBici de CABA}
     las categor\'ias nuevas tendr\'an la forma de un n\'umero x que representa la cantidad de recorridos iniciados y su valor
     asociado ser\'a la cantidad de estaciones que hayan sido origen de esa x cantidad de recorridos. 
 
+    % agregue el es decir ...
     Una vez hecha esta recategorizaci\'on se hace f\'acil de reconocer el principio de Paretto que aparece: las categor\'ias con n\'umeros m\'as bajos son las que 
-    agrupan la mayor cantidad de estaciones, lo cual se puede observar claramente en el siguiente gr\'afico de Paretto. 
+    agrupan la mayor cantidad de estaciones, es decir, la mayor\'ia de las estaciones presentan pocas concurrencias, lo cual se puede observar claramente en el siguiente gr\'afico de Paretto. 
 
     \begin{center}
     \includegraphics[scale=0.7]{ParettoOrigen.png}
@@ -312,7 +314,8 @@ Sistema EcoBici de CABA}
 
     \subsection{Estaci\'on de destino de recorrido}
 
-    Tomando en consideraci\'on que se cuenta con 135 estaciones se decidi\'o presentar dentro del informe un cuadro con las 10 estaciones que fueron utilizadas m\'as veces como destino por la muestra de usuarios. 
+    % 135 estaciones de destino
+    Tomando en consideraci\'on que se cuenta con 135 estaciones que fueron utilizadas como destino, se decidi\'o presentar dentro del informe un cuadro con las 10 estaciones m\'as utilizadas por la muestra de usuarios. 
     Si se desea obtener el cuadro de frecuencias completo puede acceder a \'el mediante el siguiente enlace {\small \url{https://data.buenosaires.gob.ar/dataset/estaciones-bicicletas-publicas}}
 
     Entonces, por un lado, recordando que no se llegan al total esperado de 411 recorridos porque solo presentamos las 10 con mayor frecuencia, se presenta la tabla a continuaci\'on. 
@@ -354,13 +357,15 @@ Sistema EcoBici de CABA}
 
     Visualizando esta tabla resulta claro que la moda es la estaci\'on ubicada en Lavalle \& Bouchard. 
 
+    % cambie algunos origen por destino que estaban mal xd
     Sin embargo, por otro lado, teniendo en cuenta la cantidad de estaciones y lo realizado con la variable anterior se vio como pertinente el recategorizar la variable 
-    con respecto a la cantidad de estaciones utilizadas como origen una x cantidad de veces. Es decir, 
-    las categor\'ias nuevas tendr\'an la forma de un n\'umero x que representa la cantidad de recorridos iniciados y su valor
-    asociado ser\'a la cantidad de estaciones que hayan sido origen de esa x cantidad de recorridos. 
+    con respecto a la cantidad de estaciones utilizadas como destino una x cantidad de veces. Es decir, 
+    las categor\'ias nuevas tendr\'an la forma de un n\'umero x que representa la cantidad de recorridos finalizados y su valor
+    asociado ser\'a la cantidad de estaciones que hayan sido destino de esa x cantidad de recorridos. 
 
+    % agregue el es decir ...
     Otra vez, ya hecha esta recategorizaci\'on se hace f\'acil de reconocer el principio de Paretto que aparece: las categor\'ias con n\'umeros m\'as bajos son las que 
-    agrupan la mayor cantidad de estaciones, lo cual se puede observar en el siguiente gr\'afico de Paretto. 
+    agrupan la mayor cantidad de estaciones, es decir, la mator\'ia de estaciones fueron concurridas pocas veces, lo cual se puede observar en el siguiente gr\'afico de Paretto. 
 
     \begin{center}
       \includegraphics[scale=0.7]{ParettoDest.png}
@@ -373,7 +378,7 @@ Sistema EcoBici de CABA}
     se representan en metros, mientras que en el presente informe se representan en kil\'ometros. 
 
     Adem\'as, dado que por la continuidad de la variable existen una gran cantidad de valores posibles
-    para que tome la variable, se procede a agrupar las categor\'ias de la variable en intervalos de un kil\'ometro. 
+    para que tome, se procede a agrupar las categor\'ias de la variable en intervalos de un kil\'ometro. 
     
     Su tabla de frecuencias queda como sigue: 
 
@@ -422,13 +427,14 @@ Sistema EcoBici de CABA}
 
       \begin{itemize}
         \item La media es de 2.0880 km con un desv\'io est\'andar de 1.7148 km.
-        \item El primer cuartil toma el valor de 1.0060 km, mentras que el segundo cuartil (o mediana)
+        \item El primer cuartil toma el valor de 1.0060 km, mientras que el segundo cuartil (o mediana)
         toma el valor de 1.6130 km y el tercer cuartil, de 3.0390 km.
-        \item Se cuenta con un rango intercuartil de 2.0330 km. 
-        \item El valor m\'aximo que toma la variable es de 10.9460 km y el m\'inimo es de 0 km (un distancia de recorrido es de 0 km si se devuelve la bicicleta a la misma estaci\'on de donde se la sac\'o).
+        \item El rango intercuartil es entonces de 2.0330 km. 
+        \item El valor m\'aximo que toma la variable es de 10.9460 km y el m\'inimo es de 0 km (una distancia de recorrido es de 0 km si se devuelve la bicicleta a la misma estaci\'on de donde se la sac\'o).
         \item El intervalo de distancia que cuenta con m\'as recorridos es el [1,2).
       \end{itemize}
 
+      % tal vez se podria explicar que es cada cosa, en el diagrama de paretto tambien, siento que son graficso complejos
       Esta informaci\'on de la variable se puede ver clara y resumida en el siguiente boxplot: 
 
       \begin{center}
@@ -442,8 +448,9 @@ Sistema EcoBici de CABA}
       Al igual que con la distancia, previo al an\'alisis de esta variable se debe aclarar
       que se modific\'o la unidad de medici\'on de la variable, pasando de segundos a minutos. 
 
+      % agregue lo de la longitud, esta bien dicho longitud (? xd
       A su vez, tambi\'en por la continuidad de la variable, se decidi\'o dividirla en intervalos de 
-      10 minutos hasta llegar a los 132 minutos, donde se agrup\'o a 3 valores muy extremos dentro de un solo intervalo. 
+      10 minutos hasta llegar a los 132 minutos, donde se agrup\'o a 3 valores muy extremos dentro de un solo intervalo de mayor longitud. 
 
       \vspace{7mm}
 
@@ -497,17 +504,18 @@ Sistema EcoBici de CABA}
 
         \vspace{7mm}
 
+        % agregue lo de los valores
         Se puede ver esta informaci\'on de una forma m\'as clara y ordenada si es presentada en un histograma. 
         Para que este cumpla su prop\'osito de verse as\'i fue necesario excluir del mismo al \'ultimo intervalo 
-        que presenta solo 3 recorridos con duraciones muy extremas.  
+        que presenta solo 3 recorridos con duraciones muy extremas. Vale aclarar que estos valores son: 191.3, 267.65 y  484.55. 
 
-        Entonces, el nuevo total de recorridos con el que se trabaja es de 408 y este ser\'ia el histograma que representa la duraci\'on de los recorridos (menores a 132 minutos) tomando como unidad los 10 minutos para que as\'i la densidad representa la cantidad de recorridos.
+        Entonces, el nuevo total de recorridos con el que se trabaja es de 408 y este ser\'ia el histograma que representa la duraci\'on de los recorridos (menores a 132 minutos) tomando como unidad los 10 minutos para que as\'i la densidad represente la cantidad de recorridos.
 
         \begin{center}
           \includegraphics[scale=0.7]{HistDuracion.png}
         \end{center}
 
-        Acompañando al histograma y manteniendo este total de 408 recorridos se presentan el pol\'igono de frecuencias y el pol\'igono acumulativo. 
+        Acompañando al histograma y manteniendo este total de 408 recorridos se presentan el pol\'igono de frecuencias (a) y el pol\'igono acumulativo (b). 
 
         \begin{center}
           \includegraphics[scale=0.55]{PoligFrecDuracion.png}
@@ -526,6 +534,7 @@ Sistema EcoBici de CABA}
         Resulta \'util, tambi\'en, el hacer un an\'alisis de las medidas resumen de la variable y sus respectivas medidas de dispersi\'on.
         Para su an\'alisis volvemos a considerar el total de 411 recorridos.
 
+        % che estamos dejando el punto como separador decimal recien aca me di cuenta,,,,,,,,,,,
         La media es de 27.3000 minutos con un desv\'io est\'andar de 32.5626 minutos. 
 
         En relaci\'on a los cuartiles se puede observar lo siguiente:
