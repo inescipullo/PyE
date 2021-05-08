@@ -1,17 +1,17 @@
-\documentclass[11pt]{article}
+\documentclass[8pt]{article}
 \usepackage{tabularx}
 
 \begin{document}
 Tablita valores truncados a 2 decimales Edad
 
-% \begin{tabularx} {0.8\textwidth}{ 
+% \begin{tabularx {0.8\textwidth}{ 
 %     | >{\raggedright\arraybackslash}X 
 %     | >{\raggedleft\arraybackslash}X 
 %     | >{\raggedleft\arraybackslash}X 
 %     | >{\raggedleft\arraybackslash}X 
 %     | >{\raggedleft\arraybackslash}X |}
 %    \hline
-%    \textbf{Edad de usuario} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} & \textbf{Frecuencia absoluta acumulada} & \textbf{Frecuencia relativa acumulada} \\
+%    Edad de usuario & Frecuencia absoluta & Frecuencia relativa & Frecuencia absoluta acumulada & Frecuencia relativa acumulada \\
 %    \hline
 %    [18,23) & 16 & 0.16 & 16 & 0.16 \\
 %    \hline
@@ -19,21 +19,51 @@ Tablita valores truncados a 2 decimales Edad
 %    \hline
 %    [28,33) & 27 & 0.27 & 58 & 0.59 \\
 %    \hline \hline
-%    \textbf{Total} & 100 & 1.00 \\
+%    Total & 100 & 1.00 \\
 %    \hline
 %   \end{tabularx}
 
 
+% https://tex.stackexchange.com/questions/97505/shrink-table-to-fit-on-a-page-or-keep-it-as-it-is/97506#97506
+  \begin{table}
+    \begin{adjustbox}{width=1\textwidth}
+      \small
+      \begin{tabularx} {1\textwidth}{ 
+          | >{\raggedright\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X
+          | >{\raggedleft\arraybackslash}X
+          | >{\raggedleft\arraybackslash}X
+          | >{\raggedleft\arraybackslash}X
+          | >{\raggedleft\arraybackslash}X
+          | >{\raggedleft\arraybackslash}X
+          | >{\raggedleft\arraybackslash}X
+          | >{\raggedleft\arraybackslash}X
+          | >{\raggedleft\arraybackslash}X
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X |}
+          \resizebox{\textwidth}{!}
+        \hline
+        - & (2,12] & (12,22] & (22,32] & (32,42] & (42,52] & (52,62] & (62,72] & (72,82] & (82,92] & (92,102] & (102,112] & (112,122] & (122,132] & (132,485] \\
+        \hline
+        \end{tabularx}
+    \end{adjustbox}
+  \end{table}
+
+
 
   \begin{center}
-    \large\textbf{10 estaciones de EcoBicis de CABA DESTINO}
+    \large{10 estaciones de EcoBicis de CABA DESTINO}
     
     \begin{tabularx} {1\textwidth}{ 
         | >{\raggedright\arraybackslash}X 
         | >{\raggedleft\arraybackslash}>{\hsize=.5\hsize}X 
         | >{\raggedleft\arraybackslash}>{\hsize=.5\hsize}X | }
        \hline
-       \textbf{Estaci\'on} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} \\
+       Estaci\'on & Frecuencia absoluta & Frecuencia relativa \\
        \hline
        Lavalle \& Bouchard & 20 & 0.0487 \\
        \hline
@@ -60,14 +90,14 @@ Tablita valores truncados a 2 decimales Edad
 
 
   \begin{center}
-    \large\textbf{10 estaciones de EcoBicis de CABA ORIGEN}
+    \large{10 estaciones de EcoBicis de CABA ORIGEN}
     
     \begin{tabularx} {1\textwidth}{ 
         | >{\raggedright\arraybackslash}X 
         | >{\raggedleft\arraybackslash}>{\hsize=.5\hsize}X 
         | >{\raggedleft\arraybackslash}>{\hsize=.5\hsize}X | }
        \hline
-       \textbf{Estaci\'on} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} \\
+       Estaci\'on & Frecuencia absoluta & Frecuencia relativa \\
        \hline
        Ramos Mejia, Av Dr Jose Maria Vargas \& Av. Del Libertador & 15 & 0.0365 \\
        \hline
