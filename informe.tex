@@ -257,7 +257,7 @@ Sistema EcoBici de CABA}
 
     % 142 estacion de origen
     Tomando en consideraci\'on que se cuenta con 142 estaciones que fueron utilizadas como origen, se decidi\'o presentar dentro del informe un cuadro con las 10 estaciones m\'as utilizadas por la muestra de usuarios. 
-    Si se desea obtener el cuadro de frecuencias completo puede acceder a \'el mediante el siguiente enlace {\small \url{https://katherinesullivan.github.io/TablaEstacionOrigen/}}.
+    Si se desea obtener el cuadro de frecuencias completo puede acceder a \'el mediante el siguiente enlace {\small \url{https://tablaorigen.000webhostapp.com/origen.html}}.
 
     Entonces, por un lado, recordando que no se llegan al total esperado de 411 recorridos porque solo presentamos las 10 con mayor frecuencia, se presenta la tabla a continuaci\'on. 
 
@@ -316,7 +316,7 @@ Sistema EcoBici de CABA}
 
     % 135 estaciones de destino
     Tomando en consideraci\'on que se cuenta con 135 estaciones que fueron utilizadas como destino, se decidi\'o presentar dentro del informe un cuadro con las 10 estaciones m\'as utilizadas por la muestra de usuarios. 
-    Si se desea obtener el cuadro de frecuencias completo puede acceder a \'el mediante el siguiente enlace {\small \url{https://katherinesullivan.github.io/TablaEstacionDestino/}}
+    Si se desea obtener el cuadro de frecuencias completo puede acceder a \'el mediante el siguiente enlace {\small \url{https://tablaorigen.000webhostapp.com/destino.html}} 
 
     Entonces, por un lado, recordando que no se llegan al total esperado de 411 recorridos porque solo presentamos las 10 con mayor frecuencia, se presenta la tabla a continuaci\'on. 
 
@@ -421,160 +421,205 @@ Sistema EcoBici de CABA}
          \textbf{Total} & 411 & 1.00 & - & - \\
          \hline
         \end{tabularx}
-      \end{myenv}
+    \end{myenv}
 
-      Resulta interesante presentar las medidas res\'umenes de la variable y sus respectivas medidas de dispersi\'on.
+    Resulta interesante presentar las medidas res\'umenes de la variable y sus respectivas medidas de dispersi\'on.
 
-      \begin{itemize}
-        \item La media es de 2.0880 km con un desv\'io est\'andar de 1.7148 km.
-        \item El primer cuartil toma el valor de 1.0060 km, mientras que el segundo cuartil (o mediana)
-        toma el valor de 1.6130 km y el tercer cuartil, de 3.0390 km.
-        \item El rango intercuartil es entonces de 2.0330 km. 
-        \item El valor m\'aximo que toma la variable es de 10.9460 km y el m\'inimo es de 0 km (una distancia de recorrido es de 0 km si se devuelve la bicicleta a la misma estaci\'on de donde se la sac\'o).
-        \item El intervalo de distancia que cuenta con m\'as recorridos es el [1,2).
-      \end{itemize}
+    \begin{itemize}
+      \item La media es de 2.0880 km con un desv\'io est\'andar de 1.7148 km.
+      \item El primer cuartil toma el valor de 1.0060 km, mientras que el segundo cuartil (o mediana)
+      toma el valor de 1.6130 km y el tercer cuartil, de 3.0390 km.
+      \item El rango intercuartil es entonces de 2.0330 km. 
+      \item El valor m\'aximo que toma la variable es de 10.9460 km y el m\'inimo es de 0 km (una distancia de recorrido es de 0 km si se devuelve la bicicleta a la misma estaci\'on de donde se la sac\'o).
+      \item El intervalo de distancia que cuenta con m\'as recorridos es el [1,2).
+    \end{itemize}
 
-      % tal vez se podria explicar que es cada cosa, en el diagrama de paretto tambien, siento que son graficso complejos
-      Esta informaci\'on de la variable se puede ver clara y resumida en el siguiente boxplot: 
+    % tal vez se podria explicar que es cada cosa, en el diagrama de paretto tambien, siento que son graficso complejos
+    Esta informaci\'on de la variable se puede ver clara y resumida en el siguiente boxplot: 
 
-      \begin{center}
-        \includegraphics[scale=0.7]{BoxPlotDist.png}
-      \end{center}
+    \begin{center}
+      \includegraphics[scale=0.7]{BoxPlotDist.png}
+    \end{center}
 
-      \vspace{-1.5cm}
+    \vspace{-1.5cm}
 
-      \subsection{Duraci\'on de recorrido}
+    \subsection{Duraci\'on de recorrido}
 
-      Al igual que con la distancia, previo al an\'alisis de esta variable se debe aclarar
-      que se modific\'o la unidad de medici\'on de la variable, pasando de segundos a minutos. 
+    Al igual que con la distancia, previo al an\'alisis de esta variable se debe aclarar
+    que se modific\'o la unidad de medici\'on de la variable, pasando de segundos a minutos. 
 
-      % agregue lo de la longitud, esta bien dicho longitud (? xd
-      A su vez, tambi\'en por la continuidad de la variable, se decidi\'o dividirla en intervalos de 
-      10 minutos hasta llegar a los 132 minutos, donde se agrup\'o a 3 valores muy extremos dentro de un solo intervalo de mayor longitud. 
+    % agregue lo de la longitud, esta bien dicho longitud (? xd
+    A su vez, tambi\'en por la continuidad de la variable, se decidi\'o dividirla en intervalos de 
+    10 minutos hasta llegar a los 132 minutos, donde se agrup\'o a 3 valores muy extremos dentro de un solo intervalo de mayor longitud. 
 
-      \vspace{7mm}
+    \vspace{7mm}
 
-      % ver si no hay que meter un vspace para que quede pegadito al cuadro
-      \begin{center}
-        \large\textbf{Duraci\'on de Recorridos en minutos \\ del Sistema EcoBici de CABA}
-      \end{center}
+    % ver si no hay que meter un vspace para que quede pegadito al cuadro
+    \begin{center}
+      \large\textbf{Duraci\'on de Recorridos en minutos \\ del Sistema EcoBici de CABA}
+    \end{center}
 
-      \begin{myenv}{1}
-        \begin{tabularx} {1\textwidth}{ 
-            | >{\raggedright\arraybackslash}X 
-            | >{\raggedleft\arraybackslash}X 
-            | >{\raggedleft\arraybackslash}X 
-            | >{\raggedleft\arraybackslash}X 
-            | >{\raggedleft\arraybackslash}X |}
-           \hline
-           \textbf{Duraci\'on de recorrido} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} & \textbf{Frecuencia absoluta acumulada} & \textbf{Frecuencia relativa acumulada} \\
-           \hline
-           (2,12] & 105 & 0.2555 & 105 & 0.2555 \\
-           \hline
-           (12,22] & 99 & 0.2409 & 204 & 0.4964 \\
-           \hline
-           (22,32] & 105 & 0.2555 & 309 & 0.7518 \\
-           \hline
-           (32,42] & 54 & 0.1314 & 363 & 0.8832 \\
-           \hline
-           (42,52] & 17 & 0.0414 & 380 & 0.9246 \\
-           \hline
-           (52,62] & 12 & 0.0292 & 392 & 0.9538 \\
-           \hline
-           (62,72] & 4 & 0.0097 & 396 & 0.9635 \\
-           \hline
-           (72,82] & 3 & 0.0073 & 399 & 0.9708 \\
-           \hline
-           (82,92] & 3 & 0.0073 & 402 & 0.9781 \\
-           \hline
-           (92,102] & 1 & 0.0024 & 403 & 0.9805 \\
-           \hline
-           (102,112] & 2 & 0.0049 & 405 & 0.9854 \\
-           \hline
-           (112,122] & 1 & 0.0024 & 406 & 0.9878 \\
-           \hline
-           (122,132] & 2 & 0.0049 & 408 & 0.9927 \\
-           \hline
-           (132,485] & 3 & 0.0073 & 411 & 1.0000 \\
-           \hline \hline
-           \textbf{Total} & 411 & 1.00 & - & - \\
-           \hline
-          \end{tabularx}
-        \end{myenv}
+    \begin{myenv}{1}
+      \begin{tabularx} {1\textwidth}{ 
+          | >{\raggedright\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X |}
+          \hline
+          \textbf{Duraci\'on de recorrido} & \textbf{Frecuencia absoluta} & \textbf{Frecuencia relativa} & \textbf{Frecuencia absoluta acumulada} & \textbf{Frecuencia relativa acumulada} \\
+          \hline
+          (2,12] & 105 & 0.2555 & 105 & 0.2555 \\
+          \hline
+          (12,22] & 99 & 0.2409 & 204 & 0.4964 \\
+          \hline
+          (22,32] & 105 & 0.2555 & 309 & 0.7518 \\
+          \hline
+          (32,42] & 54 & 0.1314 & 363 & 0.8832 \\
+          \hline
+          (42,52] & 17 & 0.0414 & 380 & 0.9246 \\
+          \hline
+          (52,62] & 12 & 0.0292 & 392 & 0.9538 \\
+          \hline
+          (62,72] & 4 & 0.0097 & 396 & 0.9635 \\
+          \hline
+          (72,82] & 3 & 0.0073 & 399 & 0.9708 \\
+          \hline
+          (82,92] & 3 & 0.0073 & 402 & 0.9781 \\
+          \hline
+          (92,102] & 1 & 0.0024 & 403 & 0.9805 \\
+          \hline
+          (102,112] & 2 & 0.0049 & 405 & 0.9854 \\
+          \hline
+          (112,122] & 1 & 0.0024 & 406 & 0.9878 \\
+          \hline
+          (122,132] & 2 & 0.0049 & 408 & 0.9927 \\
+          \hline
+          (132,485] & 3 & 0.0073 & 411 & 1.0000 \\
+          \hline \hline
+          \textbf{Total} & 411 & 1.00 & - & - \\
+          \hline
+      \end{tabularx}
+    \end{myenv}
 
-        \vspace{7mm}
+    \vspace{7mm}
 
-        % agregue lo de los valores
-        Se puede ver esta informaci\'on de una forma m\'as clara y ordenada si es presentada en un histograma. 
-        Para que este cumpla su prop\'osito de verse as\'i fue necesario excluir del mismo al \'ultimo intervalo 
-        que presenta solo 3 recorridos con duraciones muy extremas. Vale aclarar que estos valores son: 191.3, 267.65 y  484.55. 
+    % agregue lo de los valores
+    Se puede ver esta informaci\'on de una forma m\'as clara y ordenada si es presentada en un histograma. 
+    Para que este cumpla su prop\'osito de verse as\'i fue necesario excluir del mismo al \'ultimo intervalo 
+    que presenta solo 3 recorridos con duraciones muy extremas. Vale aclarar que estos valores son: 191.3, 267.65 y  484.55. 
 
-        Entonces, el nuevo total de recorridos con el que se trabaja es de 408 y este ser\'ia el histograma que representa la duraci\'on de los recorridos (menores a 132 minutos) tomando como unidad los 10 minutos para que as\'i la densidad represente la cantidad de recorridos.
+    Entonces, el nuevo total de recorridos con el que se trabaja es de 408 y este ser\'ia el histograma que representa la duraci\'on de los recorridos (menores a 132 minutos) tomando como unidad los 10 minutos para que as\'i la densidad represente la cantidad de recorridos.
 
-        \begin{center}
-          \includegraphics[scale=0.7]{HistDuracion.png}
-        \end{center}
+    \begin{center}
+      \includegraphics[scale=0.7]{HistDuracion.png}
+    \end{center}
 
-        Acompañando al histograma y manteniendo este total de 408 recorridos se presentan el pol\'igono de frecuencias (a) y el pol\'igono acumulativo (b). 
+    Acompañando al histograma y manteniendo este total de 408 recorridos se presentan el pol\'igono de frecuencias (a) y el pol\'igono acumulativo (b). 
 
-        \begin{center}
-          \includegraphics[scale=0.55]{PoligFrecDuracion.png}
-          \vspace{-4mm}
-      
-          (a) Pol\'igono de frecuencias
-        \end{center}
-      
-        \begin{center}
-          \includegraphics[scale=0.55]{PoligAcumDuracion.png}
-          \vspace{-4mm}
-      
-          (b) Pol\'igono acumulativo
-        \end{center}
+    \begin{center}
+      \includegraphics[scale=0.55]{PoligFrecDuracion.png}
+      \vspace{-4mm}
+  
+      (a) Pol\'igono de frecuencias
+    \end{center}
+  
+    \begin{center}
+      \includegraphics[scale=0.55]{PoligAcumDuracion.png}
+      \vspace{-4mm}
+  
+      (b) Pol\'igono acumulativo
+    \end{center}
 
-        Resulta \'util, tambi\'en, el hacer un an\'alisis de las medidas resumen de la variable y sus respectivas medidas de dispersi\'on.
-        Para su an\'alisis volvemos a considerar el total de 411 recorridos.
+    Resulta \'util, tambi\'en, el hacer un an\'alisis de las medidas resumen de la variable y sus respectivas medidas de dispersi\'on.
+    Para su an\'alisis volvemos a considerar el total de 411 recorridos.
 
-        % che estamos dejando el punto como separador decimal recien aca me di cuenta,,,,,,,,,,,
-        La media es de 27.3000 minutos con un desv\'io est\'andar de 32.5626 minutos. 
+    % che estamos dejando el punto como separador decimal recien aca me di cuenta,,,,,,,,,,,
+    La media es de 27.3000 minutos con un desv\'io est\'andar de 32.5626 minutos. 
 
-        En relaci\'on a los cuartiles se puede observar lo siguiente:
+    En relaci\'on a los cuartiles se puede observar lo siguiente:
 
-        \begin{itemize}
-          \item Primer cuartil: 11.67 minutos.
-          \item Segundo cuartil o mediana: 22.43 minutos.
-          \item Tercer cuartil: 31.91 minutos.
-          \item Rango intercuartil: 20.24 minutos.
-        \end{itemize}
+    \begin{itemize}
+      \item Primer cuartil: 11.67 minutos.
+      \item Segundo cuartil o mediana: 22.43 minutos.
+      \item Tercer cuartil: 31.91 minutos.
+      \item Rango intercuartil: 20.24 minutos.
+    \end{itemize}
 
-        Y, por \'ultimo, el recorrido con mayor duraci\'on fue de 484.55 minutos y el de menor duraci\'on fue de 2.20 minutos.
+    Y, por \'ultimo, el recorrido con mayor duraci\'on fue de 484.55 minutos y el de menor duraci\'on fue de 2.20 minutos.
 
-        \section{An\'alisis bivariado}
+    \section{An\'alisis bivariado}
 
-        \subsection{Duraci\'on de recorrido respecto a D\'ia de recorrido}
+    \subsection{Duraci\'on de recorrido respecto a D\'ia de recorrido}
 
-        % asi definitely no funca
-        \begin{myenv}{1}
-          \begin{tabularx} {1\textwidth}{ 
-              | >{\raggedright\arraybackslash}X 
-              | >{\raggedleft\arraybackslash}X 
-              | >{\raggedleft\arraybackslash}X 
-              | >{\raggedleft\arraybackslash}X 
-              | >{\raggedleft\arraybackslash}X 
-              | >{\raggedleft\arraybackslash}X
-              | >{\raggedleft\arraybackslash}X
-              | >{\raggedleft\arraybackslash}X
-              | >{\raggedleft\arraybackslash}X
-              | >{\raggedleft\arraybackslash}X
-              | >{\raggedleft\arraybackslash}X
-              | >{\raggedleft\arraybackslash}X
-              | >{\raggedleft\arraybackslash}X
-              | >{\raggedleft\arraybackslash}X
-              | >{\raggedleft\arraybackslash}X 
-              | >{\raggedleft\arraybackslash}X |}
-             \hline
-             \textbf{-} & \textbf{(2,12]} & \textbf{(12,22]} & \textbf{(22,32]} & \textbf{(32,42]} & \textbf{(42,52]} & \textbf{(52,62]} & \textbf{(62,72]} & \textbf{(72,82]} & \textbf{(82,92]} & \textbf{(92,102]} & \textbf{(102,112]} & \textbf{(112,122]} & \textbf{(122,132]} & \textbf{(132,485]} \\
-             \hline
-             \end{tabularx}
-             \end{myenv}
+    Resulto interesante combinar las variables D\'ia del recorrido (variable cualitativa) con Duraci\'on del recorrido (variable cuantitativa) para realizar un an\'alisis bivariado. Para ello, se categoriza la duraci\'on del recorrido en intervalos, al igual que se hizo en el an\'alisis univariado. 
+    Resulta entonces una tabla con la cantidad (frecuencia absoluta) de recorridos por d\'ia de la semana, de acuerdo a la duraci\'on de los mismos.
+     
+    \begin{myenv}{1}
+      \begin{tabularx} {1.1\textwidth}{ 
+          | >{\raggedright\arraybackslash}p{50px}
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X
+          | >{\raggedleft\arraybackslash}X
+          | >{\raggedleft\arraybackslash}X |}
+          \hline
+          \textbf{-} & \textbf{(2,12]} & \textbf{(12,22]} & \textbf{(22,32]} & \textbf{(32,42]} & \textbf{(42,52]} & \textbf{(52,62]} & \textbf{(62,72]} \\
+          \hline
+          \textbf{Domingo}    & 8 & 17 & 20 & 10 & 4 & 2 & 0 \\
+          \hline
+          \textbf{Lunes}      & 14 & 8 & 20 & 8 & 5 & 2 & 1 \\
+          \hline
+          \textbf{Martes}     & 20 & 11 & 9 & 7 & 4 & 1 & 0 \\
+          \hline
+          \textbf{Miércoles}  & 17 & 10 & 12 & 7 & 0 & 2 & 1 \\
+          \hline
+          \textbf{Jueves}     & 19 & 22 & 10 & 4 & 2 & 2 & 0 \\
+          \hline
+          \textbf{Viernes}    & 17 & 18 & 13 & 3 & 0 & 0 & 1 \\
+          \hline
+          \textbf{Sábado}     & 10 & 13 & 21 & 15 & 2 & 3 & 1 \\
+          \hline
+      \end{tabularx}
+    \end{myenv}
 
+    \begin{myenv}{1}
+      \begin{tabularx} {1.25\textwidth}{ 
+          | >{\raggedright\arraybackslash}p{50px}
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X 
+          | >{\raggedleft\arraybackslash}X
+          | >{\raggedleft\arraybackslash}X
+          | >{\raggedleft\arraybackslash}X |}
+          \hline
+          \textbf{-} & \textbf{(72,82]} & \textbf{(82,92]} & \textbf{(92,102]} & \textbf{(102,112]} & \textbf{(112,122]} & \textbf{(122,132]} & \textbf{(132,485]} \\
+          \hline
+          \textbf{Domingo}    & 0 & 0 & 0 & 1 & 0 & 0 & 1 \\
+          \hline
+          \textbf{Lunes}      & 1 & 2 & 0 & 1 & 0 & 1 & 0 \\
+          \hline
+          \textbf{Martes}     & 1 & 0 & 0 & 0 & 0 & 1 & 0 \\
+          \hline
+          \textbf{Miércoles}  & 1 & 0 & 0 & 0 & 0 & 0 & 1 \\
+          \hline
+          \textbf{Jueves}     & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
+          \hline
+          \textbf{Viernes}    & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
+          \hline
+          \textbf{Sábado}     & 0 & 1 & 1 & 0 & 0 & 0 & 1 \\
+          \hline
+      \end{tabularx}
+    \end{myenv}
+
+    Por lo tanto, parece interesante un boxplot con doble entrada para graficar esta informaci\'on, eliminando los 3 valores m\'as extremos de duraci\'on, que pertencen al \'ultimo intervalo.
+
+    \begin{center}
+      \includegraphics[scale=0.5]{boxplotBivariado.png}
+    \end{center}
+
+    Se puede observar que S\'abados y Domingos los recorridos tienden a durar m\'as tiempo en general, sin embargo la distribuci\'on es relativamente uniforme.
 \end{document}                                                                                  

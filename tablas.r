@@ -329,6 +329,7 @@ breaks = c(2,12,22,32,42,52,62,72,82,92,102,112,122,132,485)
 duracion_intervalos = cut(data2$duracion_recorrido/60, breaks = breaks, rigth = FALSE)
 tabla_bivariada = table(data2$dia,duracion_intervalos)
 tabla_bivariada <- tabla_bivariada[c(1,3,4,5,2,7,6),]
+tabla_bivariada
 
 title = "Duración de recorridos de EcoBicis de CABA\n de acuerdo al día de la semana."
 boxplot(dur_recorridos ~ dias,col = "#e3b1d2",main = title,xlab = "Días de la semana",ylab = "Duración de los recorridos")
