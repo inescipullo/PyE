@@ -554,9 +554,14 @@ Sistema EcoBici de CABA}
 
     \subsection{Duraci\'on de recorrido respecto a D\'ia de recorrido}
 
-    Resulto interesante combinar las variables D\'ia del recorrido (variable cualitativa) con Duraci\'on del recorrido (variable cuantitativa) para realizar un an\'alisis bivariado. Para ello, se categoriza la duraci\'on del recorrido en intervalos, al igual que se hizo en el an\'alisis univariado. 
+    Result\'o interesante combinar las variables D\'ia del recorrido (variable cualitativa) con Duraci\'on del recorrido (variable cuantitativa) para realizar un an\'alisis bivariado. Para ello, se categoriza la duraci\'on del recorrido en intervalos, al igual que se hizo en el an\'alisis univariado. 
     Resulta entonces una tabla con la cantidad (frecuencia absoluta) de recorridos por d\'ia de la semana, de acuerdo a la duraci\'on de los mismos.
      
+    \begin{center}
+      \large\textbf{Recorridos del Sistema EcoBici de CABA \\
+      divididos respecto a Duraci\'on y D\'ia de semana}
+    \end{center}
+
     \begin{myenv}{1}
       \begin{tabularx} {1.1\textwidth}{ 
           | >{\raggedright\arraybackslash}p{50px}
@@ -582,7 +587,7 @@ Sistema EcoBici de CABA}
           \hline
           \textbf{Viernes}    & 17 & 18 & 13 & 3 & 0 & 0 & 1 \\
           \hline
-          \textbf{Sábado}     & 10 & 13 & 21 & 15 & 2 & 3 & 1 \\
+          \textbf{S\'abado}     & 10 & 13 & 21 & 15 & 2 & 3 & 1 \\
           \hline
       \end{tabularx}
     \end{myenv}
@@ -612,16 +617,34 @@ Sistema EcoBici de CABA}
           \hline
           \textbf{Viernes}    & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
           \hline
-          \textbf{Sábado}     & 0 & 1 & 1 & 0 & 0 & 0 & 1 \\
+          \textbf{S\'abado}     & 0 & 1 & 1 & 0 & 0 & 0 & 1 \\
           \hline
       \end{tabularx}
     \end{myenv}
 
-    Por lo tanto, parece interesante un boxplot con doble entrada para graficar esta informaci\'on, eliminando los 3 valores m\'as extremos de duraci\'on, que pertencen al \'ultimo intervalo.
+    \vspace{4mm}
+
+    A fin de visualizar la infromaci\'on de una manera m\'as comprensible, se decidi\'o realizar un boxplot con doble entrada, eliminando los 3 valores m\'as extremos de duraci\'on, que pertencen al \'ultimo intervalo.
 
     \begin{center}
       \includegraphics[scale=0.5]{boxplotBivariado.png}
     \end{center}
 
-    Se puede observar que S\'abados y Domingos los recorridos tienden a durar m\'as tiempo en general, sin embargo la distribuci\'on es relativamente uniforme.
+    Se puede observar que s\'abados y domingos los recorridos tienden a durar m\'as tiempo en general, sin embargo la distribuci\'on es relativamente uniforme.
+
+    \section{Conclusiones}
+    Para concluir el presente informe se expone un resumen sobre lo encontrado en los diferentes an\'alisis de variables del Sistema de Ecobici de CABA.
+
+    Repecto al an\'alisis univariado, se puede concluir que: 
+    \begin{itemize}
+      \item el g\'enero de los usuarios se encuentra dividido muy uniformemente, 
+      \item la edad de los mismos var\'ia entre los 19 y 66 años, con la mayor parte de los usuarios teniendo entre 28 y 33 años,
+      \item la cantidad de recorridos por d\'ia de semana se encuentra distribuida de manera un tanto uniforme, con la mayor cantidad de recorridos realizados los d\'ias s\'abados
+      \item el uso de las estaciones se encuentra dividido de manera bastante desigual, siendo unas pocas las estaciones que reciben la mayor cantidad de recorridos (siendo origen o destino de los mismos),
+      \item la distancia de los recorridos var\'ia entre los 0 y 11 kilómetros con la gran mayor\'ia solo llegando a los 3 kil\'ometros, y
+      \item la duraci\'on de los recorridos var\'ia entre los 2 y 485 minutos, con la gran mayor\'ia solo llegando a los 32 minutos.
+    \end{itemize}
+      
+    Respecto al an\'alisis bivariado, realizado relacionando el d\'ia de semana con la duraci\'on del recorrido, se puede observar que los fines de semana (s\'abados y domingos) la duraci\'on de los recorridos tiende a ser mayor. 
+
 \end{document}                                                                                  
