@@ -333,11 +333,16 @@ tabla_bivariada
 
 dias = factor(dias, levels = c("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"))
 
-new_order <- with(dias, reorder(c(Domingo,Lunes,Martes,Miércoles,Jueves,Viernes,Sábado)))
 title = "Duración de recorridos de EcoBicis de CABA\n de acuerdo al día de la semana."
 boxplot(dur_recorridos ~ dias,col = "#e3b1d2",main = title,xlab = "Días de la semana",ylab = "Duración de los recorridos")
 
 
+# promedio de la duracion de los recorridos por dia
+table(data2$dia, data2$duracion_recorrido/60)["Jueves",]
+sum(table(data2$dia, data2$duracion_recorrido/60)["Jueves",])
+factor(table(data2$dia, data2$duracion_recorrido/60)["Jueves",])
+
+sum(dur_recorridos ~ dias)
 
 
 
