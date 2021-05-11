@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.9.8)  11 MAY 2021 15:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.9.8)  11 MAY 2021 18:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -419,72 +419,82 @@ File: PoligAcumDuracion.png Graphic file (type png)
 Package pdftex.def Info: PoligAcumDuracion.png  used on input line 530.
 (pdftex.def)             Requested size: 293.1461pt x 198.74312pt.
  [17 <./PoligAcumDuracion.png>]
-Overfull \hbox (1.00992pt too wide) in paragraph at lines 592--592
+Overfull \hbox (0.77217pt too wide) in paragraph at lines 595--595
+ []|\OT1/cmr/bx/n/10.95 (2,12]|
+ []
+
+
+Overfull \hbox (7.06837pt too wide) in paragraph at lines 595--595
  []|\OT1/cmr/bx/n/10.95 (12,22]|
  []
 
 
-Overfull \hbox (1.00992pt too wide) in paragraph at lines 592--592
+Overfull \hbox (7.06837pt too wide) in paragraph at lines 595--595
  []|\OT1/cmr/bx/n/10.95 (22,32]|
  []
 
 
-Overfull \hbox (1.00992pt too wide) in paragraph at lines 592--592
+Overfull \hbox (7.06837pt too wide) in paragraph at lines 595--595
  []|\OT1/cmr/bx/n/10.95 (32,42]|
  []
 
 
-Overfull \hbox (1.00992pt too wide) in paragraph at lines 592--592
+Overfull \hbox (7.06837pt too wide) in paragraph at lines 595--595
  []|\OT1/cmr/bx/n/10.95 (42,52]|
  []
 
 
-Overfull \hbox (1.00992pt too wide) in paragraph at lines 592--592
+Overfull \hbox (7.06837pt too wide) in paragraph at lines 595--595
  []|\OT1/cmr/bx/n/10.95 (52,62]|
  []
 
 
-Overfull \hbox (1.00992pt too wide) in paragraph at lines 592--592
+Overfull \hbox (7.06837pt too wide) in paragraph at lines 595--595
  []|\OT1/cmr/bx/n/10.95 (62,72]|
  []
 
 
-Overfull \hbox (2.35072pt too wide) in paragraph at lines 592--592
+Overfull \hbox (7.06837pt too wide) in paragraph at lines 595--595
+ []|\OT1/cmr/bx/n/10.95 (72,82]|
+ []
+
+
+Overfull \hbox (2.35072pt too wide) in paragraph at lines 595--595
 []|\OT1/cmr/bx/n/10.95 Mi^^Sercoles|  
  []
 
 
-Overfull \hbox (36.57127pt too wide) in paragraph at lines 592--593
+Overfull \hbox (36.57127pt too wide) in paragraph at lines 595--596
 [][] 
  []
 
 
-Overfull \hbox (5.76642pt too wide) in paragraph at lines 622--622
+Overfull \hbox (6.10927pt too wide) in paragraph at lines 627--627
  []|\OT1/cmr/bx/n/10.95 (102,112]|
  []
 
 
-Overfull \hbox (5.76642pt too wide) in paragraph at lines 622--622
+Overfull \hbox (6.10927pt too wide) in paragraph at lines 627--627
  []|\OT1/cmr/bx/n/10.95 (112,122]|
  []
 
 
-Overfull \hbox (5.76642pt too wide) in paragraph at lines 622--622
+Overfull \hbox (6.10927pt too wide) in paragraph at lines 627--627
  []|\OT1/cmr/bx/n/10.95 (122,132]|
  []
 
 
-Overfull \hbox (5.76642pt too wide) in paragraph at lines 622--622
+Overfull \hbox (6.10927pt too wide) in paragraph at lines 627--627
  []|\OT1/cmr/bx/n/10.95 (132,485]|
  []
 
 
-Overfull \hbox (2.35072pt too wide) in paragraph at lines 622--622
+Overfull \hbox (2.35072pt too wide) in paragraph at lines 627--627
 []|\OT1/cmr/bx/n/10.95 Mi^^Sercoles|  
  []
 
 
-Overfull \hbox (91.4226pt too wide) in paragraph at lines 622--623
+Overfull \hbox (91.4226pt too wide) in paragraph at lines 627--628
 [][] 
  []
 
@@ -492,7 +502,7 @@ Overfull \hbox (91.4226pt too wide) in paragraph at lines 622--623
 <boxplotBivariado.png, id=159, 722.7pt x 536.0025pt>
 File: boxplotBivariado.png Graphic file (type png)
 <use boxplotBivariado.png>
-Package pdftex.def Info: boxplotBivariado.png  used on input line 630.
+Package pdftex.def Info: boxplotBivariado.png  used on input line 635.
 (pdftex.def)             Requested size: 361.3491pt x 268.0006pt.
  [19 <./boxplotBivariado.png>]
 Missing character: There is no Ã in font cmr10!
@@ -501,20 +511,20 @@ Missing character: There is no Ã in font cmr10!
 Missing character: There is no ± in font cmr10!
 Missing character: There is no Ã in font cmr10!
 Missing character: There is no ³ in font cmr10!
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 650.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 655.
  [20]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 650.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 655.
  (./informe.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 650.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 650.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 655.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 655.
 Package rerunfilecheck Info: File `informe.out' has not changed.
 (rerunfilecheck)             Checksum: E4C33FD0C966BA8718FCC6575CA61EE0;884.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 650.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 655.
  ) 
 Here is how much of TeX's memory you used:
  5472 strings out of 494861
  80781 string characters out of 6178805
- 177619 words of memory out of 5000000
+ 181619 words of memory out of 5000000
  8720 multiletter control sequences out of 15000+600000
  9294 words of font info for 33 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
@@ -525,7 +535,7 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on informe.pdf (21 pages, 360902 bytes).
+Output written on informe.pdf (21 pages, 361252 bytes).
 PDF statistics:
  201 PDF objects out of 1000 (max. 8388607)
  153 compressed objects within 2 object streams
