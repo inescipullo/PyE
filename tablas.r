@@ -331,6 +331,9 @@ tabla_bivariada = table(data2$dia,duracion_intervalos)
 tabla_bivariada <- tabla_bivariada[c(1,3,4,5,2,7,6),]
 tabla_bivariada
 
+dias = factor(dias, levels = c("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"))
+
+new_order <- with(dias, reorder(c(Domingo,Lunes,Martes,Miércoles,Jueves,Viernes,Sábado)))
 title = "Duración de recorridos de EcoBicis de CABA\n de acuerdo al día de la semana."
 boxplot(dur_recorridos ~ dias,col = "#e3b1d2",main = title,xlab = "Días de la semana",ylab = "Duración de los recorridos")
 
