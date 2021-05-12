@@ -340,9 +340,154 @@ boxplot(dur_recorridos ~ dias,col = "#e3b1d2",main = title,xlab = "Días de la s
 # promedio de la duracion de los recorridos por dia
 table(data2$dia, data2$duracion_recorrido/60)["Jueves",]
 sum(table(data2$dia, data2$duracion_recorrido/60)["Jueves",])
-factor(table(data2$dia, data2$duracion_recorrido/60)["Jueves",])
 
-sum(dur_recorridos ~ dias)
+# DOMINGO
+suma = 0
+for (i in 1:length(data2$duracion_recorrido)) {
+  if (data2$dia[i] == "Domingo") {
+    suma = suma + (data2$duracion_recorrido/60)[i]
+  }
+}
+promedio = suma / sum(table(data2$dia, data2$duracion_recorrido/60)["Domingo",])
+promedio
+
+
+# LUNES
+suma = 0
+for (i in 1:length(data2$duracion_recorrido)) {
+  if (data2$dia[i] == "Lunes") {
+    suma = suma + (data2$duracion_recorrido/60)[i]
+  }
+}
+promedio = suma / sum(table(data2$dia, data2$duracion_recorrido/60)["Lunes",])
+promedio
+
+
+# MARTES
+suma = 0
+for (i in 1:length(data2$duracion_recorrido)) {
+  if (data2$dia[i] == "Martes") {
+    suma = suma + (data2$duracion_recorrido/60)[i]
+  }
+}
+promedio = suma / sum(table(data2$dia, data2$duracion_recorrido/60)["Martes",])
+promedio
+
+
+# MIERCOLES 
+suma = 0
+for (i in 1:length(data2$duracion_recorrido)) {
+  if (data2$dia[i] == "Miércoles") {
+    suma = suma + (data2$duracion_recorrido/60)[i]
+  }
+}
+promedio = suma / sum(table(data2$dia, data2$duracion_recorrido/60)["Miércoles",])
+promedio
+
+
+# JUEVES
+suma = 0
+for (i in 1:length(data2$duracion_recorrido)) {
+  if (data2$dia[i] == "Jueves") {
+    suma = suma + (data2$duracion_recorrido/60)[i]
+  }
+}
+promedio = suma / sum(table(data2$dia, data2$duracion_recorrido/60)["Jueves",])
+promedio
+
+
+# VIERNES
+suma = 0
+for (i in 1:length(data2$duracion_recorrido)) {
+  if (data2$dia[i] == "Viernes") {
+    suma = suma + (data2$duracion_recorrido/60)[i]
+  }
+}
+promedio = suma / sum(table(data2$dia, data2$duracion_recorrido/60)["Viernes",])
+promedio
 
 
 
+# SABADO
+suma = 0
+for (i in 1:length(data2$duracion_recorrido)) {
+  if (data2$dia[i] == "Sábado") {
+    suma = suma + (data2$duracion_recorrido/60)[i]
+  }
+}
+promedio = suma / sum(table(data2$dia, data2$duracion_recorrido/60)["Sábado",])
+promedio
+
+
+
+
+
+
+
+
+
+
+
+
+suma_jueves = 
+4.31666666666667 +
+5.48333333333333 +
+6.35 +
+6.63333333333333  +
+7.16666666666667 +
+7.71666666666667  +
+7.76666666666667 +
+7.9 +
+7.93333333333333 +
+8.01666666666667  +
+8.65 +
+8.83333333333333 +
+9.33333333333333 +
+9.36666666666667 +
+9.98333333333333 +
+9.98333333333333 +
+10.2 +
+10.7666666666667  +
+10.8666666666667  +
+12.9666666666667 +
+13.25  +
+13.7166666666667 +
+14.0166666666667  +
+14.6166666666667 +
+15.4833333333333 +
+15.6333333333333  +
+15.65  +
+16.1833333333333 +
+16.6 +
+18.4166666666667 +
+18.7166666666667 +
+19.4833333333333 +
+19.4833333333333 +
+19.5666666666667 +
+19.6666666666667 +
+19.75 +
+19.7833333333333 +
+20.45 +
+21.2666666666667 +
+21.6 +
+21.9833333333333 +
+23.3333333333333 +
+23.9166666666667 +
+24.3166666666667 +
+24.9333333333333 +
+25.6833333333333  +
+26.8666666666667  +
+27.1 +
+27.35 +
+27.9833333333333  +
+29.8833333333333 +
+32.5166666666667 +
+37.1833333333333 +
+38.9333333333333 +
+40.6333333333333 +
+49.4 +
+51.95 +
+57.4 +
+60.1333333333333
+
+suma_jueves / 59
