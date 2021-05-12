@@ -14,7 +14,7 @@ attach(data2)
 # es variable cualitativa
 # grafico de torta
 frec_abs_genero = table(data$genero_usuario)
-frec_rel_genero = round(frec_abs_genero / sum(frec_abs_genero), 2)
+frec_rel_genero = round(frec_abs_genero / sum(frec_abs_genero), 4)
 tabla_genero = cbind(frec_abs_genero,frec_rel_genero)
 attributes(tabla_genero)$dimnames[[2]] = c("Frecuencia Absoluta", "Frecuencia Relativa")
 total = c(sum(frec_abs_genero),sum(frec_rel_genero))

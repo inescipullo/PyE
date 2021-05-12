@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.17)  12 MAY 2021 14:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.17)  12 MAY 2021 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -302,32 +302,32 @@ Overfull \hbox (65.49394pt too wide) in paragraph at lines 128--130
 <HistEdad.png, id=79, 439.6425pt x 361.35pt>
 File: HistEdad.png Graphic file (type png)
 <use HistEdad.png>
-Package pdftex.def Info: HistEdad.png  used on input line 189.
+Package pdftex.def Info: HistEdad.png  used on input line 188.
 (pdftex.def)             Requested size: 307.74765pt x 252.94327pt.
  [4]
 <PoligFrecEdad.png, id=85, 484.05844pt x 361.35pt>
 File: PoligFrecEdad.png Graphic file (type png)
 <use PoligFrecEdad.png>
-Package pdftex.def Info: PoligFrecEdad.png  used on input line 194.
+Package pdftex.def Info: PoligFrecEdad.png  used on input line 193.
 (pdftex.def)             Requested size: 266.23296pt x 198.74312pt.
 <PoligAcumEdad.png, id=86, 484.05844pt x 361.35pt>
 File: PoligAcumEdad.png Graphic file (type png)
 <use PoligAcumEdad.png>
-Package pdftex.def Info: PoligAcumEdad.png  used on input line 201.
+Package pdftex.def Info: PoligAcumEdad.png  used on input line 200.
 (pdftex.def)             Requested size: 266.23296pt x 198.74312pt.
  [5 </Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/HistEdad.png (PNG copy)> </Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/PoligFrecEdad.png>] [6 </Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/PoligAcumEdad.png>]
 <BarPlotDia.png, id=98, 539.76656pt x 361.35pt>
 File: BarPlotDia.png Graphic file (type png)
 <use BarPlotDia.png>
-Package pdftex.def Info: BarPlotDia.png  used on input line 253.
+Package pdftex.def Info: BarPlotDia.png  used on input line 252.
 (pdftex.def)             Requested size: 350.8441pt x 234.87471pt.
 
-Overfull \hbox (5.07056pt too wide) in paragraph at lines 253--254
+Overfull \hbox (5.07056pt too wide) in paragraph at lines 252--253
 [] [] 
  []
 
 [7] [8 </Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/BarPlotDia.png (PNG copy)>]
-Underfull \hbox (badness 10000) in alignment at lines 298--298
+Underfull \hbox (badness 10000) in alignment at lines 297--297
 [][][] 
  []
 
@@ -335,10 +335,10 @@ Underfull \hbox (badness 10000) in alignment at lines 298--298
 <ParettoOrigen.png, id=112, 398.99063pt x 361.35pt>
 File: ParettoOrigen.png Graphic file (type png)
 <use ParettoOrigen.png>
-Package pdftex.def Info: ParettoOrigen.png  used on input line 314.
+Package pdftex.def Info: ParettoOrigen.png  used on input line 313.
 (pdftex.def)             Requested size: 279.29153pt x 252.94327pt.
  [10 </Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/ParettoOrigen.png (PNG copy)>]
-Underfull \hbox (badness 10000) in alignment at lines 357--357
+Underfull \hbox (badness 10000) in alignment at lines 356--356
 [][][] 
  []
 
@@ -346,19 +346,19 @@ Underfull \hbox (badness 10000) in alignment at lines 357--357
 <ParettoDest.png, id=122, 456.95718pt x 361.35pt>
 File: ParettoDest.png Graphic file (type png)
 <use ParettoDest.png>
-Package pdftex.def Info: ParettoDest.png  used on input line 374.
+Package pdftex.def Info: ParettoDest.png  used on input line 373.
 (pdftex.def)             Requested size: 319.86784pt x 252.94327pt.
  [12 </Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/ParettoDest.png (PNG copy)>] [13]
 <BoxPlotDist.png, id=132, 470.50781pt x 361.35pt>
 File: BoxPlotDist.png Graphic file (type png)
 <use BoxPlotDist.png>
-Package pdftex.def Info: BoxPlotDist.png  used on input line 444.
+Package pdftex.def Info: BoxPlotDist.png  used on input line 443.
 (pdftex.def)             Requested size: 329.35321pt x 252.94327pt.
  [14 </Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/BoxPlotDist.png (PNG copy)>]
 <HistDuracion.png, id=137, 433.62pt x 361.35pt>
 File: HistDuracion.png Graphic file (type png)
 <use HistDuracion.png>
-Package pdftex.def Info: HistDuracion.png  used on input line 518.
+Package pdftex.def Info: HistDuracion.png  used on input line 517.
 (pdftex.def)             Requested size: 303.53192pt x 252.94327pt.
  [15]
 <PoligFrecDuracion.png, id=142, 532.99126pt x 361.35pt>
@@ -366,79 +366,73 @@ File: PoligFrecDuracion.png Graphic file (type png)
 <use PoligFrecDuracion.png>
 Package pdftex.def Info: PoligFrecDuracion.png  used on input line 524.
 (pdftex.def)             Requested size: 293.1461pt x 198.74312pt.
- [16 </Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/HistDuracion.png (PNG copy)> </Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/PoligFrecDuracion.png>]
-<PoligAcumDuracion.png, id=148, 532.99126pt x 361.35pt>
+<PoligAcumDuracion.png, id=143, 532.99126pt x 361.35pt>
 File: PoligAcumDuracion.png Graphic file (type png)
 <use PoligAcumDuracion.png>
 Package pdftex.def Info: PoligAcumDuracion.png  used on input line 531.
 (pdftex.def)             Requested size: 293.1461pt x 198.74312pt.
- [17 </Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/PoligAcumDuracion.png>]
-Overfull \hbox (0.77217pt too wide) in paragraph at lines 596--596
- []|\OT1/cmr/bx/n/10.95 (2,12]|
- []
-
-
-Overfull \hbox (7.06837pt too wide) in paragraph at lines 596--596
+ [16 </Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/HistDuracion.png (PNG copy)> </Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/PoligFrecDuracion.png>] [17 </Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/PoligAcumDuracion.png>]
+Overfull \hbox (5.41072pt too wide) in paragraph at lines 596--596
  []|\OT1/cmr/bx/n/10.95 (12,22]|
  []
 
 
-Overfull \hbox (7.06837pt too wide) in paragraph at lines 596--596
+Overfull \hbox (5.41072pt too wide) in paragraph at lines 596--596
  []|\OT1/cmr/bx/n/10.95 (22,32]|
  []
 
 
-Overfull \hbox (7.06837pt too wide) in paragraph at lines 596--596
+Overfull \hbox (5.41072pt too wide) in paragraph at lines 596--596
  []|\OT1/cmr/bx/n/10.95 (32,42]|
  []
 
 
-Overfull \hbox (7.06837pt too wide) in paragraph at lines 596--596
+Overfull \hbox (5.41072pt too wide) in paragraph at lines 596--596
  []|\OT1/cmr/bx/n/10.95 (42,52]|
  []
 
 
-Overfull \hbox (7.06837pt too wide) in paragraph at lines 596--596
+Overfull \hbox (5.41072pt too wide) in paragraph at lines 596--596
  []|\OT1/cmr/bx/n/10.95 (52,62]|
  []
 
 
-Overfull \hbox (7.06837pt too wide) in paragraph at lines 596--596
+Overfull \hbox (5.41072pt too wide) in paragraph at lines 596--596
  []|\OT1/cmr/bx/n/10.95 (62,72]|
  []
 
 
-Overfull \hbox (7.06837pt too wide) in paragraph at lines 596--596
+Overfull \hbox (5.41072pt too wide) in paragraph at lines 596--596
  []|\OT1/cmr/bx/n/10.95 (72,82]|
  []
 
 
-Overfull \hbox (36.57127pt too wide) in paragraph at lines 596--597
+Overfull \hbox (54.85133pt too wide) in paragraph at lines 596--597
 [][] 
  []
 
 
-Overfull \hbox (6.10927pt too wide) in paragraph at lines 628--628
+Overfull \hbox (5.78119pt too wide) in paragraph at lines 628--628
  []|\OT1/cmr/bx/n/10.95 (102,112]|
  []
 
 
-Overfull \hbox (6.10927pt too wide) in paragraph at lines 628--628
+Overfull \hbox (5.78119pt too wide) in paragraph at lines 628--628
  []|\OT1/cmr/bx/n/10.95 (112,122]|
  []
 
 
-Overfull \hbox (6.10927pt too wide) in paragraph at lines 628--628
+Overfull \hbox (5.78119pt too wide) in paragraph at lines 628--628
  []|\OT1/cmr/bx/n/10.95 (122,132]|
  []
 
 
-Overfull \hbox (6.10927pt too wide) in paragraph at lines 628--628
+Overfull \hbox (5.78119pt too wide) in paragraph at lines 628--628
  []|\OT1/cmr/bx/n/10.95 (132,485]|
  []
 
 
-Overfull \hbox (91.4226pt too wide) in paragraph at lines 628--629
+Overfull \hbox (98.73798pt too wide) in paragraph at lines 628--629
 [][] 
  []
 
@@ -471,7 +465,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  34i,12n,45p,390b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/informe.pdf" (22 pages, 354808 bytes).
+Output written on "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/informe.pdf" (22 pages, 354607 bytes).
 PDF statistics:
  202 PDF objects out of 1000 (max. 8388607)
  154 compressed objects within 2 object streams

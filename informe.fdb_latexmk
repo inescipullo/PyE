@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1620841995 "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/informe.tex" "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/informe.pdf" "informe" 1620841996
-  "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/informe.aux" 1620841996 2438 caee0b0fa51789a1e227e45206dcb7b8 ""
-  "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/informe.tex" 1620841981 29044 3230c1f8104d6cf4f2ec1015497404ee ""
+["pdflatex"] 1620844133 "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/informe.tex" "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/informe.pdf" "informe" 1620844135
+  "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/informe.aux" 1620844135 2438 caee0b0fa51789a1e227e45206dcb7b8 ""
+  "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/informe.tex" 1620844131 29107 7ad424c4eb49c2a774a4d5098096ead4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -87,13 +87,13 @@
   "PoligFrecDuracion.png" 1620402142 15187 db1f7b060b57fa806781833401fc2412 ""
   "PoligFrecEdad.png" 1620313092 14592 d2e6b7a8638bf6fa36113e0e89f4e8d0 ""
   "boxplotBivariado.png" 1620689455 44689 85e277077a1bdd7380f6fbfae920941e ""
-  "informe.aux" 1620841996 2438 caee0b0fa51789a1e227e45206dcb7b8 "pdflatex"
-  "informe.out" 1620841996 884 e4c33fd0c966ba8718fcc6575ca61ee0 "pdflatex"
-  "informe.tex" 1620841981 29044 3230c1f8104d6cf4f2ec1015497404ee ""
+  "informe.aux" 1620844135 2438 caee0b0fa51789a1e227e45206dcb7b8 "pdflatex"
+  "informe.out" 1620844135 884 e4c33fd0c966ba8718fcc6575ca61ee0 "pdflatex"
+  "informe.tex" 1620844131 29107 7ad424c4eb49c2a774a4d5098096ead4 ""
   (generated)
+  "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/informe.log"
+  "informe.pdf"
   "informe.out"
   "informe.log"
-  "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/informe.log"
-  "informe.aux"
-  "informe.pdf"
   "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/informe.pdf"
+  "informe.aux"
