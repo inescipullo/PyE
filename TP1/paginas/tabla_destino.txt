@@ -1,0 +1,137 @@
+                                                                 ,Frecuencia Absoluta Frecuencia Relativa
+1019 Riglos                                                                        3              0.0073
+1078 Gurruchaga                                                                    3              0.0073
+1226 Ecuador & Mansilla, Lucio Norberto, General                                   2              0.0049
+1350 Posadas                                                                       1              0.0024
+1355 San Martin Av.                                                               11              0.0268
+1399 Moldes                                                                        1              0.0024
+1471 Cucha Cucha                                                                   6              0.0146
+1483 Quinteros, Lidoro J. Av.                                                      5              0.0122
+1520 Billinghurst & Mansilla, Lucio Norberto, General                              1              0.0024
+1540 Garcia, Juan Agustin                                                          1              0.0024
+1590 Lavalle                                                                       2              0.0049
+169 Peru & Roca, Julio A., Presidente Diagonal Sur Av.                             1              0.0024
+1701 Fernandez Moreno, Baldomero                                                   3              0.0073
+1785 Espinosa                                                                      4              0.0097
+1798 Matienzo, Benjamin, Teniente                                                  1              0.0024
+1981 Vidal                                                                         4              0.0097
+201 Luna                                                                           1              0.0024
+2080 Austria                                                                       1              0.0024
+2185 Ravignani, Emilio, Dr. & Guatemala                                            3              0.0073
+2292 Montañeses                                                                    3              0.0073
+2300 Diaz, Cnel. Av. & French                                                      3              0.0073
+238 Pichincha                                                                      2              0.0049
+2502 Galicia                                                                       2              0.0049
+2516 Pereyra Lucena                                                                3              0.0073
+2519 Conesa                                                                        2              0.0049
+2519 Superi                                                                        3              0.0073
+2700 Pedraza, Manuela                                                              1              0.0024
+2786 Montañeses                                                                    1              0.0024
+2875 Moreno                                                                        1              0.0024
+2939 Cavia                                                                         2              0.0049
+300 Almafuerte Av. & Los Patos                                                     5              0.0122
+3050 Ugarteche                                                                     3              0.0073
+3051 San Martin De Tours                                                           1              0.0024
+3084 Agrelo                                                                        7              0.0170
+3302 Guardia Vieja & Aguero                                                        2              0.0049
+3508 Carcova                                                                       2              0.0049
+3568 Estados Unidos & Boedo Av.                                                    5              0.0122
+367 Sanchez De Thompson, Mariquita                                                 1              0.0024
+3817 Traful                                                                        7              0.0170
+3822 Guemes                                                                        3              0.0073
+3912 Humahuaca                                                                     5              0.0122
+3997 TTE. GENERAL JUAN DOMINGO PERON                                               2              0.0049
+4083 Vallese, Felipe                                                               1              0.0024
+441 Bulnes & Peron, Juan Domingo, Tte. General                                    14              0.0341
+519 Pasteur                                                                        4              0.0097
+561 Uruguay & Av. Tucuman                                                          3              0.0073
+608 Doblas & Valle                                                                 2              0.0049
+67 San Martin                                                                      3              0.0073
+684 Boulogne Sur Mer & Tucuman                                                     1              0.0024
+780 Malabia & Loyola                                                               4              0.0097
+80 Larrea                                                                          2              0.0049
+803 José Marmol                                                                    6              0.0146
+902 Esmeralda                                                                      1              0.0024
+Acevedo 220 y padilla                                                              1              0.0024
+Adolfo Alsina& Bernardo De Irigoyen                                                1              0.0024
+Amenabar y Mendoza                                                                14              0.0341
+Andres Lamas&Remedios Escalada de San Martin                                       3              0.0073
+Arcos & Roosevelt Franklin D.                                                      4              0.0097
+Armenia 1525 y Gorriti                                                             2              0.0049
+Armenia 2315 & Charcas                                                             1              0.0024
+Av. Del Libertador, 3260                                                           6              0.0146
+Av. España 2200                                                                    4              0.0097
+Av. Gaona 2200                                                                     4              0.0097
+Av. Guzman 1100 & Av. Corrientes                                                   2              0.0049
+Av. Patricias Argentinas & Estivao                                                 8              0.0195
+Av. Pres. Figueroa Alcorta 2120                                                    1              0.0024
+Av. Rivadavia & Del Barco Centenera                                                1              0.0024
+Av. Sarmiento 2601                                                                 4              0.0097
+Avelino Diaz&Doblas                                                                1              0.0024
+Avenida Juan de Garay 1050                                                         2              0.0049
+Ayacucho 595                                                                       3              0.0073
+Balcarce & Yrigoyen, Hipolito Av.                                                  3              0.0073
+Bartolome Mitre & Av. Puyrredon                                                    4              0.0097
+Bernardo Irigoyen 320                                                              1              0.0024
+Bruno Giordano&Neuquen                                                             1              0.0024
+Calle Perú, 718                                                                    3              0.0073
+CARLOS PELEGRINI 215                                                               1              0.0024
+Cerrito & Arenales                                                                 1              0.0024
+Cerrito 990 y Av. Marcelo T. De Alvear                                             1              0.0024
+Cevallos, Virrey& Yrigoyen, Hipolito Av.                                          13              0.0316
+Cochabamba 1755                                                                    6              0.0146
+Cordoba 6599                                                                       4              0.0097
+Culpina 121                                                                       11              0.0268
+Delgado & Loreto, Virrey                                                           1              0.0024
+Estados Unidos 21                                                                  3              0.0073
+F.J.Santamaria de Oro & Guatemala                                                  3              0.0073
+Figueroa Alcorta & Sarmiento                                                       1              0.0024
+Figueroa Alcorta, Pres. Av. & Dorrego Av.                                          2              0.0049
+Fitz Roy  1092 & Loyola                                                            1              0.0024
+Fitz Roy & Gorriti                                                                 1              0.0024
+GARCIA DEL RIO & PINTO                                                             1              0.0024
+Godoy Cruz  3279 y Libertador                                                      6              0.0146
+Guatemala 4773                                                                     2              0.0049
+Guayaquil & Doblas                                                                 2              0.0049
+Guemes 3330 & Coronel Diaz                                                         3              0.0073
+Idependencia y Bernardo de Irigoyen                                                1              0.0024
+Iguazu & Uspallata                                                                 2              0.0049
+J.Ramirez de Velasco 285                                                           2              0.0049
+Juana De Ibarbourou & Av Patricias Argentinas                                      1              0.0024
+Juncal & Salguero, Jeronimo                                                        5              0.0122
+Lavalle & Acuña De Figueroa, Francisco                                             1              0.0024
+Lavalle & Bouchard                                                                20              0.0487
+Libertad & lavalle                                                                 3              0.0073
+Machaca Guemes 350                                                                 7              0.0170
+Manso Juana & De La Barra, Emma                                                    2              0.0049
+Marcelo T. de Alvear & Rodriguez Peña                                              2              0.0049
+Maure 1819                                                                         3              0.0073
+México & Lima                                                                      1              0.0024
+Mexico 1652                                                                        1              0.0024
+Miguel Sanchez y Av Libertadores                                                   2              0.0049
+Miller & Monroe                                                                    2              0.0049
+o´higins 1327                                                                      3              0.0073
+Olavarría 811                                                                      1              0.0024
+Olleros Av. & Del Libertador Av.                                                   3              0.0073
+Pellegrini Y Rivadavia Av.                                                         2              0.0049
+Peña & Azcuenaga                                                                   4              0.0097
+Peru  1016                                                                         1              0.0024
+Quintino Bocayuva y Don Bosco                                                     14              0.0341
+Ramos Mejia, Av Dr Jose Maria Vargas& Av. Del Libertador                           1              0.0024
+Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av.                              1              0.0024
+Reconquista & Corrientes Av.                                                       1              0.0024
+Regimiento De Patricios Av. & Araoz De Lamadrid, Gregorio, Gral.                   2              0.0049
+Riobamba 1264 & Juncal                                                             2              0.0049
+Saavedra & Mexico                                                                  2              0.0049
+Saenz Peña 938, Roque, Pres. Diagonal Norte Av. & Suipacha                         3              0.0073
+Salguero, Jeronimo & Mansilla, Lucio Norberto, General                             2              0.0049
+Santa Fe Av. & Bullrich, Int. Av.                                                  2              0.0049
+Sucre, Antonio Jose De, Mcal. Y Vertiz Virrey Av.                                  1              0.0024
+Triunvirato Av. & Roosevelt Franklin D. Av.                                        2              0.0049
+Uriburu Jose E., Pres. & Paraguay                                                  2              0.0049
+Vera Peñaloza, Rosario 599 & Lanteri Julieta                                       5              0.0122
+Villaflor, Azucena & Dealessi, Pierina                                             1              0.0024
+Villaflor, Azucena & Paine, Aime                                                   1              0.0024
+Yerbal 1290                                                                        1              0.0024
+Zapiola & Dorrego                                                                  1              0.0024
+TOTAL                                                                            411              0.9995

@@ -1,0 +1,716 @@
+65 -> long de espacio
+<tr>
+<td class="estacion">1019 Riglos                                                       </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">1019 Saavedra                                                     </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">1078 Gurruchaga                                                   </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">1226 Ecuador & Mansilla, Lucio Norberto, General                  </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">1321 Villarroel & Humboldt CABA                                   </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">1355 San Martin Av.                                               </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">137 Aranguren, Juan F., Dr. & Portugal                            </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">141 Jose Maria Moreno                                             </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">1413 Araoz & Gorriti CABA                                         </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">1471 Cucha Cucha                                                  </td>
+<td>4</td>
+<td>0.0097</td>
+</tr>
+<tr>
+<td class="estacion">1483 Quinteros, Lidoro J. Av.                                     </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">1520 Billinghurst & Mansilla, Lucio Norberto, General             </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">1540 Garcia, Juan Agustin                                         </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">1590 Lavalle                                                      </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">1701 Fernandez Moreno, Baldomero                                  </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">1785 Espinosa                                                     </td>
+<td>7</td>
+<td>0.0170</td>
+</tr>
+<tr>
+<td class="estacion">1798 Matienzo, Benjamin, Teniente                                 </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">1981 Vidal                                                        </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">2000 Vicente Lopez                                                </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">2001 Donado                                                       </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">2080 Austria                                                      </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">2133 Figueroa Alcorta                                             </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">2185 Ravignani, Emilio, Dr. & Guatemala                           </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">2292 Montañeses                                                  </td>
+<td>13</td>
+<td>0.0316</td>
+</tr>
+<tr>
+<td class="estacion">2300 Diaz, Cnel. Av. & French                                     </td>
+<td>4</td>
+<td>0.0097</td>
+</tr>
+<tr>
+<td class="estacion">2502 Galicia                                                      </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">2516 Pereyra Lucena                                               </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">2519 Superi                                                       </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">2700 Pedraza, Manuela                                             </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">2875 Moreno                                                       </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">2939 Cavia                                                        </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">300 Almafuerte Av. & Los Patos                                    </td>
+<td>9</td>
+<td>0.0219</td>
+</tr>
+<tr>
+<td class="estacion">3050 Ugarteche                                                    </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">3051 San Martin De Tours                                          </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">3082 Cabello                                                      </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">3084 Agrelo                                                       </td>
+<td>7</td>
+<td>0.0170</td>
+</tr>
+<tr>
+<td class="estacion">3302 Guardia Vieja & Aguero                                       </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">3508 Carcova                                                      </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">3568 Estados Unidos & Boedo Av.                                   </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">367 Sanchez De Thompson, Mariquita                                </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">3817 Traful                                                       </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">3822 Guemes                                                       </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">3912 Humahuaca                                                    </td>
+<td>10</td>
+<td>0.0243</td>
+</tr>
+<tr>
+<td class="estacion">394 Rawson & Potosi                                               </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">3997 TTE. GENERAL JUAN DOMINGO PERON                              </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">4300 Yrigoyen, Hipolito Av.                                       </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">441 Bulnes & Peron, Juan Domingo, Tte. General                    </td>
+<td>8</td>
+<td>0.0195</td>
+</tr>
+<tr>
+<td class="estacion">608 Doblas & Valle                                                </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">67 San Martin                                                     </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">708 Pasco & Chile                                                 </td>
+<td>4</td>
+<td>0.0097</td>
+</tr>
+<tr>
+<td class="estacion">780 Malabia & Loyola                                              </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">80 Larrea                                                         </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">803 José Marmol                                                  </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">925 Yatay& Humahuaca                                              </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Acevedo 220 y padilla                                             </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Adolfo Alsina& Bernardo De Irigoyen                               </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Aguero & Mansilla, Lucio Norberto, General                        </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Amenabar y Mendoza                                                </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Andres Lamas&Remedios Escalada de San Martin                      </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Arcos & Roosevelt Franklin D.                                     </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">Av Guzman 129 & Leiva                                             </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Av. Del Libertador, 3260                                          </td>
+<td>6</td>
+<td>0.0146</td>
+</tr>
+<tr>
+<td class="estacion">Av. España 2200                                                  </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">Av. Gaona 2200                                                    </td>
+<td>4</td>
+<td>0.0097</td>
+</tr>
+<tr>
+<td class="estacion">Av. Guzman 1100 & Av. Corrientes                                  </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Av. Patricias Argentinas & Estivao                                </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">Av. Pres. Figueroa Alcorta 2120                                   </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Av. Rivadavia & Del Barco Centenera                               </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Av. Sarmiento 2601                                                </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Avelino Diaz&Doblas                                               </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Avenida Juan de Garay 1050                                        </td>
+<td>4</td>
+<td>0.0097</td>
+</tr>
+<tr>
+<td class="estacion">Avenida Rivadavia y Fray Cayetano                                 </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Ayacucho &Peron, Juan Domingo, Tte. General                       </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Ayacucho 595                                                      </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">Bartolome Mitre & Av. Puyrredon                                   </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Bernardo Irigoyen 320                                             </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Beruti & Ecuador                                                  </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">Bruno Giordano&Neuquen                                            </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Calle Perú, 718                                                  </td>
+<td>4</td>
+<td>0.0097</td>
+</tr>
+<tr>
+<td class="estacion">CARLOS PELEGRINI 215                                              </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Cerrito & Arenales                                                </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Cerrito 990 y Av. Marcelo T. De Alvear                            </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Cevallos, Virrey& Yrigoyen, Hipolito Av.                          </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">Cochabamba 1755                                                   </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">Cordoba 6599                                                      </td>
+<td>7</td>
+<td>0.0170</td>
+</tr>
+<tr>
+<td class="estacion">Cordoba Av. & Montevideo                                          </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">Costa Rica & Armenia                                              </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Culpina 121                                                       </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">Delgado & Loreto, Virrey                                          </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">Della Paolera 297, Carlos M. & Av. Leandro N. Alem                </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Dr Tomas Manuel De  Anchorena &  Jose A. Cabrera                  </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Figueroa Alcorta & Sarmiento                                      </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Figueroa Alcorta, Pres. Av. & Dorrego Av.                         </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">GARCIA DEL RIO & PINTO                                            </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Godoy Cruz  3279 y Libertador                                     </td>
+<td>4</td>
+<td>0.0097</td>
+</tr>
+<tr>
+<td class="estacion">Guatemala 4773                                                    </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Guayaquil & Doblas                                                </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Guemes 3330 & Coronel Diaz                                        </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Idependencia y Bernardo de Irigoyen                               </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Iguazu & Uspallata                                                </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">J.Ramirez de Velasco 285                                          </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Juana De Ibarbourou & Av Patricias Argentinas                     </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">Juncal & Salguero, Jeronimo                                       </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Lavalle & Acuña De Figueroa, Francisco                           </td>
+<td>6</td>
+<td>0.0146</td>
+</tr>
+<tr>
+<td class="estacion">Lavalle & Bouchard                                                </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Libertad & lavalle                                                </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Machaca Guemes 350                                                </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">Madero, Eduardo Av. & Peron, Juan Domingo, Tte. General           </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Manso Juana & De La Barra, Emma                                   </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Marcelo T. de Alvear & Rodriguez Peña                            </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">Maure 1819                                                        </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">Maza y don Bosco                                                  </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Mexico 1652                                                       </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Miller & Monroe                                                   </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Moreno & Av Paseo Colon                                           </td>
+<td>6</td>
+<td>0.0146</td>
+</tr>
+<tr>
+<td class="estacion">o´higins 1327                                                    </td>
+<td>4</td>
+<td>0.0097</td>
+</tr>
+<tr>
+<td class="estacion">Olleros Av. & Del Libertador Av.                                  </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">Parana & Juncal                                                   </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Peña & Azcuenaga                                                 </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Peru  1016                                                        </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Quintino Bocayuva y Don Bosco                                     </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">Ramos Mejia, Av Dr Jose Maria Vargas& Av. Del Libertador          </td>
+<td>15</td>
+<td>0.0365</td>
+</tr>
+<tr>
+<td class="estacion">Ramos Mejia, Jose Maria, Dr. Av. & Del Libertador Av.             </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">Regimiento De Patricios Av. & Araoz De Lamadrid, Gregorio, Gral.  </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">Riobamba 1264 & Juncal                                            </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">Saavedra & Mexico                                                 </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Saenz Peña 938, Roque, Pres. Diagonal Norte Av. & Suipacha       </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Salguero, Jeronimo & Mansilla, Lucio Norberto, General            </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Santa Fe Av. & Bullrich, Int. Av.                                 </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">Santa Fe Av. & Dorrego                                            </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Sarandi 1010                                                      </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Sucre, Antonio Jose De, Mcal. Y Vertiz Virrey Av.                 </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Triunvirato Av. & Roosevelt Franklin D. Av.                       </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Uriburu Jose E., Pres. & Paraguay                                 </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Urquiza, Gral. & Rondeau                                          </td>
+<td>6</td>
+<td>0.0146</td>
+</tr>
+<tr>
+<td class="estacion">Vera Peñaloza, Rosario 599 & Lanteri Julieta                     </td>
+<td>4</td>
+<td>0.0097</td>
+</tr>
+<tr>
+<td class="estacion">Villaflor, Azucena & Dealessi, Pierina                            </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Villaflor, Azucena & Paine, Aime                                  </td>
+<td>3</td>
+<td>0.0073</td>
+</tr>
+<tr>
+<td class="estacion">Virasoro, Valentin & Figueroa, D Apolinario, Coronel              </td>
+<td>2</td>
+<td>0.0049</td>
+</tr>
+<tr>
+<td class="estacion">Vuelta de Obligado 2004                                           </td>
+<td>5</td>
+<td>0.0122</td>
+</tr>
+<tr>
+<td class="estacion">Yerbal 1290                                                       </td>
+<td>1</td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td class="estacion">Zapiola & Dorrego                                                 </td>
+<td>4</td>
+<td>0.0097</td>
+</tr>
+<tr>
+<td class="estacion">TOTAL                                                             </td>
+<td>411</td>
+<td>1.0000</td>
+</tr>
