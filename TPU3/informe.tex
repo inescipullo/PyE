@@ -161,7 +161,7 @@ Como $I_{1}$, $M_{1}$ y $N_{1}$ representan una partici\'on del espacio muestral
 \[N_{2} = (N_{2} \cap I_{1}) \cup (N_{2} \cap M_{1}) \cup (N_{2} \cap N_{1}) \]
 
 Y, entonces, la probabilidad de $N_{2}$ queda expresada como: 
-\[P(N_{2}) = P(N_{2}\cap I_{1}) + P(N_{2}\cap M_{1}) + P(N_{2}\cap N_{1}) = 0.12 + 0.18 + 0.08 = 0.38 \]
+\[P(N_{2}) = P(N_{2} \cap I_{1}) + P(N_{2} \cap M_{1}) + P(N_{2} \cap N_{1}) = 0.12 + 0.18 + 0.08 = 0.38 \]
 
 Entonces, terminamos con el an\'alisis de independencia,
 
@@ -172,6 +172,34 @@ Entonces, terminamos con el an\'alisis de independencia,
 \end{itemize}
 
 \textbf{Ejercicio 3}
+
+Tomando una persona de la poblaci\'on, denominamos a los siguientes sucesos: 
+% \vspace{-0.5mm}
+\begin{itemize}
+    \item La persona padece la enfermedad: $E$
+    \item La persona no padece la enfermedad: $\overline{E}$
+    \item Le di\'o positiva la prueba: $D$
+    \item Le di\'o negativa la prueba: $\overline{D}$
+\end{itemize}
+
+Se solicita calcular la probabilidad de que una persona a la que la prueba la ha dado positiva, esté sana. Es decir, se busca calcular $$P(\overline{E}/D).$$
+
+Sabemos que: 
+\begin{itemize}
+    \item $P(E) = 0.12$
+    \item $P(\overline{E}) = 0.88$
+    \item $P(D/E) = 0.9$
+    \item $P(D/\overline{E}) = 0.05$
+\end{itemize}
+
+Primero, calculamos $P(D)$:
+
+
+$$P(D/E) \cdot P(E) + P(D/\overline{E}) \cdot P(\overline{E}) = P(D \cap E) + P(D \cap \overline{E}) = $$
+$$ = P((D \cap E) \cup (D \cap \overline{E})) + P((D \cap E) \cap (D \cap \overline{E})) = $$
+$$ = P(D \cap (E \cup \overline{E})) + P(D \cap (E \cap \overline{E})) = P(D \cap (E \cup \overline{E})) + P(\emptyset) = $$
+$$ = P(D \cap (E \cup \overline{E})) = P(D) $$
+
 
 
 \end{document} 
