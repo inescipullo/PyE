@@ -9,6 +9,7 @@
 % para tablas
 \usepackage{multirow}
 \usepackage{array}
+
 \usepackage[spanish]{babel}
 
 \newsavebox\CBox
@@ -54,6 +55,36 @@
 \end{titlepage}
 \par
 
+
+\textbf{Ejercicio 1}
+
+Considerando un canal de comunicaci\'on de un bit donde la probabilidad de enviar un 0 o un 1 es la misma, definimos los siguientes sucesos: 
+\begin{itemize}
+    \item Se emite un 0: $A$
+    \item Se emite un 1: $B$
+    \item Se recibe un 0: $C$
+    \item Se recibe un 1: $D$
+\end{itemize}
+
+As\'i, definimos al suceso $Error$ (se comete error en la transmisión) como: que suceda $A$ y $D$ o suceda $B$ y $C$. Es decir, $$(A \cap D) \cup (B \cap D).$$
+
+Buscamos entonces, calcular $P(Error) = P((A \cap D) \cup (B \cap D))$.
+
+Por definci\'on de la probabilidad de la uni\'on, 
+\[ P(Error) = P(A \cap D) + P(B \cap C) - P((A \cap D) \cap (B \cap C)) \]
+
+Dado que $A \cap B = \emptyset$, sabemos que $P((A \cap D) \cap (B \cap C)) = 0$.
+
+Entonces, por esto y por el teorema de la multipliaci\'on de probabilidades,
+\[ P(Error) =  P(D/A) \cdot P(A) + P(C/B) \cdot P(B) - 0 = P(D/A) \cdot P(A) + P(C/B) \cdot P(B) \]
+
+Por u\'ltimo, sabiendo que $P(A) = P(B) = 0.5$, podemos aplicar la propiedad distributiva:
+\[ P(Error) = 0.5 \cdot (P(D/A) + P(C/B)) \]
+
+Para poder asignarle un valor a la probabilidad de que ocurra un error, quedaría conocer los valores de $P(D/A)$, que se entiende como la probabilidad de que se cumpla $D$ dado que se sucedi\'o $A$ y $P(C/B)$, que se entinede como la probabilidad de que se cumpla $C$ dado que sucedi\'o $B$.
+
+
+            
 \textbf{Ejercicio 2}
  
 a) Se solicita crear una tabla en donde cada celda represente la intersecci\'on de los sucesos de la primera prueba con los de la segunda prueba.
@@ -243,7 +274,7 @@ Como $P(D/\overline{E})$y $P(\overline{E})$ son valores que ya conozco,
 
 Habiendo calculado los 2 datos que necesitabamos resulta que 
 
-\[P(\overline{E}/D) = \frac{0.044}{0.152} = 2895\]
+\[P(\overline{E}/D) = \frac{0.044}{0.152} = 0.2895\]
 
 
 $$P(D/E) \cdot P(E) + P(D/\overline{E}) \cdot P(\overline{E}) = P(D \cap E) + P(D \cap \overline{E}) = $$
