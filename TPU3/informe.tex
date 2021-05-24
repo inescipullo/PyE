@@ -182,13 +182,13 @@ Tomando una persona de la poblaci\'on, denominamos a los siguientes sucesos:
     \item Le di\'o negativa la prueba: $\overline{D}$
 \end{itemize}
 
-Se solicita calcular la probabilidad de que una persona a la que la prueba le ha dado positiva, esté sana. Es decir, se busca calcular $$P(\overline{E}/D).$$
+Se solicita calcular la probabilidad de que una persona a la que la prueba le ha dado positiva, est\'e sana. Es decir, se busca calcular $$P(\overline{E}/D).$$
 
-Por definici\'on de probabilidad condicionada
+Por definici\'on de probabilidad condicionada,
 
 \[P(\overline{E}/D) = \frac{P(\overline{E}\cap D)}{P(D)}\]
 
-Entonces intentaremos encontrar los valores de $P(D)$ y $P(\overline{E} \cap D)$
+Entonces intentaremos encontrar los valores de $P(D)$ y $P(\overline{E} \cap D)$.
 
 Sabemos que: 
 \begin{itemize}
@@ -200,19 +200,19 @@ Sabemos que:
 
 Primero, vamos a calcular $P(D)$.
 
-Sabiendo que la porbabilidad de la intersecci\'on entre dos sucesos es la probabilidad de que ambos ocurran, podemos expresar la probabilidad de $D$ como la probabilidad de la intersección entre $D$ y un suceso que va a pasar s\'i o s\'i, por ejemplo, $E\cup \overline{E}$. Es decir,
+Sabiendo que la porbabilidad de la intersecci\'on entre dos sucesos es la probabilidad de que ambos ocurran, podemos expresar la probabilidad de $D$ como la probabilidad de la intersecci\'on entre $D$ y un suceso que va a pasar s\'i o s\'i, por ejemplo, $E\cup \overline{E}$. Es decir,
 \[P(D) = P(D \cap (E \cup \overline{E}))\]
 
 A su vez, sabemos que la probabilidad de que $E$ y $\overline{E}$ sucedan juntos es $0$, por lo tanto, 
-\[P(E\cap \overline{E}) = 0\] y consecuentemente \[P(D\cap (E \cap \overline{E})) = 0\] 
+\[P(E\cap \overline{E}) = 0\] y, consecuentemente, \[P(D\cap (E \cap \overline{E})) = 0\] 
 
 Entonces, como esta probabilidad es $0$, la podemos aprovechar para la construcci\'on de $P(D)$: 
 \[P(D) = P(D \cap (E \cup \overline{E})) + P(D\cap (E \cap \overline{E}))\]
 
-Por propiedad de conjuntos dados $A$, $B$ y $C$ conjuntos, 
+Por propiedad de conjuntos, dados $A$, $B$ y $C$ conjuntos, 
 \[A \cap (B\cup C) = (A\cap B) \cup (A\cap C)\]
 
-Por lo tanto, podemos expandir nuestra expresi\'on de $P(D)$ haciendo uso de esta propiedad y del hecho de que la intersecci\'on es conmutativa sumado a que $D\cap D = D$: 
+Por lo tanto, podemos expandir nuestra expresi\'on de $P(D)$ haciendo uso de esta propiedad y del hecho que la intersecci\'on es conmutativa, sumado a que $D\cap D = D$: 
 \[P(D) = P((D \cap E) \cup (D \cap \overline{E})) + P((D\cap E) \cap (D \cap \overline{E}))\]
 
 Por propiedad, la probabilidad de la uni\'on de dos sucesos es la suma de sus probabilidades individuales menos la probabilidad de su intersecci\'on. Es decir dados 2 conjuntos $A$ y $B$, 
@@ -225,10 +225,11 @@ P(A\cup B) + P(A\cap B) = P(A) + P(B)
 Entonces, reemplazando $A$ por $D\cap E$ y $B$ por $D\cap \overline{E}$ en $(1)$ la expresi\'on de $P(D)$ puede resultar como sigue
 \[P(D) = P(D\cap E) + P(D\cap \overline{E})\]
 
-Luego, aplicando la definici\'on de la probabilidad de una intersecci\'on tenemos que: 
+Luego, aplicando el teorema de la multiplicaci\'on de
+probabilidades tenemos que: 
 \[P(D) = P(D/E)\cdot P(E) + P(D/\overline{E}) \cdot P(\overline{E})\]
 
-Dado que ya cuento con los valores del lado izquierdo de la igualdad entonces concluyo que: 
+Dado que ya cuento con los valores del lado izquierdo de la igualdad, concluyo que: 
 \[P(D) = 0.108 + 0.044 = 0.152\]
 
 Ahora, resta encontrar $P(\overline{E}\cap D)$. 
