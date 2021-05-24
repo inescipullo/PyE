@@ -1,0 +1,55 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage[spanish]{babel}
+
+\newsavebox\CBox
+\def\textBF#1{\sbox\CBox{#1}\resizebox{\wd\CBox}{\ht\CBox}{\textbf{#1}}}
+
+\newenvironment{myenv}[1]
+  {\begin{spacing}{#1}}
+  {\end{spacing}}
+
+\addtolength{\textwidth}{0.2cm}
+\setlength{\parskip}{13pt}
+\setlength{\parindent}{0.0cm}
+\linespread{1.25}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{TP - Cipullo, Sullivan}
+\lhead{Probalidad y Estad\'istica}
+\rfoot{\vspace{1cm} \thepage}
+
+\renewcommand*\contentsname{\LARGE Índice}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vfill
+        \vfill
+            \vspace{0.7cm}
+            \noindent\textbf{\Huge Trabajo Pr\'actico Unidad 3}\par
+            \noindent\textbf{\Huge Probabilidad y Estad\'istica}\par
+            \vspace{.5cm}
+        \vfill
+        \noindent \textbf{\huge Alumnas:}\par
+        \vspace{.5cm}
+        \noindent \textbf{\Large Cipullo, In\'es}\par
+        \noindent \textbf{\Large Sullivan, Katherine}\par
+ 
+        \vfill
+        \large Universidad Nacional de Rosario \par
+        \noindent\large 2021
+    \end{center}
+\end{titlepage}
+\par
+
+
+
+\end{document} 
