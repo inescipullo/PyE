@@ -50,6 +50,94 @@
 \end{titlepage}
 \par
 
+\textbf{Ejercicio 2}
+ 
+a) Se solicita crear una tabla en donde cda celda represente la intersecci\'on de los sucesos de la primera prueba con los de la segunda prueba.
+
+Esta se presenta a continuaci\'on. 
+
+b) Se indica calcular la probabilidad de un error importante en la segunda prueba. 
+
+Primero, otorg\'emosle nombre a los siguientes sucesos: 
+\begin{itemize}
+    \item Ocurre un error importante en la segunda prueba: $I_{2}$
+    \item Ocurre un error importante en la primera prueba: $I_{1}$
+    \item Ocurre un error menor en la segunda prueba: $M_{1}$
+    \item No ocurre ning\'un error en la primera prueba: $N_{1}$
+\end{itemize}
+
+Definimos $S$ como el espacio muestral asociado a la primera prueba.
+Es decir, 
+\[S=\{I_{1},M_{1},N_{1}\}\]
+
+Veamos que los sucesos $I_{1}$, $M_{1}$ y $N_{1}$ representan una partición del espacio muestral $S$, puesto que: 
+\begin{itemize}
+    \item $I_{1} \cap  M_{1} = \emptyset$, $M_{1} \cap N_{1} = \emptyset$ y $N_{1} \cap I_{1} = \emptyset$, ya que solo puede ocurrir uno de los sucesos cuando se corre la primera prueba
+    \item $I_{1} \cup M_{1} \cup N_{1} = S$, y
+    \item $P(I_{1}) = 0.6 > 0$, $P(M_{1}) = 0.3 > 0$ y $P(N_{1}) = 0.1 > 0$. 
+\end{itemize}
+
+Luego como los sucesos representan una partici\'on del espacio $S$ podemos descomponer a $I_{2}$ como la uni\'on de las intersecciones de $I_{2}$ con estos sucesos (resultando una uni\'on de sucesos mutuamente excluyentes)
+\[I_{2} = (I_{2} \cap I_{1}) \cup (I_{2} \cap M_{1}) \cup (I_{2} \cap N_{1}) \]
+
+Y, entonces, la probabilidad de $I_{2}$ queda expresada como: 
+\[P(I_{2}) = P(I_{2}\cap I_{1}) + P(I_{2}\cap M_{1}) + P(I_{2}\cap N_{1}) = 0.18 + 0.03 + 0 = 0.21 \]
+
+
+c) Se requiere encontrar la probabilidad de error menor en la primera prueba sabiendo que el
+error en la segunda prueba es importante.
+
+Manteniendo los nombres otorgados en el inciso anterior lo que se debe encontrar es $P(M_{1}/I_{2})$
+
+Aplicando la definici\'on de probabilidad condicional se tiene que:
+
+\[P(M_{1}/I_{2}) = \frac{P(M_{1}\cap I_{2})}{P(I_{2})} = \frac{0.03}{0.21} = 0.0063\]
+
+d) Se precisa analizar la independencia entre los resultados de la primera prueba y los resultados de la segunda prueba. 
+
+Mantenemos los nombres otorgados en el inciso b) y llamamos $M_{2}$ a la ocurrencia de un error menor en la segunda prueba y $N_{2}$ a la no ocurrencia de un error en la segunda prueba. 
+
+Lo que debemos analizar para ver si dos sucesos son independientes es si la probabilidad de su intersección es igual a la multiplicación de sus probabilidades individuales y eso es lo que haremos. 
+
+\begin{itemize}
+    \item \underline{$I_{2}$ con $I_{1}$}: Como $P(I_{2}\cap I_{1}) = 0.18$ y $P(I_{2})\cdot P(I_{1}) = 0.21\cdot 0.6 = 0.126$ los sucesos no son independientes. 
+    \item \underline{$I_{2}$ con $M_{1}$}: Como $P(I_{2}\cap M_{1}) = 0.03$ y $P(I_{2})\cdot P(M_{1}) = 0.21\cdot 0.3 = 0.063$ los sucesos no son independientes. 
+    \item \underline{$I_{2}$ con $N_{1}$}: Como $P(I_{2}\cap N_{1}) = 0$ y $P(I_{2})\cdot P(N_{1}) = 0.21\cdot 0.1 = 0.021$ los sucesos no son independientes. 
+\end{itemize}
+
+Antes de analizar la independencia de los resultados de la primer prueba con $M_{2}$ voy a querer analizar cu\'al es la probabilidad de $M_{2}$. Para eso, vamos a valernos de lo que expusimos en el inciso b). 
+
+Como $I_{1}$, $M_{1}$ y $N_{1}$ representan una partici\'on del espacio muestral $S$ (definido en el inciso b), podemos descomponer a $M_{2}$ como la uni\'on de las intersecciones de $M_{2}$ con estos sucesos (resultando una uni\'on de sucesos mutuamente excluyentes)
+\[M_{2} = (M_{2} \cap I_{1}) \cup (M_{2} \cap M_{1}) \cup (M_{2} \cap N_{1}) \]
+
+Y, entonces, la probabilidad de $M_{2}$ queda expresada como: 
+\[P(M_{2}) = P(M_{2}\cap I_{1}) + P(M_{2}\cap M_{1}) + P(M_{2}\cap N_{1}) = 0.3 + 0.09 + 0.02 = 0.41 \]
+
+Entonces, continuamos con el an\'alisis de independencia,
+
+\begin{itemize}
+    \item \underline{$M_{2}$ con $I_{1}$}: Como $P(M_{2}\cap I_{1}) = 0.3$ y $P(M_{2})\cdot P(I_{1}) = 0.41\cdot 0.6 = 0.246$ los sucesos no son independientes. 
+    \item \underline{$M_{2}$ con $M_{1}$}: Como $P(M_{2}\cap M_{1}) = 0.09$ y $P(M_{2})\cdot P(M_{1}) = 0.41\cdot 0.3 = 0.123$ los sucesos no son independientes. 
+    \item \underline{$M_{2}$ con $N_{1}$}: Como $P(M_{2}\cap N_{1}) = 0.02$ y $P(M_{2})\cdot P(N_{1}) = 0.41\cdot 0.1 = 0.041$ los sucesos no son independientes. 
+\end{itemize}
+
+Y, como hicimos con $M_{2}$ antes de analizar la independencia de los resultados de la primer prueba con $N_{2}$ voy a querer analizar cu\'al es la probabilidad de $N_{2}$, valiendonos de lo que expusimos en el inciso b). 
+
+Como $I_{1}$, $M_{1}$ y $N_{1}$ representan una partici\'on del espacio muestral $S$ (definido en el inciso b), podemos descomponer a $N_{2}$ como la uni\'on de las intersecciones de $N_{2}$ con estos sucesos (resultando una uni\'on de sucesos mutuamente excluyentes)
+\[N_{2} = (N_{2} \cap I_{1}) \cup (N_{2} \cap M_{1}) \cup (N_{2} \cap N_{1}) \]
+
+Y, entonces, la probabilidad de $M_{2}$ queda expresada como: 
+\[P(N_{2}) = P(N_{2}\cap I_{1}) + P(N_{2}\cap M_{1}) + P(N_{2}\cap N_{1}) = 0.12 + 0.18 + 0.08 = 0.38 \]
+
+Entonces, terminamos con el an\'alisis de independencia,
+
+\begin{itemize}
+    \item \underline{$N_{2}$ con $I_{1}$}: Como $P(N_{2}\cap I_{1}) = 0.12$ y $P(N_{2})\cdot P(I_{1}) = 0.38\cdot 0.6 = 0.228$ los sucesos no son independientes. 
+    \item \underline{$N_{2}$ con $M_{1}$}: Como $P(N_{2}\cap M_{1}) = 0.18$ y $P(N_{2})\cdot P(M_{1}) = 0.38\cdot 0.3 = 0.114$ los sucesos no son independientes. 
+    \item \underline{$N_{2}$ con $N_{1}$}: Como $P(N_{2}\cap N_{1}) = 0.08$ y $P(N_{2})\cdot P(N_{1}) = 0.38\cdot 0.1 = 0.038$ los sucesos no son independientes. 
+\end{itemize}
+
+\textbf{Ejercicio 3}
 
 
 \end{document} 
