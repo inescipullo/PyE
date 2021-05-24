@@ -1,6 +1,7 @@
-\documentclass[8pt]{article}
+\documentclass[11pt]{article}
 % \usepackage{tabularx}
 \usepackage{multirow}
+\usepackage{array}
 \usepackage{graphicx}
 
 
@@ -34,22 +35,30 @@
   % \end{tabular}
   
 
-
-  \begin{table}[htbp]
-    \begin{center} \scalebox{1.5}{
+  \setlength{\extrarowheight}{2ex}
+  \begin{table}
+    \begin{center} 
+    \centering
+    \scalebox{1.2}{    
   
-      \begin{tabular}{|c|c|c|c|c|}
+      \begin{tabular}{|m{1.5cm}
+                      |m{2cm}
+                      |m{2cm}
+                      |m{2cm}
+                      |m{2cm}|}
+        % {|c|c|c|c|c|}
         \hline
         \multicolumn{2}{|c|}{} &\multicolumn{3}{|c|}{Tipo de Error en la Segunda Prueba} \\
         \cline{3-5}
         \multicolumn{2}{|c|}{}  & Importante & Menor & Ninguno \\
         \hline
-        \multirow{5}{*}{\rotatebox{90}{Tipo de Error en la Primera Prueba}}  
+        \multirow{5}{*}{\rotatebox{90}{Tipo de error}} \multirow{5}{*}{\rotatebox{90}{en la Primera}} \multirow{5}{*}{\rotatebox{90}{Prueba}}
         & Importante & 0.18 & 0.3  & 0.12 \\ \cline{2-5}    
         & Menor      & 0.03 & 0.09 & 0.18 \\ \cline{2-5}
         & Ninguno    & 0    & 0.02 & 0.08 \\ \cline{2-5}
       \hline  
       \end{tabular}
+    
     }
     \end{center}
   \end{table}
