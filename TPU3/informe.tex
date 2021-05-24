@@ -3,8 +3,12 @@
 \usepackage{fancyhdr}
 \usepackage{wrapfig}
 \usepackage{hyperref}
-\usepackage{tabularx}
+% \usepackage{tabularx}
 \usepackage{setspace}
+
+% para tablas
+\usepackage{multirow}
+\usepackage{array}
 \usepackage[spanish]{babel}
 
 \newsavebox\CBox
@@ -52,9 +56,40 @@
 
 \textbf{Ejercicio 2}
  
-a) Se solicita crear una tabla en donde cda celda represente la intersecci\'on de los sucesos de la primera prueba con los de la segunda prueba.
+a) Se solicita crear una tabla en donde cada celda represente la intersecci\'on de los sucesos de la primera prueba con los de la segunda prueba.
 
 Esta se presenta a continuaci\'on. 
+
+\vspace{0.5mm}
+
+\setlength{\extrarowheight}{2ex}
+\begin{table}
+  \begin{center} 
+  \centering 
+
+    \begin{tabular}{|m{1.5cm}
+                    |m{2cm}
+                    |m{2cm}
+                    |m{2cm}
+                    |m{2cm}|}
+      % {|c|c|c|c|c|}
+      \hline
+      \multicolumn{2}{|c|}{} &\multicolumn{3}{|c|}{Tipo de Error en la Segunda Prueba} \\
+      \cline{3-5}
+      \multicolumn{2}{|c|}{}  & Importante & Menor & Ninguno \\
+      \hline
+      \multirow{3.3}{*}{\rotatebox{90}{Tipo de error}} \multirow{3.3}{*}{\rotatebox{90}{en la Primera}} \multirow{3.3}{*}{\rotatebox{90}{Prueba}}
+      & Importante & 0.18 & 0.3  & 0.12 \\ \cline{2-5}    
+      & Menor      & 0.03 & 0.09 & 0.18 \\ \cline{2-5}
+      & Ninguno    & 0    & 0.02 & 0.08 \\ \cline{2-5}
+    \hline  
+    \end{tabular}
+  
+  \end{center}
+\end{table}
+
+\vspace{0.5mm}
+
 
 b) Se indica calcular la probabilidad de un error importante en la segunda prueba. 
 
@@ -62,7 +97,7 @@ Primero, otorg\'emosle nombre a los siguientes sucesos:
 \begin{itemize}
     \item Ocurre un error importante en la segunda prueba: $I_{2}$
     \item Ocurre un error importante en la primera prueba: $I_{1}$
-    \item Ocurre un error menor en la segunda prueba: $M_{1}$
+    \item Ocurre un error menor en la primera prueba: $M_{1}$
     \item No ocurre ning\'un error en la primera prueba: $N_{1}$
 \end{itemize}
 
@@ -91,7 +126,7 @@ Manteniendo los nombres otorgados en el inciso anterior lo que se debe encontrar
 
 Aplicando la definici\'on de probabilidad condicional se tiene que:
 
-\[P(M_{1}/I_{2}) = \frac{P(M_{1}\cap I_{2})}{P(I_{2})} = \frac{0.03}{0.21} = 0.0063\]
+\[P(M_{1}/I_{2}) = \frac{P(M_{1}\cap I_{2})}{P(I_{2})} = \frac{0.03}{0.21} = 0.1428\]
 
 d) Se precisa analizar la independencia entre los resultados de la primera prueba y los resultados de la segunda prueba. 
 
@@ -126,7 +161,7 @@ Y, como hicimos con $M_{2}$ antes de analizar la independencia de los resultados
 Como $I_{1}$, $M_{1}$ y $N_{1}$ representan una partici\'on del espacio muestral $S$ (definido en el inciso b), podemos descomponer a $N_{2}$ como la uni\'on de las intersecciones de $N_{2}$ con estos sucesos (resultando una uni\'on de sucesos mutuamente excluyentes)
 \[N_{2} = (N_{2} \cap I_{1}) \cup (N_{2} \cap M_{1}) \cup (N_{2} \cap N_{1}) \]
 
-Y, entonces, la probabilidad de $M_{2}$ queda expresada como: 
+Y, entonces, la probabilidad de $N_{2}$ queda expresada como: 
 \[P(N_{2}) = P(N_{2}\cap I_{1}) + P(N_{2}\cap M_{1}) + P(N_{2}\cap N_{1}) = 0.12 + 0.18 + 0.08 = 0.38 \]
 
 Entonces, terminamos con el an\'alisis de independencia,
