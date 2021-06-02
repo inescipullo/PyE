@@ -61,8 +61,8 @@
 
 \textbf{Ejercicio 1}
 
-\textbf{A.} \par
-Tenemos una variable aleatoria $X$, tal que $X$:”número de interrupciones diarias” en una compañía. 
+\textbf{a)} \par
+Tenemos una variable aleatoria $X$, tal que $X$: ``n\'umero de interrupciones diarias'' en una compa\~{n}\'ia. 
 Debemos calcular los valores $P(X=4)$ y $P(X=5)$. Sabemos que:  
 
 \begin{itemize}
@@ -74,14 +74,14 @@ Debemos calcular los valores $P(X=4)$ y $P(X=5)$. Sabemos que:
     \item $P(X=6) = 0.01$
 \end{itemize}
 
-Primero, tenemos que: 
+Primero, podemos obtener $P(X=4)$ simplemente haciendo uso de la definici\'on de $F(4)$: 
 \begin{align*}
     F(4)& = P(X=0) + P(X=1) + P(X=2) + P(X=3) + P(X=4) =\\
         & = 0.32 + 0.35 + 0.18 + 0.08 + P(X=4) = 0.93 + P(X=4) =\\
         & = 0.97 \implies P(X=4) = 0.04
 \end{align*}
 
-Luego, como la variable aleatoria $X$ puede tomar unicamente valores enteros entre el 0 y el 6 inclusive, es decir, $P(X=x) = 0\ \forall\ x > 6$, y sabemos que la suma total de su distribución de probabilidades suma 1, tenemos que:
+Luego, como la variable aleatoria $X$ puede tomar \'unicamente valores enteros entre el 0 y el 6 inclusive, es decir, $P(X=x) = 0\ \forall\ x > 6$, y sabemos que la suma total de su distribuci\'on de probabilidades da 1, tenemos que:
 \begin{align*}
     &P(X=0) + P(X=1) + P(X=2) + P(X=3) + P(X=4) + P(X=5) + P(X=6) = \\
     &= 0.32 + 0.35 + 0.18 + 0.08 + 0.04 + P(X=5) + 0.01 = 0.98 + P(X=5) = 1 \implies \\
@@ -89,20 +89,22 @@ Luego, como la variable aleatoria $X$ puede tomar unicamente valores enteros ent
 \end{align*}
 
 
-\textbf{B.} \par
-La probabilidad de que en un día dado haya a lo sumo 4 interrupciones refiere a la probabilidad de que la variable aleatoria $X$ tome un valor igual a 4 o menor, por lo tanto esto es $F(4) = 0.97$. \par
-La probabilidad de que en un día dado haya por lo menos 5 interrupciones refiere a la probabiilidad de que la variable aleatoria $X$ tome un valor igual a 5 o mayor, por lo tanto esto es $P(X=5) + P(X=6) = 0.02 + 0.01 = 0.03$.
+\textbf{b)} \par
+La probabilidad de que en un d\'ia dado haya a lo sumo 4 interrupciones refiere a la probabilidad de que la variable aleatoria $X$ tome un valor igual a 4 o menor, por lo tanto esto es $F(4) = 0.97$. \par
+La probabilidad de que en un d\'ia dado haya por lo menos 5 interrupciones refiere a la probabilidad de que la variable aleatoria $X$ tome un valor igual a 5 o mayor, por lo tanto esto es $P(X=5) + P(X=6) = 0.02 + 0.01 = 0.03$.
 
 
-\textbf{C.} \par
-Esperanza matemática de $X$:
+\textbf{c)} \par
+Primero procederemos a calcular. 
+
+Esperanza matem\'atica de $X$:
 \begin{align*}
     E(X)& = \sum_{i=1}^{7} x_i \cdot p(x_i) = \sum_{i=1}^{7} (i-1) \cdot p(i-1) = \\
         & = 0.35 + 2 \cdot 0.18 + 3 \cdot 0.08 + 4 \cdot 0.04 + 5 \cdot 0.02 + 6 \cdot 0.01 = \\
         & = 0.35 + 0.36 + 0.24 + 0.16 + 0.1 + 0.06 = 1.27
 \end{align*}
 
-Desviación estándar de $X$:
+Desviaci\'on est\'andar de $X$:
 \begin{align*}
     \sigma_x = \sqrt{V(X)} = \sqrt{E(X^2) - E(X)^2},
 \end{align*}
@@ -113,34 +115,50 @@ donde
            & = 0.35 + 4 \cdot 0.18 + 9 \cdot 0.08 + 16 \cdot 0.04 + 25 \cdot 0.02 + 36 \cdot 0.01 = \\
            & = 0.35 + 0.72 + 0.72 + 0.64 + 0.5 + 0.36 = 3.29
 \end{align*}
-Volviendo a la fórmula, tenemos que:
+Por lo tanto, tenemos que:
 \begin{align*}
     \sigma_x = \sqrt{3.29 - 1.6129} = \sqrt{1.6771} = 1.295
 \end{align*}
 
-\textbf{D.} \par
+Luego, la interpretaci\'on que le podemos dar a los datos obtenidos es que en promedio se reciben 1.27 errores por d\'ia y que los valores, al contar con una desviaci\'on est\'andar de 1.295, no se encuentran muy alejados de la media.
 
-La esperanza matemática representa el valor medio que toma la variable aleatoria, en este caso 1.27.
-La desviación estándar, por otro lado, indica que tan dispersos están los datos con respecto a la media, al ser en este caso relativamente baja indica que no hay una disperción de los datos tan significativa.
+%La esperanza matemática representa el valor medio que toma la variable aleatoria, en este caso 1.27.
+%La desviación estándar, por otro lado, indica que tan dispersos están los datos con respecto a la media, al ser en este caso relativamente baja indica que no hay una disperción de los datos tan significativa.
+
+\textbf{d)} \par
+
+Al ser obtenidos de la poblaci\'on y no de una muestra particular los valores obtenidos en el inciso anterior son par\'ametros. (Pues aqu\'i trabajamos con la media \emph{poblacional} y su varianza).
+
+
 
 
 \textbf{Ejercicio 2}
 
+Se solicita determinar la probabilidad de que un decodificador tome una decisi\'on err\'onea cuando el sistema no implementa una t\'ecnica de correcci\'on de errores, y luego de implementar el uso de c\'odigos ``corrector-error" donde cada bit se transmite 3 veces y se interpreta seg\'un el bit que se presente una mayor cantidad de veces. 
 
+Sin ninguna t\'ecnica de correcci\'on lo que sucede simplemente es que se env\'ia un bit y la decisi\'on es que ese es el bit obtenido. Entonces, la probabilidad de que el decodificador tome una decisi\'on err\'onea es la probabilidad de que ocurra un error de transmici\'on, es decir, es igual a $\varepsilon$. 
+
+Luego de implementar el uso de códigos ``corrector-error" indicado, se tomar\'a una decisi\'on err\'onea si y solo si 2 o 3 de los bits recibidos resultan haber sido transmitidos err\'oneamente. Por lo tanto, si nombramos al suceso ``dos de los tres bits se transmitieron de manera err\'onea'' como A y al suceso ``los tres bits se transmitieron de manera err\'onea'' como B, la probabilidad de que se tome una decisi\'on err\'onea es:
+
+\[P(A\cup B) = P(A)+P(B)-P(A\cap B)\]
+
+Sabemos que si la probabilidad de transmici\'on err\'onea es $\varepsilon$ entonces la probabilidad de que haya dos bits transmitidos err\'oneamente es $\varepsilon^{2}$ y que tres bits hayan sido transmitidos err\'oneamente es de $\varepsilon^3$. 
+
+Es decir, sabiendo que $\varepsilon$ es menor a $0,1$ resulta claro que la probabilidad de tomar un error se vuelve notablemente menor (pues ser\'ia a lo sumo $0,011-P(A\cap B)$ en donde $P(A\cap B)$ es un valor positivo), aunque claramente el tiempo de transimici\'on se triplicar\'ia puesto que por cada bit se deben transmitir tres.
 
 \textbf{Ejercicio 3}
 
-Sabemos que el 30\% de los aspirantes a un trabajo tienen entrenamiento avanzado en programación. Los aspirantes son entrevistados al azar y en forma sucesiva. \par
-Consideramos que la cantidad total de aspirantes es muy grande, potencialmente infinita. Por lo tanto, al entrevistar una persona, independientemenete de si su entrenamiento es avanzado o no, sabremos que la proporción de aspirantes con entrenamineto avanzado en el grupo restante de aspirantes se mantiene (siempre será 30\%). Es decir, nos enfrentamos a una situación de extracción con reposición. \par
+Sabemos que el 30\% de los aspirantes a un trabajo tienen entrenamiento avanzado en programaci\'on. Los aspirantes son entrevistados al azar y en forma sucesiva. \par
+Consideramos que la cantidad total de aspirantes es muy grande, potencialmente infinita. Por lo tanto, al entrevistar una persona, independientemenete de si su entrenamiento es avanzado o no, sabremos que la proporci\'on de aspirantes con entrenamineto avanzado en el grupo restante de aspirantes se mantiene (siempre ser\'a 30\%). Es decir, nos enfrentamos a lo que podr\'ia entenderse como una situaci\'n de extracci\'n con reposici\'on. \par
 
-\textbf{A.} \par
-Para calcular la probabilidad de haber encontrado el primer aspirante con entrenamiento avanzado en programación para la quinta entrevista utilizamos la distribución geométrica: \par
+\textbf{a)} \par
+Para calcular la probabilidad de haber encontrado el primer aspirante con entrenamiento avanzado en programaci\'on para la quinta entrevista utilizamos la distribuci\'on geom\'etrica: \par
 $P(X=k) = (1-p)^{k-1} \cdot p$, donde $k = 5$ y $p = 0.3$ \par
 $P(X=5) = 0.7^4 \cdot 0.3 = 0.2401 \cdot 0.3 = 0.07203 $
 
 
-\textbf{B.} \par
-Para calcular la probabilidad de haber encontrado el quinto aspirante con entrenamiento avanzado en programación para la décima entrevista utilizamos la distribución de Pascal: \par
+\textbf{b)} \par
+Para calcular la probabilidad de haber encontrado el quinto aspirante con entrenamiento avanzado en programaci\'on para la d\'ecima entrevista utilizamos la distribuci\'on de Pascal: \par
 $P(Y=k) = \binom{k-1}{r-1} \cdot p^r \cdot (1-p)^{k-r}$, donde $k = 10$, $r = 5$ y $p = 0.3$ \par
 $P(Y=10) = \binom{9}{5} \cdot 0.3^5 \cdot 0.7^5 = \frac{9!}{4! \cdot 5!} \cdot 0.3^5 \cdot 0.7^5 = 126 \cdot 0.00243 \cdot 0.16807 = 0.0515$
 
