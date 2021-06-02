@@ -1,0 +1,148 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+% \usepackage{wrapfig}
+\usepackage{hyperref}
+% \usepackage{tabularx}
+\usepackage{setspace}
+
+% para tablas
+\usepackage{multirow}
+\usepackage{array}
+
+% math package
+\usepackage{amsmath}
+
+\usepackage[spanish]{babel}
+
+\newsavebox\CBox
+\def\textBF#1{\sbox\CBox{#1}\resizebox{\wd\CBox}{\ht\CBox}{\textbf{#1}}}
+
+\newenvironment{myenv}[1]
+  {\begin{spacing}{#1}}
+  {\end{spacing}}
+
+\addtolength{\textwidth}{0.2cm}
+\setlength{\parskip}{13pt}
+\setlength{\parindent}{0.0cm}
+\linespread{1.25}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{TP - Cipullo, Sullivan}
+\lhead{Probalidad y Estad\'istica}
+\rfoot{\vspace{1cm} \thepage}
+
+\renewcommand*\contentsname{\LARGE Índice}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vfill
+        \vfill
+            \vspace{0.7cm}
+            \noindent\textbf{\Huge Trabajo Pr\'actico Unidad 4}\par
+            \noindent\textbf{\Huge Probabilidad y Estad\'istica}\par
+            \vspace{.5cm}
+        \vfill
+        \noindent \textbf{\huge Alumnas:}\par
+        \vspace{.5cm}
+        \noindent \textbf{\Large Cipullo, In\'es}\par
+        \noindent \textbf{\Large Sullivan, Katherine}\par
+ 
+        \vfill
+        \large Universidad Nacional de Rosario \par
+        \noindent\large 2021
+    \end{center}
+\end{titlepage}
+\par
+
+
+\textbf{Ejercicio 1}
+
+\textbf{A.} \par
+Tenemos una variable aleatoria $X$, tal que $X$:”número de interrupciones diarias” en una compañía. 
+Debemos calcular los valores $P(X=4)$ y $P(X=5)$. Sabemos que:  
+
+\begin{itemize}
+    \item $F(4) = 0.97$
+    \item $P(X=0) = 0.32$ 
+    \item $P(X=1) = 0.35$
+    \item $P(X=2) = 0.18$
+    \item $P(X=3) = 0.08$
+    \item $P(X=6) = 0.01$
+\end{itemize}
+
+Primero, tenemos que: 
+\begin{align*}
+    F(4)& = P(X=0) + P(X=1) + P(X=2) + P(X=3) + P(X=4) =\\
+        & = 0.32 + 0.35 + 0.18 + 0.08 + P(X=4) = 0.93 + P(X=4) =\\
+        & = 0.97 \implies P(X=4) = 0.04
+\end{align*}
+
+Luego, como la variable aleatoria $X$ puede tomar unicamente valores enteros entre el 0 y el 6 inclusive, es decir, $P(X=x) = 0\ \forall\ x > 6$, y sabemos que la suma total de su distribución de probabilidades suma 1, tenemos que:
+\begin{align*}
+    &P(X=0) + P(X=1) + P(X=2) + P(X=3) + P(X=4) + P(X=5) + P(X=6) = \\
+    &= 0.32 + 0.35 + 0.18 + 0.08 + 0.04 + P(X=5) + 0.01 = 0.98 + P(X=5) = 1 \implies \\
+    &\implies P(X=5) = 0.02 
+\end{align*}
+
+
+\textbf{B.} \par
+La probabilidad de que en un día dado haya a lo sumo 4 interrupciones refiere a la probabilidad de que la variable aleatoria $X$ tome un valor igual a 4 o menor, por lo tanto esto es $F(4) = 0.97$. \par
+La probabilidad de que en un día dado haya por lo menos 5 interrupciones refiere a la probabiilidad de que la variable aleatoria $X$ tome un valor igual a 5 o mayor, por lo tanto esto es $P(X=5) + P(X=6) = 0.02 + 0.01 = 0.03$.
+
+
+\textbf{C.} \par
+Esperanza matemática de $X$:
+\begin{align*}
+    E(X)& = \sum_{i=1}^{7} x_i \cdot p(x_i) = \sum_{i=1}^{7} (i-1) \cdot p(i-1) = \\
+        & = 0.35 + 2 \cdot 0.18 + 3 \cdot 0.08 + 4 \cdot 0.04 + 5 \cdot 0.02 + 6 \cdot 0.01 = \\
+        & = 0.35 + 0.36 + 0.24 + 0.16 + 0.1 + 0.06 = 1.27
+\end{align*}
+
+Desviación estándar de $X$:
+\begin{align*}
+    \sigma_x = \sqrt{V(X)} = \sqrt{E(X^2) - E(X)^2},
+\end{align*}
+donde
+\begin{align*}
+    E(X)^2 & = 1.27^2 = 1.6129 \\
+    E(X^2) & = \sum_{i=1}^{7} x_i^2 \cdot p(x_i) = \sum_{i=1}^{7} (i-1)^2 \cdot p(i-1) = \\
+           & = 0.35 + 4 \cdot 0.18 + 9 \cdot 0.08 + 16 \cdot 0.04 + 25 \cdot 0.02 + 36 \cdot 0.01 = \\
+           & = 0.35 + 0.72 + 0.72 + 0.64 + 0.5 + 0.36 = 3.29
+\end{align*}
+Volviendo a la fórmula, tenemos que:
+\begin{align*}
+    \sigma_x = \sqrt{3.29 - 1.6129} = \sqrt{1.6771} = 1.295
+\end{align*}
+
+\textbf{D.} \par
+
+La esperanza matemática representa el valor medio que toma la variable aleatoria, en este caso 1.27.
+La desviación estándar, por otro lado, indica que tan dispersos están los datos con respecto a la media, al ser en este caso relativamente baja indica que no hay una disperción de los datos tan significativa.
+
+
+\textbf{Ejercicio 2}
+
+
+
+\textbf{Ejercicio 3}
+
+Sabemos que el 30\% de los aspirantes a un trabajo tienen entrenamiento avanzado en programación. Los aspirantes son entrevistados al azar y en forma sucesiva. \par
+Consideramos que la cantidad total de aspirantes es muy grande, potencialmente infinita. Por lo tanto, al entrevistar una persona, independientemenete de si su entrenamiento es avanzado o no, sabremos que la proporción de aspirantes con entrenamineto avanzado en el grupo restante de aspirantes se mantiene (siempre será 30\%). Es decir, nos enfrentamos a una situación de extracción con reposición. \par
+
+\textbf{A.} \par
+Para calcular la probabilidad de haber encontrado el primer aspirante con entrenamiento avanzado en programación para la quinta entrevista utilizamos la distribución geométrica: \par
+$P(X=k) = (1-p)^{k-1} \cdot p$, donde $k = 5$ y $p = 0.3$ \par
+$P(X=5) = 0.7^4 \cdot 0.3 = 0.2401 \cdot 0.3 = 0.07203 $
+
+
+\textbf{B.} \par
+Para calcular la probabilidad de haber encontrado el quinto aspirante con entrenamiento avanzado en programación para la décima entrevista utilizamos la distribución de Pascal: \par
+$P(Y=k) = \binom{k-1}{r-1} \cdot p^r \cdot (1-p)^{k-r}$, donde $k = 10$, $r = 5$ y $p = 0.3$ \par
+$P(Y=10) = \binom{9}{5} \cdot 0.3^5 \cdot 0.7^5 = \frac{9!}{4! \cdot 5!} \cdot 0.3^5 \cdot 0.7^5 = 126 \cdot 0.00243 \cdot 0.16807 = 0.0515$
+
+
+\end{document} 
