@@ -1,0 +1,96 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+% \usepackage{wrapfig}
+\usepackage{hyperref}
+% \usepackage{tabularx}
+\usepackage{setspace}
+
+% math package
+\usepackage{amsmath}
+
+\usepackage{yhmath}
+
+\usepackage[spanish]{babel}
+
+\newsavebox\CBox
+\def\textBF#1{\sbox\CBox{#1}\resizebox{\wd\CBox}{\ht\CBox}{\textbf{#1}}}
+
+\newenvironment{myenv}[1]
+  {\begin{spacing}{#1}}
+  {\end{spacing}}
+
+\addtolength{\textwidth}{0.2cm}
+\setlength{\parskip}{13pt}
+\setlength{\parindent}{0.0cm}
+\linespread{1.25}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{TP - Cipullo, Sullivan}
+\lhead{Probalidad y Estad\'istica}
+\rfoot{\vspace{1cm} \thepage}
+
+\renewcommand*\contentsname{\LARGE Índice}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vfill
+        \vfill
+            \vspace{0.7cm}
+            \noindent\textbf{\Huge Trabajo Pr\'actico Unidad 5}\par
+            \noindent\textbf{\Huge Probabilidad y Estad\'istica}\par
+            \vspace{.5cm}
+        \vfill
+        \noindent \textbf{\huge Alumnas:}\par
+        \vspace{.5cm}
+        \noindent \textbf{\Large Cipullo, In\'es}\par
+        \noindent \textbf{\Large Sullivan, Katherine}\par
+ 
+        \vfill
+        \large Universidad Nacional de Rosario \par
+        \noindent\large 2021
+    \end{center}
+\end{titlepage}
+\par
+
+
+\textbf{Ejercicio 1}
+
+Contamos con cierto tipo de marcapasos cuya vida \'util sigue una distribuci\'on exponencial con media 16 a\~{n}os.
+Por contar con una distribuci\'on exponencial, la media, notada con $E(X)$, se expresa como sigue: 
+$$E(X) = \int_{0}^{+ \infty} x \alpha e^{-\alpha x} dx = \frac{1}{\alpha} = 16 \implies \alpha = \frac{1}{16}$$
+
+Debemos calcular la probabilidad de que un marcapasos dure menos de 20 a\~{n}os. Esto equivale a calcular la funci\'on de distribuci\'on acumulada en $x=20$. Dicha funci\'on para una distribuci\'on queda definida como sigue: 
+$$F(x) = \int_{0}^{x} \alpha e^{-\alpha t} dt = 1 - e^{-\alpha x}$$
+Por lo tanto, la probabilidad buscada es: $$F(20) = 1 - e^{-\frac{1}{16} 20} = 1 - e^{\frac{-20}{16}} = 0.7135$$
+
+Por otro lado, se solicita obtener la probabilidad de que un marcapasos dure menos de 25 a\~{n}os dado que lleva funcionando 5 a\~{n}os.
+
+Por la propiedad de falta de memoria, caracter\'istica de la distribuci\'on exponencial, sabemos que: $$P(X > 20 + 5 / X > 5) =  P(X > 20),$$ 
+es decir, la probabilidad de que este marcapasos dure m\'as de 25 a\~{n}os dado que ya dur\'o 5, es igual a la probabilidad de que otro marcapasos cualquiera dure m\'as de 20 a\~{n}os.
+
+Ahora bien, nosotras debemos la probabilidad de que este marcapasos dure menos de 25 a\~{n}os. Esto se reduce a $1 - P(X>20) = F(20) = 0.7135.$ 
+
+\textbf{Ejercicio 2}
+
+Se cuenta un láser semiconductor a potencia constante cuya duraci\'on tiene una distribuci\'on normal con media 7000 horas y desviaci\'on t\'ipica de 600 horas.
+
+\textbf{a)}
+
+Se solicita calcular la probabilidad de que el laser dure menos de 5000 horas, lo cual es equivalente a evaluar la funci\'on de distribuci\'on acumulada en $x=5000$. Para obtener este valor, primero estandarizamos la variable $x$, siendo ahora nuestra variable de inter\'es $z = \frac{x - \mu}{\sigma}$, y luego buscamos el valor correspondiente a $F(\frac{5000-7000}{600}) = F(3.\wideparen{33})$ en la tabla de probabilidades de distribuci\'on normal. 
+Llegando al resultado: $$P(X<5000) = 0.0004$$
+
+\textbf{b)}
+
+Debemos encontrar la duraci\'on excedida por el 95\% de los lasers, es decir, debemos encontrar un valor $t$ (en horas) tal que $P(X>t) = 0.95$. Sabemos que $P(X>t) = 1 - F(t)$, entonces si $P(X>t) = 0.95$ eso implica que $F(t) = 0.05$. 
+Para obtener el valor de $t\ /\ F(t) = 0.05$, primero buscamos el valor $z$ dentro de la tabla de probabilidades de la distribuci\'on normal tal que $F(z) = 0.05$, el cual es $z = -1.64$. Luego desestandarizamos la variable $z$, obteniendo que: 
+$$z = \frac{t - 7000}{600} = -1.64 \implies t = 600z + 7000 = 600 \cdot (-1.64) + 7000 = 6016$$
+
+\textbf{c)}
+
+
+
+\end{document} 
