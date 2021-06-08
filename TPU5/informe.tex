@@ -11,6 +11,7 @@
 
 \usepackage{yhmath}
 
+
 \usepackage[spanish]{babel}
 
 \newsavebox\CBox
@@ -76,7 +77,7 @@ Ahora bien, nosotras debemos la probabilidad de que este marcapasos dure menos d
 
 \textbf{Ejercicio 2}
 
-Se cuenta un láser semiconductor a potencia constante cuya duraci\'on tiene una distribuci\'on normal con media 7000 horas y desviaci\'on t\'ipica de 600 horas.
+Se cuenta un láser semiconductor a potencia constante cuya duraci\'on $X$ tiene una distribuci\'on normal con media 7000 horas y desviaci\'on t\'ipica de 600 horas.
 
 \textbf{a)}
 
@@ -85,11 +86,32 @@ Llegando al resultado: $$P(X<5000) = 0.0004$$
 
 \textbf{b)}
 
-Debemos encontrar la duraci\'on excedida por el 95\% de los lasers, es decir, debemos encontrar un valor $t$ (en horas) tal que $P(X>t) = 0.95$. Sabemos que $P(X>t) = 1 - F(t)$, entonces si $P(X>t) = 0.95$ eso implica que $F(t) = 0.05$. 
-Para obtener el valor de $t\ /\ F(t) = 0.05$, primero buscamos el valor $z$ dentro de la tabla de probabilidades de la distribuci\'on normal tal que $F(z) = 0.05$, el cual es $z = -1.64$. Luego desestandarizamos la variable $z$, obteniendo que: 
+Debemos encontrar la duraci\'on excedida por el 95\% de los lasers, es decir, debemos encontrar un valor $t$ (en horas) tal que $P(X>t) = 0.95$. Sabemos que $P(X>t) = 1 - F(z)$, donde $z = \frac{t - \mu}{\sigma}$ (variable estandarizada). Entonces si $P(X>t) = 0.95$ eso implica que $F(z) = 0.05$. 
+Buscamos el valor $z$ dentro de la tabla de probabilidades de la distribuci\'on normal tal que $F(z) = 0.05$, el cual es $z = -1.64$. Luego desestandarizamos la variable $z$, obteniendo que: 
 $$z = \frac{t - 7000}{600} = -1.64 \implies t = 600z + 7000 = 600 \cdot (-1.64) + 7000 = 6016$$
 
 \textbf{c)}
+
+Dados tres lasers que fallan de manera independiente, buscamos la probabilidad de que los tres sigan funcionando luego de 7000 horas. Definimos la variable aleatoria discreta $Y$: ``n\'umero de lasers que duran m\'as de 7000 horas de un total de 3 lasers".
+Sabiendo que la duraci\'on de cada laser es independiente, queremos calcular $P(Y=3)$.
+
+Para realizar esto, primero calculamos $P(X>7000) = 1 - F(\frac{7000-7000}{600}) = 1 - F(0) = 1 - 0.5 = 0.5$.
+
+Como $Y$ cuenta con una distribuci\'on binomial con $n=3$ y la probabilidad asociada al suceso de inter\'es $p=P(X>7000)=0.5$, obtenemos que:
+$$P(Y=3) = \binom{3}{3} \cdot 0.5^3 \cdot (1 - 0.5)^0 = 0.125$$ 
+
+\textbf{Ejercicio 3}
+
+Tenemos una variable aleatoria continua $T_c$ con distribuci\'on uniforme en el intervalo $(15,21)$, por lo tanto su funci\'on de densidad es $f_c(x) = \frac{1}{6}$.
+
+Definimos una nueva variable aleatoria continua $T_f = H(T_c) = \frac{9}{5} \cdot T_c + 32$. Analizamos los valores posibles para $T_f$ a partir de los valores de $T_c$: 
+$$15 < T_c < 21 \iff 15 \cdot \frac{9}{5} + 32 < T_c \cdot \frac{9}{5} + 32 < 21 \cdot \frac{9}{5} + 32 \iff 59 < T_f < 69.8$$ 
+Al ser una funci\'on lineal creciente, podemos afirmar que $H$ es una funci\'on mon\'otona y derivable en los reales. 
+
+Por lo tanto, la funci\'on de densidad de $T_f$ es: $$f_f(y) = f_c(H^{-1}(y)) \cdot \left|\frac{\partial H^{-1}(y)}{\partial y}\right|$$
+Tenemos que $H^{-1}(y) = (y - 32) \cdot \frac{5}{9}$, por lo que $$59 < y < 69.8 \implies 15 < H^{-1}(y) < 21 \implies f_c(H^{-1}(y)) = \frac{1}{6}$$
+Adem\'as, $(H^{-1})'(y) = \frac{5}{9}$. Entonces, resulta: 
+$$f_f(y) = \frac{1}{6} \cdot \frac{5}{9} = \frac{5}{54}$$
 
 
 

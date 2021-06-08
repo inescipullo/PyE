@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1623093943 "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/TPU5/informe.tex" "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/TPU5/informe.pdf" "informe" 1623093945
-  "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/TPU5/informe.aux" 1623093944 787 3400ed4783b525ad9953bc67c7ea6465 ""
-  "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/TPU5/informe.tex" 1623093943 3995 cf7d694f66c6adb1ce0007d7a5d1599d ""
+["pdflatex"] 1623110737 "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/TPU5/informe.tex" "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/TPU5/informe.pdf" "informe" 1623110788
+  "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/TPU5/informe.aux" 1623110739 787 3400ed4783b525ad9953bc67c7ea6465 ""
+  "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/TPU5/informe.tex" 1623110788 5685 4714f364178648fb8461a68b429e8635 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -91,13 +91,13 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1587152527 2432461 549026f327f444ef40e30e4adf10ef16 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "informe.aux" 1623093944 787 3400ed4783b525ad9953bc67c7ea6465 "pdflatex"
-  "informe.out" 1623093944 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "informe.tex" 1623093943 3995 cf7d694f66c6adb1ce0007d7a5d1599d ""
+  "informe.aux" 1623110739 787 3400ed4783b525ad9953bc67c7ea6465 "pdflatex"
+  "informe.out" 1623110738 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "informe.tex" 1623110788 5685 4714f364178648fb8461a68b429e8635 ""
   (generated)
-  "informe.out"
   "informe.aux"
-  "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/TPU5/informe.pdf"
-  "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/TPU5/informe.log"
   "informe.log"
+  "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/TPU5/informe.pdf"
+  "informe.out"
+  "/Users/inescipullo/Documents2.0/Probabilidad y Estadistica/PyE/TPU5/informe.log"
   "informe.pdf"
