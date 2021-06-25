@@ -1,0 +1,174 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+% \usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{setspace}
+
+% math package
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{yhmath}
+
+
+\usepackage[spanish]{babel}
+
+\newsavebox\CBox
+\def\textBF#1{\sbox\CBox{#1}\resizebox{\wd\CBox}{\ht\CBox}{\textbf{#1}}}
+
+\newenvironment{myenv}[1]
+  {\begin{spacing}{#1}}
+  {\end{spacing}}
+
+\addtolength{\textwidth}{0.2cm}
+\setlength{\parskip}{13pt}
+\setlength{\parindent}{0.0cm}
+\linespread{1.25}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{TP - Cipullo, Sullivan}
+\lhead{Probalidad y Estad\'istica}
+\rfoot{\vspace{1cm} \thepage}
+
+\renewcommand*\contentsname{\LARGE Índice}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vfill
+        \vfill
+            \vspace{0.7cm}
+            \noindent\textbf{\Huge Trabajo Pr\'actico Unidad 6}\par
+            \noindent\textbf{\Huge Probabilidad y Estad\'istica}\par
+            \vspace{.5cm}
+        \vfill
+        \noindent \textbf{\huge Alumnas:}\par
+        \vspace{.5cm}
+        \noindent \textbf{\Large Cipullo, In\'es}\par
+        \noindent \textbf{\Large Sullivan, Katherine}\par
+ 
+        \vfill
+        \large Universidad Nacional de Rosario \par
+        \noindent\large 2021
+    \end{center}
+\end{titlepage}
+\par
+
+
+\textbf{Ejercicio 1}
+
+\textbf{Ejercicio 2}
+
+\textbf{Ejercicio 3}
+
+Sean las variables aleatorias:
+\begin{itemize}
+    \item $X$: ``n\'umero de defectos tipo D1 que presenta una pieza''
+    \item $Y$: ``n\'umero de defectos tipo D2 que presenta una pieza''
+\end{itemize}
+Contamos con los siguientes datos:
+\begin{enumerate}
+    \item $E(X) = 0.3$ y $V(X) = 0.21$
+    \item $E(Y) = 0.8$ y $V(Y) = 0.56$
+    \item 20\% de piezas tienen 2 defectos tipo D2
+    \item 15\% de las piezas tienen 1 defecto tipo D1 y ninguno tipo D2
+    \item 50\% de las piezas que no tienen defectos tipo D1, tienen 1 defecto tipo D2
+\end{enumerate}
+
+\textbf{a)}
+
+\begin{center}
+    \begin{tabularx} {0.8\textwidth}{ 
+        | >{\raggedright\arraybackslash}X 
+        | >{\raggedleft\arraybackslash}X 
+        | >{\raggedleft\arraybackslash}X 
+        | >{\raggedleft\arraybackslash}X 
+        | >{\raggedleft\arraybackslash}X | }
+        \hline
+        \textbf{X \textbackslash Y} & \textbf{0} & \textbf{1} & \textbf{2} & \textbf{$p_X(x)$} \\
+        \hline
+        \textbf{0}                  & 0,25       & 0,35       & 0,1        & 0,7 \\
+        \hline
+        \textbf{1}                  & 0,15       & 0,05       & 0,1        & 0,3 \\
+        \hline
+        \textbf{$p_Y(y)$}           & 0,4        & 0,4        & 0,2        & 1 \\
+        \hline
+   \end{tabularx}
+\end{center}
+
+Calculos realizados: 
+\begin{itemize}
+    \item $p(1,0) = 0.15$ (por lo especificado en el dato 4)
+    \item $p_Y(2) = 0.2$ (por lo especificado en el dato 3)
+    \item $E(X) = 0 \cdot p_X(0) + 1 \cdot p_X(1) = p_X(1) \implies p_X(1) = 0.3$
+    \item $p_X(0) + p_X(1) = p_X(0) + 0.3 = 1 \implies p_X(0) = 0.7$
+    \item $p(0,1) = p_X(0) \cdot 0.5 = 0.7 \cdot 0.5 = 0.35$ (por lo especificado en el dato 5)
+    \item $E(Y) = 0 \cdot p_Y(0) + 1 \cdot p_Y(1) + 2 \cdot p_Y(2) = p_Y(1) + 2 \cdot 0.2 \implies p_Y(1) = 0.4$
+    \item $p_Y(0) + p_Y(1) + p_Y(2) = p_Y(0) + 0.4 + 0.2 = 1 \implies p_Y(0) = 0.4$
+    \item $p_Y(0) = p(0,0) + p(1,0) \implies 0.4 = p(0,0) + 0.15 \implies p(0,0) = 0.25$
+    \item $p_X(0) = p(0,0) + p(0,1) + p(0,2) \implies 0.7 = 0.25 + 0.35 + p(0,2) \implies p(0,2) = 0.1$
+    \item $p_Y(1) = p(0,1) + p(1,1) \implies 0.4 = 0.35 + p(1,1) \implies p(1,1) = 0.5$
+    \item $p_Y(2) = p(0,2) + p(1,2) \implies 0.2 = 0.1 + p(1,2) \implies p(1,2) = 0.1$
+\end{itemize}
+
+
+\textbf{b)}
+
+Las variables aleatorias $X$ e $Y$ son independientes si $$p(x,y) = p_X(x) \cdot p_Y(y) \ \forall\ (x,y) \in R_{(X \times Y)}$$
+Notar que en este caso $R_{(X \times Y)} = \{(0,0),(0,1),(0,2),(1,0),(1,1),(1,2)\}$.
+
+Pero tenemos que $p(0,0) = 0.25$ y $p_X(0) \cdot p_Y(0) = 0.7 \cdot 0.4 = 0.28$, por lo tanto $X$ e $Y$ no son independientes. 
+
+Calculamos entonces el Coeficiente de Correlaci\'on:
+
+\begin{align*}
+    \rho_{xy} &= \frac{Cov(X,Y)}{\sqrt{V(X) \cdot V(Y)}} = \frac{E(X \cdot Y) - E(X) \cdot E(Y)}{\sqrt{V(X) \cdot V(Y)}} \\
+              &\stackrel{(*)}{=} \frac{0.25 - 0.3 \cdot 0.8}{\sqrt{0.21 \cdot 0.56}} = 0.0292
+\end{align*}
+donde $(*)$ hace referencia al siguiente c\'alculo:
+\begin{align*}
+    E(X \cdot Y) &= \sum_{(x,y) \in R_{(X \times Y)}} x \cdot y \cdot p(x,y) \\
+                 &= p(1,1) + 2 \cdot p(1,2) = 0.05 + 2 \cdot 0.1 = 0.25 
+\end{align*}
+
+
+\textbf{c)}
+
+La f\'ormula de probabilidad condicional es como sigue:
+$$P(Y=y / X=x) = \frac{p(x,y)}{p_X(x)}$$
+
+Queda entonces que
+$$P(Y=2 / X=0) = \frac{p(0,2)}{p_X(0)} = \frac{0.1}{0.7} = 0.1428$$
+
+Este resultado refleja que dada una pieza que no tiene defectos tipo D1, la probabilidad de que tenga 2 defectos tipo D2 es $0.1428$. 
+Otra forma de verlo es pensar que el $14.28\%$ de las piezas que no tienen defectos D1, tienen 2 defectos D2.
+
+
+\textbf{d)}
+
+Buscamos la esperanza y la varianza del costo de reparaci\'on por pieza, siendo que un defecto tipo D1 tiene un costo de reparaci\'on de \$3 y uno tipo D2 tiene un costo de reparaci\'on de \$4.
+
+Definimos una funci\'on sobre las variables aleatorias: $Z = H(X,Y)$, donde $H(x,y) = 3 \cdot x + 4 \cdot y$.
+
+Luego, basta con calcular $E(Z)$ y $V(Z)$.
+
+\begin{align*}
+    E(Z) &= \sum_{(x,y) \in R_{(X \times Y)}} H(x,y) \cdot p(x,y) \\ 
+         &= 4 \cdot p(0,1) + 8 \cdot p(0,2) + 3 \cdot p(1,0) + 7 \cdot p(1,1) + 11 \cdot p(1,2) \\
+         &= 4 \cdot 0.35 + 8 \cdot 0.1 + 3 \cdot 0.15 + 7 \cdot 0.05 + 11 \cdot 0.1 \\
+         &= 1.4 + 0.8 + 0.45 + 0.35 + 1.1 = 4.1
+\end{align*}
+
+\begin{align*}
+    V(Z) &= \sum_{(x,y) \in R_{(X \times Y)}} [H(x,y) - E(Z)]^2 \cdot p(x,y) \\
+         &= (-4.1)^2 \cdot p(0,0) + (-0.1)^2 \cdot p(0,1) + 3.9^2 \cdot p(0,2) + \\ &\ \ \ + (-1.1)^2 \cdot p(1,0) + 2.9^2 \cdot p(1,1) + 6.9^2 \cdot p(1,2) \\
+         &= 16.81 \cdot 0.25 + 0.01 \cdot 0.35 + 15.21 \cdot 0.1 + 1.21 \cdot 0.15 + 8.41 \cdot 0.05 + 47.61 \cdot 0.1 \\
+         &= 4.2025 + 0.0035 + 1.521 + 0.1815 + 0.4205 + 4.761 = 11.09
+\end{align*}
+
+
+\end{document} 
