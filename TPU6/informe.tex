@@ -80,35 +80,35 @@ para todo $i=1,...,50$ podemos aplicar el teorema central del l\'imite y conclui
 aproximadamente normal de media $\mu$ y varainza $\sigma^2$, donde:
 
 \begin{itemize}
-    \item $\mu = E(G_t) = $ ver defs unidad 6 para esto
-    \item $\sigma^2 = V(G_t) = $
+    \item $\mu = E(G_t) = 50\cdot E(G_i) = 50\cdot 0.1 = 5$ 
+    \item $\sigma^2 = V(G_t) = 50\cdot V(G_i) = 50\cdot 0.09 = 4.5$
 \end{itemize}
 
 Por lo tanto, 
-$ G_t \sim N(,)$
+$ G_t \sim N(5,4.5)$
 
 Sea $S$ la cantidad de dinero con que la persona queda luego de las 50 apuestas. Queremos ver que $S\geq 0$. 
 
 Recordando que se apuesta una cantidad de dinero $c$ que se pierde en caso de que $G_i=0$ y que si $G_i=1$ se ganan $5c$, tenemos que:
 
 \begin{align*}
-    S &= 5\cdot c \cdot G_t - (-1)\cdot c\cdot (50 - G_t) \\
-      &= 5\cdot c \cdot G_t - (-c \cdot 50 + c\cdot G_t) \\
-      &= 5\cdot c \cdot G_t - c\cdot G_t + c\cdot 50 \\
-      &= 4\cdot c \cdot G_t + c\cdot 50
+    S &= 5\cdot c \cdot G_t - c\cdot (50 - G_t) \\
+      &= 5\cdot c \cdot G_t - (c \cdot 50 + c\cdot G_t) \\
+      &= 5\cdot c \cdot G_t + c\cdot G_t - c\cdot 50 \\
+      &= 6\cdot c \cdot G_t - c\cdot 50
 \end{align*}
 
-Queremos que $S \geq 0 \implies 4c \ G_t + 50c \geq 0 \implies G_t \geq \frac{-50}{4}$  
+Queremos que $S \geq 0 \implies 6c \ G_t - 50c \geq 0 \implies G_t \geq \frac{50}{6}$  
 
-Entonces, en s\'intesis lo que buscamos es $P(G_t\geq -12.5)$. 
+Entonces, en s\'intesis lo que buscamos es $P(G_t\geq 8.33)$. 
 
 Para obtener este valor estandarizamos la variable 
 
-$ Z = \frac{(G_t - \mu)}{\sigma} = $
+$ Z = \frac{G_t - \mu}{\sigma} = \frac{G_t - 5}{\sqrt{4.5}} = \frac{G_t - 5}{2.12}$
 
 Y por lo tanto,
 
-$P(G_t\geq -12.5) = P(Z \geq ) = $
+$P(G_t\geq 8.33) = P(Z \geq 1.57) = 1 - P(Z < 1.57) = 1 - 0.9418 = 0.0582$
 
 
 \textbf{Ejercicio 2}
