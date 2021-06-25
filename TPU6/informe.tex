@@ -14,6 +14,7 @@
 
 
 \usepackage[spanish]{babel}
+\decimalpoint
 
 \newsavebox\CBox
 \def\textBF#1{\sbox\CBox{#1}\resizebox{\wd\CBox}{\ht\CBox}{\textbf{#1}}}
@@ -89,7 +90,7 @@ $ G_t \sim N(5,4.5)$
 
 Sea $S$ la cantidad de dinero con que la persona queda luego de las 50 apuestas. Queremos ver que $S\geq 0$. 
 
-Recordando que se apuesta una cantidad de dinero $c$ que se pierde en caso de que $G_i=0$ y que si $G_i=1$ se ganan $5c$, tenemos que:
+Recordando que se apuesta una cantidad de dinero $c > 0$ que se pierde en caso de que $G_i=0$ y que si $G_i=1$ se ganan $5c$, tenemos que:
 
 \begin{align*}
     S &= 5\cdot c \cdot G_t - c\cdot (50 - G_t) \\
@@ -102,7 +103,7 @@ Queremos que $S \geq 0 \implies 6c \ G_t - 50c \geq 0 \implies G_t \geq \frac{50
 
 Entonces, en s\'intesis lo que buscamos es $P(G_t\geq 8.33)$. 
 
-Para obtener este valor estandarizamos la variable 
+Para obtener este valor estandarizamos la variable:
 
 $ Z = \frac{G_t - \mu}{\sigma} = \frac{G_t - 5}{\sqrt{4.5}} = \frac{G_t - 5}{2.12}$
 
@@ -113,6 +114,39 @@ $P(G_t\geq 8.33) = P(Z \geq 1.57) = 1 - P(Z < 1.57) = 1 - 0.9418 = 0.0582$
 
 \textbf{Ejercicio 2}
 
+Sean las variables aleatorias:
+\begin{itemize}
+    \item $A$: ``longitud de bloques de tipo A''
+    \item $B$: ``longitud de bloques de tipo B''
+    \item $X$: ``suma de la longitud de 20 bloques de tipo A''
+    \item $Y$: ``suma de la longitud de 30 bloques de tipo B''
+    \item $R$: ``longitud del recipiente''
+\end{itemize}
+
+Contamos con los siguientes datos:
+\begin{itemize}
+    \item $E(A) = 1.95$ y $\sqrt{V(A)} = 0.01 \implies V(A) = 0.0001$
+    \item $E(B) = 0.83$ y $\sqrt{V(B)} = 0.02 \implies V(B) = 0.0004$
+    \item $E(R) = 65$ y $\sqrt{V(R)} = 0.5 \implies V(R) = 0.7071$
+\end{itemize}
+
+Como $A$ y $B$ son variables aleatorias independientes con media y varianza finita, por el Teorema Central del L\'imite sabemos que las variables aleatorias $X$ e $Y$ tienen una distribuci\'on aproximadamente normal, donde $E(X) = 39$, $V(X) = 0.002$, $E(Y) = 24.9$ y $V(Y) = 0.012$.
+
+Buscamos la probabilidad de que el ensamble formado por 20 bloques de tipo A y 30 bloques de tipo B entre en un recipiente. Podemos plantearlo como sigue:
+$$P(X+Y \leq R) = P(X+Y-R \leq 0)$$
+
+Como $R$ tiene distribuci\'on normal y $X$ e $Y$ tienen distribuci\'on aproximadamente normal, por la propiedad reproductica de la distribuci\'in normal:
+$$X + Y + (-1) \cdot R \sim N(E(X)+E(Y)-E(R), \sqrt{V(X)+V(Y)-V(R)})$$
+
+Definimos entonces una nueva variable aleatoria: $S = X+Y-R$, donde
+$$S \sim N(-1.1, -0.6931)$$
+
+En s\'intesis, queremos ver que $P(S \leq 0)$. Para obtener ese valor, debemos estandarizar la variable:
+
+$Z = \frac{S - \mu}{\sigma^2} = \frac{S + 1.1}{-0.6931}$
+
+Buscamos en la tabla de distribuci\'on normal est\'andar
+$$P(S \leq 0) = P(Z \leq -1.587) = 0.0559$$
 
 
 \textbf{Ejercicio 3}
@@ -143,11 +177,11 @@ Contamos con los siguientes datos:
         \hline
         \textbf{X \textbackslash Y} & \textbf{0} & \textbf{1} & \textbf{2} & \textbf{$p_X(x)$} \\
         \hline
-        \textbf{0}                  & 0,25       & 0,35       & 0,1        & 0,7 \\
+        \textbf{0}                  & 0.25       & 0.35       & 0.1        & 0.7 \\
         \hline
-        \textbf{1}                  & 0,15       & 0,05       & 0,1        & 0,3 \\
+        \textbf{1}                  & 0.15       & 0.05       & 0.1        & 0.3 \\
         \hline
-        \textbf{$p_Y(y)$}           & 0,4        & 0,4        & 0,2        & 1 \\
+        \textbf{$p_Y(y)$}           & 0.4        & 0.4        & 0.2        & 1 \\
         \hline
    \end{tabularx}
 \end{center}
