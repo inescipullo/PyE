@@ -10,7 +10,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 
-\usepackage{yhmath}
+%\usepackage{yhmath}
 
 
 \usepackage[spanish]{babel}
@@ -75,11 +75,40 @@ Tenemos que:
     \item $G_t = \sum_{i = 1}^{50} G_i$
 \end{itemize}
 
-Considerando que el resultado de una apuesta es independiente del resultado del resto de apuestas y que $E(G_i)$ 
+Considerando que el resultado de una apuesta es independiente del resultado del resto de apuestas y que $E(G_i)$ y $V(G_i)$ son finitas 
+para todo $i=1,...,50$ podemos aplicar el teorema central del l\'imite y concluir que la variable $G_t$ tiene una distribuci\'on 
+aproximadamente normal de media $\mu$ y varainza $\sigma^2$, donde:
 
-Considerando que la demanda de cada día es independiente de la demanda del resto de los días y que E(Di) y V(Di) son finitas para todo i=1,...,90, 
-podemos aplicar el teorema central del límite y concluir que la variable DT tiene una distribución aproximadamente normal de media μ y varianza σ2.
+\begin{itemize}
+    \item $\mu = E(G_t) = $ ver defs unidad 6 para esto
+    \item $\sigma^2 = V(G_t) = $
+\end{itemize}
 
+Por lo tanto, 
+$ G_t \sim N(,)$
+
+Sea $S$ la cantidad de dinero con que la persona queda luego de las 50 apuestas. Queremos ver que $S\geq 0$. 
+
+Recordando que se apuesta una cantidad de dinero $c$ que se pierde en caso de que $G_i=0$ y que si $G_i=1$ se ganan $5c$, tenemos que:
+
+\begin{align*}
+    S &= 5\cdot c \cdot G_t - (-1)\cdot c\cdot (50 - G_t) \\
+      &= 5\cdot c \cdot G_t - (-c \cdot 50 + c\cdot G_t) \\
+      &= 5\cdot c \cdot G_t - c\cdot G_t + c\cdot 50 \\
+      &= 4\cdot c \cdot G_t + c\cdot 50
+\end{align*}
+
+Queremos que $S \geq 0 \implies 4c \ G_t + 50c \geq 0 \implies G_t \geq \frac{-50}{4}$  
+
+Entonces, en s\'intesis lo que buscamos es $P(G_t\geq -12.5)$. 
+
+Para obtener este valor estandarizamos la variable 
+
+$ Z = \frac{(G_t - \mu)}{\sigma} = $
+
+Y por lo tanto,
+
+$P(G_t\geq -12.5) = P(Z \geq ) = $
 
 
 \textbf{Ejercicio 2}
