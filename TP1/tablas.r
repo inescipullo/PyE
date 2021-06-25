@@ -1,4 +1,4 @@
-setwd("/Users/inescipullo/Documents2.0/Probabilidad\ y\ Estadistica/PyE")
+setwd("/Users/inescipullo/Documents2.0/Probabilidad\ y\ Estadistica/PyE/TP1")
 setwd("/home/administrador/Documentos/PyE")
 
 data = read.table("usuarios9.csv", header = TRUE, sep = ",")
@@ -35,7 +35,7 @@ grafico_genero = pie(x, labels = labels, clockwise = TRUE, main = title, col = c
 
 
 # tabla de frecuencias para EDAD
-# garfico histograma
+# grafico histograma
 breaks_edad = seq(18,68,5)
 edad_intervalos = cut(data$edad_usuario, breaks = breaks_edad, right = FALSE)
 frec_abs_edad = table(edad_intervalos) 
@@ -51,7 +51,8 @@ tabla_edad
 
 # grafico de histograma para EDAD
 title2 = "Edad de los Usuarios del Servicio EcoBici de CABA"
-hist(data$edad_usuario,border = "black",col = "lightblue",xlim = c(10,70),ylim = c(0,30),breaks = breaks_edad,xlab = "Edad (en años)",ylab = "Cantidad de Usuarios",main = title2,)
+hist(data$edad_usuario,border = "black",col = "lightblue", xaxt='n',ylim = c(0,30),breaks = breaks_edad,xlab = "Edad (en años)",ylab = "Cantidad de Usuarios",main = title2,)
+axis(side = 1, at = breaks_edad)
 
 # poligono de frecuencia y poligono acumulativo para EDAD
 breaks_edad2 = seq(13,73,5)
@@ -210,7 +211,8 @@ title3 = "Duraciones de recorridos en EcoBici en CABA"
 boxplot(dur_recorridos, col="orange", main = title3 , ylab="Duración del recorrido (en minutos)")
 
 breaks_hist = c(2,12,22,32,42,52,62,72,82,92,102,112,122,132)
-hist(dur_recorridos,border = "black",col = "orange",ylim = c(0,120),xlim = c(0,140),breaks = breaks_hist,xlab = "Duración (en minutos)",ylab = "Cantidad de recorridos",main = "Duración de recorridos en EcoBici en CABA")
+hist(dur_recorridos,border = "black",col = "orange",ylim = c(0,120),xaxt='n',breaks = breaks_hist,xlab = "Duración (en minutos)",ylab = "Cantidad de recorridos",main = "Duración de recorridos en EcoBici en CABA")
+axis(side = 1, at = breaks)
 
 # poligono de frecuencia y poligono acumulativo para DURACION
 breaks_hist2 = c(-8,breaks_hist,142)
