@@ -1,0 +1,268 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+% \usepackage{wrapfig}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{listings}
+
+% \DeclareUnicodeCharacter{0301}{*************************************}
+
+
+% math package
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% matrix package
+\usepackage{nicematrix}
+
+% graph package
+% \usepackage{tikz}
+% \usetikzlibrary{positioning}
+
+
+%\usepackage{yhmath}
+
+
+% for R style
+% \usepackage{color}
+% \definecolor{mGreen}{rgb}{0,0.6,0}
+% \definecolor{mGray}{rgb}{0.5,0.5,0.5}
+% \definecolor{mPurple}{rgb}{0.58,0,0.82}
+% \definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+
+% \lstdefinestyle{RStyle}{
+%     backgroundcolor=\color{backgroundColour},   
+%     commentstyle=\color{mGreen},
+%     keywordstyle=\color{magenta},
+%     numberstyle=\tiny\color{mGray},
+%     stringstyle=\color{mPurple},
+%     basicstyle=\footnotesize,
+%     breakatwhitespace=false,
+%     breaklines=true,
+%     captionpos=b,
+%     keepspaces=true,
+%     numbers=left,
+%     numbersep=5pt,
+%     showspaces=false,
+%     showstringspaces=false,
+%     showtabs=false,
+%     tabsize=2,
+%     language=R
+% }
+
+
+
+\usepackage[spanish]{babel}
+\decimalpoint
+
+\newsavebox\CBox
+\def\textBF#1{\sbox\CBox{#1}\resizebox{\wd\CBox}{\ht\CBox}{\textbf{#1}}}
+
+\newenvironment{myenv}[1]
+  {\begin{spacing}{#1}}
+  {\end{spacing}}
+
+\addtolength{\textwidth}{0.2cm}
+\setlength{\parskip}{13pt}
+\setlength{\parindent}{0.0cm}
+\linespread{1.25}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Cipullo}
+\lhead{Probalidad y Estad\'istica}
+\rfoot{\vspace{1cm} \thepage}
+
+\renewcommand*\contentsname{\LARGE Índice}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vfill
+        \vfill
+            \vspace{0.7cm}
+            \noindent\textbf{\Huge Exámen Final}\par
+            \noindent\textbf{\Huge Probabilidad y Estad\'istica}\par
+            \vspace{.5cm}
+        \vfill
+        \noindent \textbf{\huge Alumna:}\par
+        \vspace{.5cm}
+        \noindent \textbf{\Large Cipullo, In\'es}\par
+
+ 
+        \vfill
+        \large Universidad Nacional de Rosario \par
+        \noindent\large 2021
+    \end{center}
+\end{titlepage}
+\par
+
+
+\section*{Parte I}
+
+\textbf{Ejercicio 1}
+
+\textbf{i.}
+Matríz de transición en un paso, con $k = 3$ y $p = 0.4$:
+
+\begin{equation}
+    P = \begin{pNiceMatrix}[first-row,first-col]
+          & 0   & 1   & 2   & 3   \\
+        0 & 0.6 & 0.4 & 0   & 0   \\
+        1 & 0.6 & 0   & 0.4 & 0   \\
+        2 & 0.6 & 0   & 0   & 0.4 \\
+        3 & 0   & 0   & 0   & 1   \\
+    \end{pNiceMatrix}
+\end{equation}
+
+\textbf{ii.}
+Si no se exige que los éxitos sean consecutivos, la matríz de transición sería
+
+\begin{equation}
+    P = \begin{pNiceMatrix}[first-row,first-col]
+          & 0   & 1   & 2   & 3   \\
+        0 & 0.6 & 0.4 & 0   & 0   \\
+        1 & 0   & 0.6 & 0.4 & 0   \\
+        2 & 0   & 0   & 0.6 & 0.4 \\
+        3 & 0   & 0   & 0   & 1   \\
+    \end{pNiceMatrix}
+\end{equation}
+
+\textbf{iii.}
+La distribución de Pascal con $r = 3$ se puede utilizar para modelar la situación planteada en ii.
+
+La esperanza, en este caso, es $E(N_k) = \frac{3}{0.4} = 7.5$.
+
+\textbf{iv.}
+La diferencia en los resultados obtenidos se debe a que en el nuevo escenario planteado, dado un fallo luego de haber acumulado algún éxito no significaría volver a empezar a contar (volver a 0), sino mantener el contador donde estaba.
+
+La esperanza calculada en iii es un parámetro, mientras que la calculada en el Trabajo es una estimación.
+
+\textbf{Ejercicio 2}
+
+\textbf{i.}
+El proceso $S_n$: ``posición de una particula en el momento $n$'' es la suma acumulada del proceso $D_n = 2 \cdot I_n - 1$, donde $I_n$ es un proceso de Bernoulli con probabilidad de \'exito $p = 0.75$. Vemos entonces que el proceso $D_n$ es simplemente una transformación lineal de un porceso de Bernoulli. 
+
+Por lo tanto, se podría decir que el proceso $S_n$ comparte características con el Proceso Número de \'Exitos. Cabe destacar que si bien en este caso si se parte de $N_0 = 0$, este proceso estocástico no describe el número de \'exitos del proceso de Bernoulli, sino que describe el número de \'exitos menos el número de fallos.
+
+\textbf{ii.}
+Tenemos que $E(S_{n+1}|S_n) = S_n + p$.
+
+Para un $p = 0.5$ se esperaría que la trayectoria oscile sobre el 0.
+
+Para un $p$ cercano a 1 se esperaría que la trayectoria tienda hacia infinito positivo.
+
+Para un $p$ cercano a 0 se esperaría que la trayectoria tienda hacia infinito negativo.
+
+\textbf{Ejercicio 3}
+
+\textbf{i.}
+Se define el suceso $R_A$: ``el jugador $A$ pierde todo su capital en algún momento''.
+
+Si tenemos un proceso $X_n$: ``capital del jugador al momento $n$'', podemos expresar $R_A$ como que $\exists\ n \in \mathbb{N} / X_n = 0$.
+
+\textbf{ii.}
+Matríz de transición en un paso, con $p$ la probabilidad de éxito de $J_n$:
+
+\begin{equation}
+    P = \begin{pNiceMatrix}[first-row,first-col]
+              & 0   & 1   & \dots & 9   & 10  & 11  & \dots & 19 & 20 \\
+        0     & 1   & 0   & \dots & 0   & 0   & 0   & \dots & 0  & 0  \\
+        1     & 1-p & 0   & \dots & 0   & 0   & 0   & \dots & 0  & 0  \\
+        \dots & \dots & \dots & \dots & \dots & \dots & \dots & \dots & \dots & \dots \\
+        9     & 0   & 0   & \dots & 0   & p   & 0   & \dots & 0  & 0 \\
+        10    & 0   & 0   & \dots & 1-p & 0   & p   & \dots & 0  & 0 \\
+        11    & 0   & 0   & \dots & 0   & 1-p & 0   & \dots & 0  & 0 \\
+        \dots & \dots & \dots & \dots & \dots & \dots & \dots & \dots & \dots & \dots \\
+        19    & 0   & 0   & \dots & 0   & 0   & 0   & \dots & 0  & p  \\
+        20    & 0   & 0   & \dots & 0   & 0   & 0   & \dots & 0  & 1  \\
+    \end{pNiceMatrix}
+\end{equation}
+
+\textbf{iii.}
+Se busca calcular la matríz $F$ con las probabilidades de alcanzar el estado $j$ partiendo del estado $i$ en un número finito de pasos.
+
+$F(i,j) = \sum_{n=1}^{\infty} F_n(i,j)$
+
+$F(i,j) = P(i,j) + \sum_{b \in E-\{j\}} P(i,b) \cdot F(b,i)$
+
+
+\textbf{Ejercicio 5}
+
+\textbf{ii.}
+La cadena tiene distribución límite, su cálculo está relizado en el apartado c).
+
+Queda entonces que
+
+\begin{equation}
+    P^{\infty} = \begin{pNiceMatrix}[first-row, first-col]
+          & a      & b    & c      & d      & e     & f      & g     \\
+        a & 0.2453 & 0.16 & 0.0587 & 0.0667 & 0.128 & 0.3093 & 0.032 \\
+        b & 0.2453 & 0.16 & 0.0587 & 0.0667 & 0.128 & 0.3093 & 0.032 \\
+        c & 0.2453 & 0.16 & 0.0587 & 0.0667 & 0.128 & 0.3093 & 0.032 \\
+        d & 0.2453 & 0.16 & 0.0587 & 0.0667 & 0.128 & 0.3093 & 0.032 \\
+        e & 0.2453 & 0.16 & 0.0587 & 0.0667 & 0.128 & 0.3093 & 0.032 \\
+        f & 0.2453 & 0.16 & 0.0587 & 0.0667 & 0.128 & 0.3093 & 0.032 \\
+        g & 0.2453 & 0.16 & 0.0587 & 0.0667 & 0.128 & 0.3093 & 0.032 \\
+    \end{pNiceMatrix}
+\end{equation}
+
+
+
+\textbf{Ejercicio 6}
+
+\textbf{i.}
+En el instante 0 hay 0 arribos.
+
+Ocurre como mucho solo un arribo por instante.
+
+Dado un t dentro del intervalo de tiempo usado, se puede saber cuantos arribos ocurrieron hasta ese instante.
+
+\textbf{ii.}
+Los tiempos entre arribos se ajustan a una distribución exponencial. Notamos que cumple con la propiedad de la falta de memoria ya que uno no depende de los anteriores.
+
+\textbf{iii.}
+Hipótesis que deben cumplirse a fin de que el proceso de Poisson sea el modelo adecuado:
+
+\begin{itemize}
+    \item El número de arribos durante intervalos de tiempo no superpuestos son variables aleatorias independientes.
+    \item La distribución de la cantidad de arribos durante cualquier intervalo depende sólo de la longitud del intervalo y no de los extremos.
+    \item Si el intervalo es suficientemente pequeño, la probabilidad de que se produzca exactamente un arribo durante ese intervalo es directamente proporcional a la longitud del intervalo.
+    \item La probabilidad de que se porduzcan dos o más arribos en un intervalo suficientemente pequeño es despreciable, esto quiere decir que no pueden producirse dos arribos en el mismo instante.
+    \item La condición inicial es 0, es decir, $p_0(0) = 1$.
+\end{itemize}
+
+
+\textbf{Ejercicio 7}
+
+\textbf{i.}
+Todos los estados de la cadena de Marcov son positivamente recurrentes de período 1, es decir, aperiódicos. Además, todos los estados pertenecen al mismo conjunto cerrado, finito e irreducible, por lo tanto la cadena de Marcov es ergódica.
+
+\textbf{ii.}
+Tenemos las siguentes dos propiedades de las cadenas de Marcov:
+
+\begin{itemize}
+    \item Conociendo la matríz de transición en un paso $P$ y la distribución inicial $\pi_0$ (distribución de $X_0$), se puede conocer el comportamiento completo de $X$. Es decir, $P(X_0 = i_0, \dots, X_n = i_n) = P(i_{n-1}, i_n) \dots P(X_0 = i_0)$.
+    \item Para todo $n,m \in \mathbb{N}_0$ vale que $P(X_{m+n} = j / X_m = i) = P^n(i,j) \ \forall\ i,j \in E$.
+\end{itemize}
+
+De esas dos propiedades surge que $$P(X_n = j) = (\pi_0 \cdot P^n)(j)\ \forall\ n,j \in E$$, lo cual justifica lo realizado en el item a).
+
+\section*{Parte II}
+
+\textbf{a.}
+El eje vertical de un histograma en el que los intervalos son de distinta amplitud presenta la densidad de dicha clase, y no la frecuencia.
+
+En este caso, si se quieren unir los últimos dos intervalos, la altura del rectángulo sobre dichos intervalos será $$\frac{frecuencia\ relativa}{ancho\ de\ intervalo}$$, donde la frecuencia relativa será la suma de las frecuencias relativas de ambos intervalos a unir y el ancho del intervalo será la suma de las longitudes de ambos intervalos. De esta forma representará la densidad.
+
+\textbf{b.}
+El boxplot se presenta como una ``caja'', en este caso de color amarillo, que se extiende desde el valor del primer cuartíl (1.0060 km) hasta el valor del tercer cuartíl (3.0390 km), marcando con una línea el segundo cuartíl o mediana (1.6130 km). Su altura es, por lo tanto, el rango intercuartíl (2.0330 km). Además, presenta dos líneas punteadas que surgen desde los extremos de la caja (una de cada extremo) y se extienden hasta el último valor que es considerado no outlier (es decir, adyacente). Por último, los valores que se encuantran marcados con círculo son outliers. 
+Vale aclarar que para que un valor sea considerado outlier tiene que encontrarse a más de 1.5 veces el rango intercuartíl del extremo más cercano de la caja
+
+
+
+\end{document} 
